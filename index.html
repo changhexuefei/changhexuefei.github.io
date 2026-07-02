@@ -470,6 +470,68 @@
       margin-bottom: 72px;
     }
 
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .activity-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 212px;
+      padding: 20px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .68);
+      box-shadow: 0 12px 36px rgba(24, 32, 38, .07);
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+
+    .activity-card:hover,
+    .activity-card:focus-within {
+      border-color: rgba(47, 125, 123, .34);
+      box-shadow: 0 18px 48px rgba(24, 32, 38, .11);
+      transform: translateY(-4px);
+    }
+
+    .activity-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.28;
+    }
+
+    .activity-card p {
+      margin-bottom: 16px;
+      color: #52616c;
+      font-size: 14px;
+    }
+
+    .activity-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: auto;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .activity-meta span {
+      padding: 3px 8px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .58);
+    }
+
+    .activity-link {
+      display: inline-flex;
+      margin-top: 12px;
+      color: var(--accent-strong);
+      font-weight: 900;
+    }
+
     .repo-card {
       position: relative;
       overflow: hidden;
@@ -725,6 +787,10 @@
         grid-template-columns: 1fr 1fr;
       }
 
+      .activity-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .section-head {
         align-items: flex-start;
         flex-direction: column;
@@ -752,6 +818,7 @@
       }
 
       .metrics,
+      .activity-grid,
       .post-grid {
         grid-template-columns: 1fr;
       }
@@ -928,6 +995,36 @@
     </section>
 
     <section id="repos" class="shell">
+      <div class="section-head reveal">
+        <h2>最近在做</h2>
+        <p>根据 GitHub 公开仓库的最近更新时间整理：当前重心在个人主页、Kotlin 多平台/绘图库，以及仪器控制相关技术栈。</p>
+      </div>
+      <div class="activity-grid">
+        <article class="activity-card reveal">
+          <h3>个人主页重建</h3>
+          <p>持续优化 `changhexuefei.github.io`，把旧博客入口整理成更稳定、更美观的 GitHub Pages 门面。</p>
+          <div class="activity-meta"><span>HTML</span><span>2026-07</span></div>
+          <a class="activity-link" href="https://github.com/changhexuefei/changhexuefei.github.io" target="_blank" rel="noopener">查看仓库</a>
+        </article>
+        <article class="activity-card reveal">
+          <h3>Kotlin 绘图方向</h3>
+          <p>关注 Lets-Plot / Skia / Kandy 相关仓库，探索 Kotlin 多平台绘图与可视化能力。</p>
+          <div class="activity-meta"><span>Kotlin</span><span>Lets-Plot</span></div>
+          <a class="activity-link" href="https://github.com/changhexuefei/lets-plot-kotlin" target="_blank" rel="noopener">查看仓库</a>
+        </article>
+        <article class="activity-card reveal">
+          <h3>SiPhStudio</h3>
+          <p>近期更新的自有 Kotlin 仓库，适合作为后续项目展示和工程记录的重点入口。</p>
+          <div class="activity-meta"><span>Kotlin</span><span>2026-06</span></div>
+          <a class="activity-link" href="https://github.com/changhexuefei/SiPhStudio" target="_blank" rel="noopener">查看仓库</a>
+        </article>
+        <article class="activity-card reveal">
+          <h3>仪器控制与 VISA</h3>
+          <p>关注 PyVISA、JVisa、PyMeasure 等测量设备控制方向，连接 Python/Java 与实验自动化。</p>
+          <div class="activity-meta"><span>Python</span><span>Java</span></div>
+          <a class="activity-link" href="https://github.com/changhexuefei/pyvisa" target="_blank" rel="noopener">查看仓库</a>
+        </article>
+      </div>
       <div class="section-head reveal">
         <h2>仓库风格</h2>
         <p>把这个站点当成一个公开作品来整理：页面轻、依赖少、可直接托管，也给后续恢复更多文章和项目留下空间。</p>
