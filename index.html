@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101418">
-  <meta name="description" content="长河雪飞的个人网站，记录技术、阅读与生活思考。">
+  <meta name="description" content="长河雪飞的 GitHub 个人主页，记录技术实践、阅读摘记与持续更新。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="长河雪飞的个人网站">
-  <meta property="og:description" content="十年饮冰，热血未凉。">
+  <meta property="og:description" content="十年饮冰，热血未凉。技术、文字与个人作品的展示空间。">
   <meta property="og:url" content="https://changhexuefei.github.io/">
   <title>长河雪飞的个人网站</title>
   <script type="application/ld+json">
@@ -17,7 +17,7 @@
       "name": "长河雪飞",
       "url": "https://changhexuefei.github.io/",
       "sameAs": ["https://github.com/changhexuefei"],
-      "description": "记录技术、阅读与生活思考的个人网站。"
+      "description": "记录技术实践、阅读摘记与持续更新的 GitHub 个人主页。"
     }
   </script>
   <style>
@@ -181,6 +181,25 @@
       width: 18px;
       height: 18px;
       flex: 0 0 auto;
+    }
+
+    .hero-kicker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: -10px 0 28px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero-kicker li {
+      padding: 6px 11px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .5);
+      color: #47545f;
+      font-size: 13px;
+      font-weight: 800;
     }
 
     .hero {
@@ -385,6 +404,30 @@
       font-weight: 900;
     }
 
+    .repo-strip {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .repo-mini {
+      padding: 16px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .62);
+    }
+
+    .repo-mini b {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .repo-mini span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
     section {
       padding: 72px 0;
     }
@@ -418,6 +461,100 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
+    }
+
+    .repo-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      margin-bottom: 72px;
+    }
+
+    .repo-card {
+      position: relative;
+      overflow: hidden;
+      padding: 26px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .72);
+      box-shadow: 0 14px 44px rgba(24, 32, 38, .08);
+    }
+
+    .repo-card.featured {
+      background:
+        linear-gradient(135deg, rgba(47, 125, 123, .14), transparent 44%),
+        rgba(255, 255, 255, .76);
+    }
+
+    .repo-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .repo-title h3 {
+      margin-bottom: 0;
+      font-size: 26px;
+    }
+
+    .repo-title span {
+      padding: 4px 10px;
+      border: 1px solid rgba(47, 125, 123, .18);
+      border-radius: 999px;
+      background: rgba(47, 125, 123, .08);
+      color: var(--accent-strong);
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .repo-card p {
+      color: #52616c;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .stack li {
+      padding: 6px 10px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .62);
+      color: #3e4a54;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .commit-line {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .commit-item {
+      display: grid;
+      grid-template-columns: 12px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: #50606b;
+      font-size: 14px;
+    }
+
+    .commit-dot {
+      width: 10px;
+      height: 10px;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(47, 125, 123, .1);
     }
 
     .post-card {
@@ -573,7 +710,9 @@
       }
 
       .hero,
-      .timeline {
+      .timeline,
+      .repo-grid,
+      .repo-strip {
         grid-template-columns: 1fr;
       }
 
@@ -619,8 +758,14 @@
 
       .feature-panel,
       .about-card,
+      .repo-card,
       .post-card {
         padding: 20px;
+      }
+
+      .repo-title {
+        align-items: flex-start;
+        flex-direction: column;
       }
 
       section {
@@ -659,6 +804,7 @@
       </a>
       <div class="nav-links">
         <a href="#notes">文章</a>
+        <a href="#repos">仓库</a>
         <a href="#about">关于</a>
         <a href="#thoughts">片段</a>
         <a href="https://github.com/changhexuefei">GitHub</a>
@@ -675,7 +821,13 @@
       <div class="hero-text reveal">
         <p class="eyebrow">个人网站 · 技术与文字</p>
         <h1><span>十年饮冰，</span><span>热血未凉。</span></h1>
-        <p class="hero-copy">这里是长河雪飞的个人空间。写 Python、前端与数据结构，也收藏阅读里的锋利句子和生活里的微小回声。</p>
+        <p class="hero-copy">这里是长河雪飞的 GitHub 个人主页。写 Python、前端与数据结构，也把阅读里的锋利句子和持续更新的作品放在同一个入口。</p>
+        <ul class="hero-kicker" aria-label="主页关键词">
+          <li>GitHub Pages</li>
+          <li>Python</li>
+          <li>Front-end</li>
+          <li>Writing</li>
+        </ul>
         <div class="hero-actions">
           <a class="button primary" href="#notes">阅读精选</a>
           <a class="button secondary" href="https://github.com/changhexuefei" target="_blank" rel="noopener">查看代码</a>
@@ -716,6 +868,16 @@
               <div><b>自我更新</b><span>让个人网站成为一个持续打磨的小作品，而不是静止名片。</span></div>
             </li>
           </ul>
+          <div class="repo-strip" aria-label="仓库状态">
+            <div class="repo-mini">
+              <b>changhexuefei.github.io</b>
+              <span>个人主页与博客入口</span>
+            </div>
+            <div class="repo-mini">
+              <b>master</b>
+              <span>持续发布到 GitHub Pages</span>
+            </div>
+          </div>
         </div>
       </aside>
     </section>
@@ -762,6 +924,40 @@
           <p>一个名字的来处，也是一段个人表达的开端。</p>
           <a class="post-link" href="/2018/06/07/长河雪飞的由来/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </article>
+      </div>
+    </section>
+
+    <section id="repos" class="shell">
+      <div class="section-head reveal">
+        <h2>仓库风格</h2>
+        <p>把这个站点当成一个公开作品来整理：页面轻、依赖少、可直接托管，也给后续恢复更多文章和项目留下空间。</p>
+      </div>
+      <div class="repo-grid">
+        <article class="repo-card featured reveal">
+          <div class="repo-title">
+            <h3>changhexuefei.github.io</h3>
+            <span>GitHub Pages</span>
+          </div>
+          <p>这是当前个人主页仓库，也是你的公开门面。新版保留原博客的文章入口，同时把首页变成更完整的个人介绍、技术记录和项目展示中心。</p>
+          <ul class="stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive</li>
+            <li>SEO</li>
+          </ul>
+        </article>
+        <aside class="repo-card reveal">
+          <div class="repo-title">
+            <h3>更新轨迹</h3>
+            <span>Live</span>
+          </div>
+          <div class="commit-line">
+            <div class="commit-item"><span class="commit-dot"></span><span>修复旧页面中文元信息与过时外链依赖。</span></div>
+            <div class="commit-item"><span class="commit-dot"></span><span>重建响应式首页，适配桌面与移动端访问。</span></div>
+            <div class="commit-item"><span class="commit-dot"></span><span>补充仓库展示、技术标签和 GitHub Pages 发布入口。</span></div>
+          </div>
+        </aside>
       </div>
     </section>
 
