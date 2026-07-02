@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 欢迎来到我的博客
+title: 长河雪飞的个人网站
 ---
 
-这里是我的 Jekyll 博客，托管在 GitHub Pages 上！
+这里是长河雪飞的个人网站，托管在 GitHub Pages 上。

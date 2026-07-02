@@ -1,3 +1,4 @@
-theme: minima  # 选择 Minima 主题
-title: 我的博客
-description: 欢迎来到我的 Jekyll 博客！
+theme: minima
+title: 长河雪飞的个人网站
+description: 十年饮冰，热血未凉。
+lang: zh-CN
