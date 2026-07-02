@@ -176,8 +176,7 @@
       transform: translateY(-2px);
     }
 
-    .github-link svg,
-    .post-link svg {
+    .github-link svg {
       width: 18px;
       height: 18px;
       flex: 0 0 auto;
@@ -432,10 +431,6 @@
       padding: 72px 0;
     }
 
-    #notes {
-      padding-top: 34px;
-    }
-
     .section-head {
       display: flex;
       align-items: end;
@@ -455,12 +450,6 @@
       max-width: 470px;
       margin-bottom: 0;
       color: var(--muted);
-    }
-
-    .post-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
     }
 
     .repo-grid {
@@ -619,35 +608,6 @@
       box-shadow: 0 0 0 6px rgba(47, 125, 123, .1);
     }
 
-    .post-card {
-      position: relative;
-      display: flex;
-      min-height: 248px;
-      flex-direction: column;
-      padding: 22px;
-      border: 1px solid rgba(24, 32, 38, .1);
-      border-radius: var(--radius);
-      background: var(--panel);
-      box-shadow: 0 12px 40px rgba(24, 32, 38, .07);
-      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
-    }
-
-    .post-card:hover,
-    .post-card:focus-within {
-      border-color: rgba(47, 125, 123, .36);
-      box-shadow: 0 20px 52px rgba(24, 32, 38, .12);
-      transform: translateY(-5px);
-    }
-
-    .post-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 18px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
     .tag {
       padding: 3px 9px;
       border: 1px solid rgba(47, 125, 123, .16);
@@ -655,33 +615,6 @@
       background: rgba(47, 125, 123, .08);
       color: var(--accent-strong);
       font-weight: 800;
-    }
-
-    .post-card h3 {
-      margin-bottom: 12px;
-      font-size: 22px;
-      line-height: 1.32;
-    }
-
-    .post-card p {
-      margin-bottom: 22px;
-      color: #55616b;
-      font-size: 15px;
-    }
-
-    .post-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: auto;
-      color: var(--accent-strong);
-      font-weight: 900;
-    }
-
-    .post-link::after {
-      content: "";
-      position: absolute;
-      inset: 0;
     }
 
     .timeline {
@@ -783,10 +716,6 @@
         padding-top: 42px;
       }
 
-      .post-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
       .activity-grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -818,15 +747,13 @@
       }
 
       .metrics,
-      .activity-grid,
-      .post-grid {
+      .activity-grid {
         grid-template-columns: 1fr;
       }
 
       .feature-panel,
       .about-card,
-      .repo-card,
-      .post-card {
+      .repo-card {
         padding: 20px;
       }
 
@@ -839,9 +766,6 @@
         padding: 54px 0;
       }
 
-      #notes {
-        padding-top: 34px;
-      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -870,7 +794,6 @@
         <span>长河雪飞</span>
       </a>
       <div class="nav-links">
-        <a href="#notes">文章</a>
         <a href="#repos">仓库</a>
         <a href="#about">关于</a>
         <a href="#thoughts">片段</a>
@@ -896,7 +819,7 @@
           <li>Writing</li>
         </ul>
         <div class="hero-actions">
-          <a class="button primary" href="#notes">阅读精选</a>
+          <a class="button primary" href="#repos">最近在做</a>
           <a class="button secondary" href="https://github.com/changhexuefei" target="_blank" rel="noopener">查看代码</a>
         </div>
         <div class="metrics" aria-label="网站概览">
@@ -947,51 +870,6 @@
           </div>
         </div>
       </aside>
-    </section>
-
-    <section id="notes" class="shell">
-      <div class="section-head reveal">
-        <h2>精选文章</h2>
-        <p>保留旧博客里最能代表技术学习轨迹的内容入口，用更轻的卡片呈现，阅读路径也更清楚。</p>
-      </div>
-      <div class="post-grid">
-        <article class="post-card reveal">
-          <div class="post-meta"><time datetime="2018-11-22">2018-11-22</time><span class="tag">Python</span></div>
-          <h3>python 函数参数的填坑之路</h3>
-          <p>从真实踩坑出发，梳理函数参数、默认值和调用方式里容易忽略的细节。</p>
-          <a class="post-link" href="/2018/11/22/python函数参数的填坑之路/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </article>
-        <article class="post-card reveal">
-          <div class="post-meta"><time datetime="2018-11-14">2018-11-14</time><span class="tag">小程序</span></div>
-          <h3>小程序 json.parse 错误</h3>
-          <p>一次小程序 JSON 解析异常的排查记录，适合在类似错误出现时快速对照。</p>
-          <a class="post-link" href="/2018/11/14/小程序json-parse错误/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </article>
-        <article class="post-card reveal">
-          <div class="post-meta"><time datetime="2018-09-12">2018-09-12</time><span class="tag">数据结构</span></div>
-          <h3>数据结构之单链表</h3>
-          <p>用单链表作为切入点，回到基础结构本身，理解节点、指针和操作流程。</p>
-          <a class="post-link" href="/2018/09/12/数据结构之单链表/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </article>
-        <article class="post-card reveal">
-          <div class="post-meta"><time datetime="2018-08-17">2018-08-17</time><span class="tag">前端</span></div>
-          <h3>前端入门第二天</h3>
-          <p>继续记录前端学习中的关键知识点，把零散概念整理成可复习的线索。</p>
-          <a class="post-link" href="/2018/08/17/前端入门第二天/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </article>
-        <article class="post-card reveal">
-          <div class="post-meta"><time datetime="2018-06-12">2018-06-12</time><span class="tag">前端</span></div>
-          <h3>前端入门杂记</h3>
-          <p>把当日学到的知识点留在原地，让学习轨迹有迹可循，也方便回看。</p>
-          <a class="post-link" href="/2018/06/12/前端入门杂记/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </article>
-        <article class="post-card reveal">
-          <div class="post-meta"><time datetime="2018-06-07">2018-06-07</time><span class="tag">随笔</span></div>
-          <h3>“长河雪飞”的由来</h3>
-          <p>一个名字的来处，也是一段个人表达的开端。</p>
-          <a class="post-link" href="/2018/06/07/长河雪飞的由来/">继续阅读 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </article>
-      </div>
     </section>
 
     <section id="repos" class="shell">
