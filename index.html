@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101418">
-  <meta name="description" content="长河雪飞的 GitHub 个人主页，记录技术实践、阅读摘记与持续更新。">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="长河雪飞的 SpaceX 风格个人主页，动态呈现 GitHub 仓库、提交曲线与技术任务。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="长河雪飞的个人网站">
-  <meta property="og:description" content="十年饮冰，热血未凉。技术、文字与个人作品的展示空间。">
+  <meta property="og:description" content="十年饮冰，热血未凉。以任务控制台的方式展示技术、仓库与持续更新。">
   <meta property="og:url" content="https://changhexuefei.github.io/">
-  <meta name="build-version" content="no-featured-posts-2026-07-02">
+  <meta name="build-version" content="spacex-ui-2026-07-04">
   <title>长河雪飞的个人网站</title>
   <script type="application/ld+json">
     {
@@ -18,24 +18,24 @@
       "name": "长河雪飞",
       "url": "https://changhexuefei.github.io/",
       "sameAs": ["https://github.com/changhexuefei"],
-      "description": "记录技术实践、阅读摘记与持续更新的 GitHub 个人主页。"
+      "description": "动态呈现 GitHub 仓库、提交曲线与技术任务的个人主页。"
     }
   </script>
   <style>
     :root {
-      color-scheme: light;
-      --bg: #f7f4ee;
-      --ink: #182026;
-      --muted: #66727d;
-      --line: rgba(24, 32, 38, .12);
-      --panel: rgba(255, 255, 255, .78);
-      --panel-solid: #fffdfa;
-      --accent: #2f7d7b;
-      --accent-strong: #155e63;
-      --gold: #c7822b;
-      --rose: #bb5a5a;
-      --shadow: 0 24px 70px rgba(23, 31, 38, .13);
-      --radius: 8px;
+      color-scheme: dark;
+      --bg: #050505;
+      --ink: #f7f7f4;
+      --muted: #9a9da3;
+      --line: rgba(255, 255, 255, .16);
+      --panel: rgba(12, 13, 15, .74);
+      --panel-solid: #0b0c0f;
+      --accent: #ffffff;
+      --accent-strong: #ffffff;
+      --gold: #b7bcc6;
+      --rose: #e5e7eb;
+      --shadow: 0 32px 100px rgba(0, 0, 0, .5);
+      --radius: 2px;
       font-family: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
     }
 
@@ -51,9 +51,9 @@
       min-width: 320px;
       margin: 0;
       background:
-        radial-gradient(circle at 8% 12%, rgba(47, 125, 123, .18), transparent 24rem),
-        radial-gradient(circle at 92% 8%, rgba(199, 130, 43, .16), transparent 23rem),
-        linear-gradient(135deg, #f7f4ee 0%, #edf3f2 45%, #fbf7f0 100%);
+        radial-gradient(circle at 72% 16%, rgba(255, 255, 255, .12), transparent 20rem),
+        radial-gradient(circle at 20% 86%, rgba(114, 130, 150, .16), transparent 22rem),
+        linear-gradient(145deg, #030303 0%, #090b0f 45%, #000 100%);
       color: var(--ink);
       line-height: 1.7;
     }
@@ -65,10 +65,10 @@
       pointer-events: none;
       content: "";
       background-image:
-        linear-gradient(rgba(24, 32, 38, .045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(24, 32, 38, .045) 1px, transparent 1px);
-      background-size: 38px 38px;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .68), transparent 78%);
+        linear-gradient(rgba(255, 255, 255, .04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .04) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .9), transparent 84%);
     }
 
     a {
@@ -94,9 +94,9 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      border-bottom: 1px solid rgba(24, 32, 38, .08);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
       backdrop-filter: blur(18px);
-      background: rgba(247, 244, 238, .72);
+      background: rgba(0, 0, 0, .72);
     }
 
     .nav {
@@ -112,7 +112,8 @@
       align-items: center;
       gap: 12px;
       font-weight: 800;
-      letter-spacing: 0;
+      letter-spacing: .04em;
+      text-transform: uppercase;
     }
 
     .brand-mark {
@@ -120,11 +121,11 @@
       width: 38px;
       height: 38px;
       place-items: center;
-      border: 1px solid rgba(24, 32, 38, .12);
-      border-radius: 50%;
-      background: linear-gradient(135deg, #182026, #2f7d7b);
-      color: #fffdfa;
-      box-shadow: 0 10px 28px rgba(47, 125, 123, .24);
+      border: 1px solid rgba(255, 255, 255, .32);
+      border-radius: 0;
+      background: #f7f7f4;
+      color: #050505;
+      box-shadow: 0 0 34px rgba(255, 255, 255, .16);
       font-size: 17px;
     }
 
@@ -133,23 +134,26 @@
       align-items: center;
       gap: 6px;
       padding: 4px;
-      border: 1px solid rgba(24, 32, 38, .1);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .48);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 0;
+      background: rgba(255, 255, 255, .04);
     }
 
     .nav-links a {
       padding: 8px 14px;
-      border-radius: 999px;
-      color: #39444d;
+      border-radius: 0;
+      color: #d8d8d8;
       font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
       transition: color .2s ease, background .2s ease, transform .2s ease;
     }
 
     .nav-links a:hover,
     .nav-links a:focus-visible {
-      background: #182026;
-      color: #fffdfa;
+      background: #f7f7f4;
+      color: #050505;
       outline: none;
       transform: translateY(-1px);
     }
@@ -160,10 +164,10 @@
       gap: 8px;
       min-height: 40px;
       padding: 8px 14px;
-      border: 1px solid rgba(24, 32, 38, .12);
-      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 0;
       background: var(--panel);
-      color: #182026;
+      color: #f7f7f4;
       font-weight: 700;
       font-size: 14px;
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
@@ -171,8 +175,8 @@
 
     .github-link:hover,
     .github-link:focus-visible {
-      border-color: rgba(47, 125, 123, .42);
-      box-shadow: 0 12px 30px rgba(24, 32, 38, .1);
+      border-color: rgba(255, 255, 255, .56);
+      box-shadow: 0 12px 34px rgba(255, 255, 255, .08);
       outline: none;
       transform: translateY(-2px);
     }
@@ -194,10 +198,10 @@
 
     .hero-kicker li {
       padding: 6px 11px;
-      border: 1px solid rgba(24, 32, 38, .1);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .5);
-      color: #47545f;
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 0;
+      background: rgba(255, 255, 255, .045);
+      color: #d7dbe2;
       font-size: 13px;
       font-weight: 800;
     }
@@ -211,14 +215,29 @@
       padding: 38px 0 30px;
     }
 
+    .hero::before {
+      position: fixed;
+      inset: 84px 0 auto auto;
+      z-index: -1;
+      width: min(58vw, 760px);
+      height: min(58vw, 760px);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 50%;
+      transform: translate(28%, -18%);
+      content: "";
+      box-shadow: inset 0 0 80px rgba(255, 255, 255, .04);
+    }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       margin: 0 0 20px;
-      color: var(--accent-strong);
+      color: #f7f7f4;
       font-size: 14px;
       font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
     }
 
     .eyebrow::before {
@@ -240,7 +259,8 @@
       margin-bottom: 22px;
       font-size: clamp(48px, 7.2vw, 88px);
       line-height: .96;
-      letter-spacing: 0;
+      letter-spacing: .015em;
+      text-transform: uppercase;
     }
 
     h1 span {
@@ -251,7 +271,7 @@
     .hero-copy {
       max-width: 650px;
       margin-bottom: 30px;
-      color: #40505c;
+      color: #c6c9cf;
       font-size: clamp(17px, 2vw, 20px);
     }
 
@@ -269,21 +289,23 @@
       min-height: 46px;
       padding: 11px 18px;
       border: 1px solid transparent;
-      border-radius: 999px;
+      border-radius: 0;
       font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
       transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
     }
 
     .button.primary {
-      background: #182026;
-      color: #fffdfa;
-      box-shadow: 0 18px 42px rgba(24, 32, 38, .2);
+      background: #f7f7f4;
+      color: #050505;
+      box-shadow: 0 22px 58px rgba(255, 255, 255, .14);
     }
 
     .button.secondary {
-      border-color: rgba(24, 32, 38, .14);
-      background: rgba(255, 255, 255, .58);
-      color: #182026;
+      border-color: rgba(255, 255, 255, .28);
+      background: rgba(255, 255, 255, .04);
+      color: #f7f7f4;
     }
 
     .button:hover,
@@ -301,9 +323,9 @@
 
     .metric {
       padding: 16px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .14);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .58);
+      background: rgba(255, 255, 255, .045);
     }
 
     .metric strong {
@@ -324,9 +346,9 @@
       position: relative;
       overflow: hidden;
       padding: 26px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .16);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .68);
+      background: rgba(8, 9, 11, .72);
       box-shadow: var(--shadow);
     }
 
@@ -335,8 +357,8 @@
       inset: 0;
       content: "";
       background:
-        linear-gradient(135deg, rgba(47, 125, 123, .16), transparent 42%),
-        linear-gradient(315deg, rgba(199, 130, 43, .12), transparent 40%);
+        linear-gradient(135deg, rgba(255, 255, 255, .1), transparent 42%),
+        linear-gradient(315deg, rgba(110, 125, 145, .16), transparent 40%);
       pointer-events: none;
     }
 
@@ -349,7 +371,7 @@
     .quote {
       padding: 24px;
       border-left: 4px solid var(--accent);
-      background: rgba(255, 253, 250, .7);
+      background: rgba(255, 255, 255, .045);
     }
 
     .quote p {
@@ -378,9 +400,9 @@
       gap: 12px;
       align-items: start;
       padding: 14px;
-      border: 1px solid rgba(24, 32, 38, .09);
+      border: 1px solid rgba(255, 255, 255, .12);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .56);
+      background: rgba(255, 255, 255, .04);
     }
 
     .focus-list b {
@@ -399,8 +421,8 @@
       height: 34px;
       place-items: center;
       border-radius: 50%;
-      background: rgba(47, 125, 123, .12);
-      color: var(--accent-strong);
+      background: #f7f7f4;
+      color: #050505;
       font-weight: 900;
     }
 
@@ -413,9 +435,9 @@
 
     .repo-mini {
       padding: 16px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .14);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .62);
+      background: rgba(255, 255, 255, .045);
     }
 
     .repo-mini b {
@@ -475,13 +497,15 @@
       color: var(--muted);
       font-size: 13px;
       font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
     .activity-status::before {
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: var(--gold);
+      background: #f7f7f4;
       content: "";
     }
 
@@ -490,17 +514,17 @@
       flex-direction: column;
       min-height: 212px;
       padding: 20px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .14);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .68);
-      box-shadow: 0 12px 36px rgba(24, 32, 38, .07);
+      background: rgba(10, 11, 13, .72);
+      box-shadow: 0 18px 54px rgba(0, 0, 0, .28);
       transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
     }
 
     .activity-card:hover,
     .activity-card:focus-within {
-      border-color: rgba(47, 125, 123, .34);
-      box-shadow: 0 18px 48px rgba(24, 32, 38, .11);
+      border-color: rgba(255, 255, 255, .42);
+      box-shadow: 0 20px 62px rgba(255, 255, 255, .08);
       transform: translateY(-4px);
     }
 
@@ -512,7 +536,7 @@
 
     .activity-card p {
       margin-bottom: 16px;
-      color: #52616c;
+      color: #b9bec7;
       font-size: 14px;
     }
 
@@ -528,25 +552,27 @@
 
     .activity-meta span {
       padding: 3px 8px;
-      border: 1px solid rgba(24, 32, 38, .1);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .58);
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 0;
+      background: rgba(255, 255, 255, .045);
     }
 
     .activity-link {
       display: inline-flex;
       margin-top: 12px;
-      color: var(--accent-strong);
+      color: #f7f7f4;
+      letter-spacing: .08em;
+      text-transform: uppercase;
       font-weight: 900;
     }
 
     .chart-card {
       margin: 18px 0 72px;
       padding: 24px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .16);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .7);
-      box-shadow: 0 14px 44px rgba(24, 32, 38, .08);
+      background: rgba(6, 7, 9, .78);
+      box-shadow: 0 24px 72px rgba(0, 0, 0, .34);
     }
 
     .chart-head {
@@ -577,12 +603,12 @@
     }
 
     .chart-axis {
-      stroke: rgba(24, 32, 38, .16);
+      stroke: rgba(255, 255, 255, .24);
       stroke-width: 1;
     }
 
     .chart-grid-line {
-      stroke: rgba(24, 32, 38, .08);
+      stroke: rgba(255, 255, 255, .10);
       stroke-width: 1;
     }
 
@@ -595,11 +621,11 @@
     }
 
     .chart-area {
-      fill: rgba(47, 125, 123, .12);
+      fill: rgba(255, 255, 255, .10);
     }
 
     .chart-dot {
-      fill: #fffdfa;
+      fill: #050505;
       stroke: var(--accent);
       stroke-width: 3;
     }
@@ -620,16 +646,16 @@
       position: relative;
       overflow: hidden;
       padding: 26px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .14);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .72);
-      box-shadow: 0 14px 44px rgba(24, 32, 38, .08);
+      background: rgba(10, 11, 13, .72);
+      box-shadow: 0 18px 58px rgba(0, 0, 0, .3);
     }
 
     .repo-card.featured {
       background:
-        linear-gradient(135deg, rgba(47, 125, 123, .14), transparent 44%),
-        rgba(255, 255, 255, .76);
+        linear-gradient(135deg, rgba(255, 255, 255, .1), transparent 44%),
+        rgba(10, 11, 13, .82);
     }
 
     .repo-title {
@@ -647,17 +673,17 @@
 
     .repo-title span {
       padding: 4px 10px;
-      border: 1px solid rgba(47, 125, 123, .18);
-      border-radius: 999px;
-      background: rgba(47, 125, 123, .08);
-      color: var(--accent-strong);
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 0;
+      background: rgba(255, 255, 255, .06);
+      color: #f7f7f4;
       font-size: 12px;
       font-weight: 900;
       white-space: nowrap;
     }
 
     .repo-card p {
-      color: #52616c;
+      color: #b9bec7;
     }
 
     .stack {
@@ -671,10 +697,10 @@
 
     .stack li {
       padding: 6px 10px;
-      border: 1px solid rgba(24, 32, 38, .1);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .62);
-      color: #3e4a54;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 0;
+      background: rgba(255, 255, 255, .045);
+      color: #d7dbe2;
       font-size: 13px;
       font-weight: 800;
     }
@@ -690,7 +716,7 @@
       grid-template-columns: 12px 1fr;
       gap: 12px;
       align-items: start;
-      color: #50606b;
+      color: #c1c6ce;
       font-size: 14px;
     }
 
@@ -700,15 +726,15 @@
       margin-top: 7px;
       border-radius: 50%;
       background: var(--accent);
-      box-shadow: 0 0 0 6px rgba(47, 125, 123, .1);
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, .1);
     }
 
     .tag {
       padding: 3px 9px;
-      border: 1px solid rgba(47, 125, 123, .16);
-      border-radius: 999px;
-      background: rgba(47, 125, 123, .08);
-      color: var(--accent-strong);
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 0;
+      background: rgba(255, 255, 255, .045);
+      color: #f7f7f4;
       font-weight: 800;
     }
 
@@ -721,10 +747,10 @@
 
     .about-card {
       padding: 26px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .14);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .7);
-      box-shadow: 0 14px 42px rgba(24, 32, 38, .08);
+      background: rgba(10, 11, 13, .72);
+      box-shadow: 0 18px 58px rgba(0, 0, 0, .3);
     }
 
     .about-card h3 {
@@ -733,7 +759,7 @@
     }
 
     .about-card p {
-      color: #52616c;
+      color: #b9bec7;
     }
 
     .thoughts {
@@ -746,15 +772,15 @@
 
     .thoughts li {
       padding: 18px 20px;
-      border: 1px solid rgba(24, 32, 38, .1);
+      border: 1px solid rgba(255, 255, 255, .14);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .58);
-      color: #40505c;
+      background: rgba(255, 255, 255, .045);
+      color: #c6cbd3;
     }
 
     .footer {
       padding: 34px 0 44px;
-      border-top: 1px solid rgba(24, 32, 38, .1);
+      border-top: 1px solid rgba(255, 255, 255, .12);
       color: var(--muted);
       font-size: 14px;
     }
@@ -767,7 +793,7 @@
     }
 
     .back-top {
-      color: var(--accent-strong);
+      color: #f7f7f4;
       font-weight: 900;
     }
 
@@ -889,9 +915,9 @@
         <span>长河雪飞</span>
       </a>
       <div class="nav-links">
-        <a href="#repos">仓库</a>
-        <a href="#about">关于</a>
-        <a href="#thoughts">片段</a>
+        <a href="#repos">Missions</a>
+        <a href="#about">Control</a>
+        <a href="#thoughts">Logs</a>
         <a href="https://github.com/changhexuefei">GitHub</a>
       </div>
       <a class="github-link" href="https://github.com/changhexuefei" target="_blank" rel="noopener">
@@ -904,31 +930,31 @@
   <main id="top">
     <section class="shell hero">
       <div class="hero-text reveal">
-        <p class="eyebrow">个人网站 · 技术与文字</p>
+        <p class="eyebrow">Personal Mission Control</p>
         <h1><span>十年饮冰，</span><span>热血未凉。</span></h1>
-        <p class="hero-copy">这里是长河雪飞的 GitHub 个人主页。写 Python、前端与数据结构，也把阅读里的锋利句子和持续更新的作品放在同一个入口。</p>
+        <p class="hero-copy">这里是长河雪飞的个人任务控制台。页面会定时读取 GitHub 公开数据，把近期仓库、提交曲线和技术方向以更克制、更硬朗的方式呈现出来。</p>
         <ul class="hero-kicker" aria-label="主页关键词">
-          <li>GitHub Pages</li>
+          <li>GitHub Telemetry</li>
+          <li>Kotlin</li>
           <li>Python</li>
-          <li>Front-end</li>
-          <li>Writing</li>
+          <li>Static Launch</li>
         </ul>
         <div class="hero-actions">
-          <a class="button primary" href="#repos">最近在做</a>
-          <a class="button secondary" href="https://github.com/changhexuefei" target="_blank" rel="noopener">查看代码</a>
+          <a class="button primary" href="#repos">View Missions</a>
+          <a class="button secondary" href="https://github.com/changhexuefei" target="_blank" rel="noopener">Open GitHub</a>
         </div>
         <div class="metrics" aria-label="网站概览">
           <div class="metric">
             <strong>19</strong>
-            <span>日志沉淀</span>
+            <span>Archived Logs</span>
           </div>
           <div class="metric">
             <strong>8</strong>
-            <span>主题分类</span>
+            <span>Mission Areas</span>
           </div>
           <div class="metric">
             <strong>21</strong>
-            <span>文章标签</span>
+            <span>Signal Tags</span>
           </div>
         </div>
       </div>
@@ -937,30 +963,30 @@
         <div class="feature-inner">
           <div class="quote">
             <p>把踩过的坑，写成后来者能绕开的路。</p>
-            <span>Code, reading and a little stubborn optimism.</span>
+            <span>Code telemetry, engineering notes and steady iteration.</span>
           </div>
           <ul class="focus-list">
             <li>
               <span class="index-badge">01</span>
-              <div><b>工程记录</b><span>记录 Python、前端、数据结构中的具体问题与解决路径。</span></div>
+              <div><b>工程记录</b><span>记录 Kotlin、Python、仪器控制和前端页面里的具体问题。</span></div>
             </li>
             <li>
               <span class="index-badge">02</span>
-              <div><b>阅读摘记</b><span>保存那些让人重新整理内心秩序的文章与演讲。</span></div>
+              <div><b>动态遥测</b><span>读取 GitHub 公开仓库变化，自动组织近期工作和提交曲线。</span></div>
             </li>
             <li>
               <span class="index-badge">03</span>
-              <div><b>自我更新</b><span>让个人网站成为一个持续打磨的小作品，而不是静止名片。</span></div>
+              <div><b>持续发射</b><span>让个人网站成为持续打磨的小型发射台，而不是静止名片。</span></div>
             </li>
           </ul>
           <div class="repo-strip" aria-label="仓库状态">
             <div class="repo-mini">
               <b>changhexuefei.github.io</b>
-              <span>个人主页与博客入口</span>
+              <span>Mission control homepage</span>
             </div>
             <div class="repo-mini">
               <b>master</b>
-              <span>持续发布到 GitHub Pages</span>
+              <span>Deploying through GitHub Pages</span>
             </div>
           </div>
         </div>
@@ -969,45 +995,45 @@
 
     <section id="repos" class="shell">
       <div class="section-head reveal">
-        <h2>最近在做</h2>
+        <h2>Mission Telemetry</h2>
         <p>页面会读取 GitHub 公开数据，按仓库更新时间和公开提交事件自动整理近期工作，并在打开期间每 10 分钟自动刷新。</p>
       </div>
       <div class="activity-status reveal" id="github-status">正在读取 GitHub 公开动态</div>
       <div class="activity-grid" id="activity-grid">
         <article class="activity-card reveal">
-          <h3>个人主页重建</h3>
+          <h3>Homepage Relaunch</h3>
           <p>持续优化 `changhexuefei.github.io`，把旧博客入口整理成更稳定、更美观的 GitHub Pages 门面。</p>
           <div class="activity-meta"><span>HTML</span><span>2026-07</span></div>
-          <a class="activity-link" href="https://github.com/changhexuefei/changhexuefei.github.io" target="_blank" rel="noopener">查看仓库</a>
+          <a class="activity-link" href="https://github.com/changhexuefei/changhexuefei.github.io" target="_blank" rel="noopener">Open Repo</a>
         </article>
         <article class="activity-card reveal">
-          <h3>Kotlin 绘图方向</h3>
+          <h3>Kotlin Visualization</h3>
           <p>关注 Lets-Plot / Skia / Kandy 相关仓库，探索 Kotlin 多平台绘图与可视化能力。</p>
           <div class="activity-meta"><span>Kotlin</span><span>Lets-Plot</span></div>
-          <a class="activity-link" href="https://github.com/changhexuefei/lets-plot-kotlin" target="_blank" rel="noopener">查看仓库</a>
+          <a class="activity-link" href="https://github.com/changhexuefei/lets-plot-kotlin" target="_blank" rel="noopener">Open Repo</a>
         </article>
         <article class="activity-card reveal">
           <h3>SiPhStudio</h3>
           <p>近期更新的自有 Kotlin 仓库，适合作为后续项目展示和工程记录的重点入口。</p>
           <div class="activity-meta"><span>Kotlin</span><span>2026-06</span></div>
-          <a class="activity-link" href="https://github.com/changhexuefei/SiPhStudio" target="_blank" rel="noopener">查看仓库</a>
+          <a class="activity-link" href="https://github.com/changhexuefei/SiPhStudio" target="_blank" rel="noopener">Open Repo</a>
         </article>
         <article class="activity-card reveal">
-          <h3>仪器控制与 VISA</h3>
+          <h3>Instrument Control</h3>
           <p>关注 PyVISA、JVisa、PyMeasure 等测量设备控制方向，连接 Python/Java 与实验自动化。</p>
           <div class="activity-meta"><span>Python</span><span>Java</span></div>
-          <a class="activity-link" href="https://github.com/changhexuefei/pyvisa" target="_blank" rel="noopener">查看仓库</a>
+          <a class="activity-link" href="https://github.com/changhexuefei/pyvisa" target="_blank" rel="noopener">Open Repo</a>
         </article>
       </div>
       <div class="chart-card reveal" aria-label="提交变化曲线">
         <div class="chart-head">
-          <h3>提交变化曲线</h3>
+          <h3>Commit Trajectory</h3>
           <p id="commit-summary">根据 GitHub 公开 PushEvent 统计最近 14 天提交数量；如果没有公开事件，会显示空曲线。</p>
         </div>
         <svg class="commit-chart" id="commit-chart" viewBox="0 0 920 300" role="img" aria-label="最近 14 天公开提交变化曲线"></svg>
       </div>
       <div class="section-head reveal">
-        <h2>仓库风格</h2>
+        <h2>Launch Vehicle</h2>
         <p>把这个站点当成一个公开作品来整理：页面轻、依赖少、可直接托管，也给后续恢复更多文章和项目留下空间。</p>
       </div>
       <div class="repo-grid">
@@ -1027,7 +1053,7 @@
         </article>
         <aside class="repo-card reveal">
           <div class="repo-title">
-            <h3>更新轨迹</h3>
+            <h3>Flight Log</h3>
             <span>Live</span>
           </div>
           <div class="commit-line">
@@ -1042,11 +1068,11 @@
     <section id="about" class="shell">
       <div class="timeline">
         <div class="section-head reveal">
-          <h2>关于这里</h2>
+          <h2>Control Room</h2>
         </div>
         <div class="about-card reveal">
-          <h3>一个更轻、更稳、更像自己的首页</h3>
-          <p>旧版页面来自 Hexo/NexT 的生成结果，依赖较多远程脚本，部分中文元信息也出现了乱码。新版把首页收束成一个可直接部署的静态页面，保留原来的精神气质，同时改善首屏观感、移动端阅读、导航清晰度和加载稳定性。</p>
+          <h3>一个更轻、更稳、更像任务控制台的首页</h3>
+          <p>旧版页面来自 Hexo/NexT 的生成结果，依赖较多远程脚本，部分中文元信息也出现了乱码。新版把首页收束成一个可直接部署的静态页面，保留原来的精神气质，同时用 SpaceX 式深色、细线、高对比的方式改善首屏观感、移动端阅读、导航清晰度和加载稳定性。</p>
           <p>后续如果继续恢复文章详情页，这个首页也可以作为新的门面：它不会绑定复杂构建流程，适合慢慢扩展。</p>
         </div>
       </div>
@@ -1054,7 +1080,7 @@
 
     <section id="thoughts" class="shell">
       <div class="section-head reveal">
-        <h2>片段</h2>
+        <h2>Mission Logs</h2>
         <p>网站不只是文章列表，也可以是一个人思考方式的截面。</p>
       </div>
       <ul class="thoughts">
@@ -1144,7 +1170,7 @@
             <span>${formatDate(repo.updated_at)}</span>
             ${repo.fork ? "<span>Fork</span>" : "<span>Original</span>"}
           </div>
-          <a class="activity-link" href="${escapeHtml(repo.html_url)}" target="_blank" rel="noopener">查看仓库</a>
+          <a class="activity-link" href="${escapeHtml(repo.html_url)}" target="_blank" rel="noopener">Open Repo</a>
         </article>
       `).join("");
       observeNewReveals(activityGrid);
@@ -1270,12 +1296,12 @@
         renderRepos(repos);
         renderCommitChart(days);
         githubLastSync = Date.now();
-        githubStatus.textContent = `已自动同步 GitHub 公开数据：${repos.length} 个仓库，最近 14 天 ${totalCommits} 次公开提交 · ${syncedAt} · 每 10 分钟刷新`;
-        commitSummary.textContent = `根据最近活跃仓库的 commits API 统计最近 14 天提交数量，共 ${totalCommits} 次公开提交。`;
+        githubStatus.textContent = `Telemetry synced: ${repos.length} repositories · ${totalCommits} public commits in 14 days · ${syncedAt} · refreshes every 10 minutes`;
+        commitSummary.textContent = `Based on the commits API for recently active repositories: ${totalCommits} public commits in the last 14 days.`;
       } catch (error) {
         renderCommitChart(lastNDays(14));
-        githubStatus.textContent = previousStatus || "GitHub API 暂时不可用，正在显示上次整理的静态内容";
-        commitSummary.textContent = "当前显示空曲线；GitHub API 可用时会自动刷新最近 14 天公开提交趋势。";
+        githubStatus.textContent = previousStatus || "GitHub API is unavailable; showing the static mission state";
+        commitSummary.textContent = "The chart will refresh automatically when GitHub public API data is available.";
       } finally {
         githubLoading = false;
       }
@@ -1312,7 +1338,7 @@
         r: Math.random() * 2.2 + .6,
         vx: (Math.random() - .5) * .18,
         vy: (Math.random() - .5) * .18,
-        color: Math.random() > .5 ? "47, 125, 123" : "199, 130, 43"
+        color: Math.random() > .5 ? "255, 255, 255" : "142, 151, 164"
       }));
     }
 
@@ -1327,7 +1353,7 @@
         if (p.y > window.innerHeight + 10) p.y = -10;
 
         ctx.beginPath();
-        ctx.fillStyle = `rgba(${p.color}, .35)`;
+        ctx.fillStyle = `rgba(${p.color}, .28)`;
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
 
@@ -1338,7 +1364,7 @@
           const distance = Math.sqrt(dx * dx + dy * dy);
           if (distance < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(24, 32, 38, ${0.09 * (1 - distance / 120)})`;
+            ctx.strokeStyle = `rgba(255, 255, 255, ${0.08 * (1 - distance / 120)})`;
             ctx.lineWidth = 1;
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(other.x, other.y);
