@@ -970,7 +970,7 @@
     <section id="repos" class="shell">
       <div class="section-head reveal">
         <h2>最近在做</h2>
-        <p>页面会读取 GitHub 公开数据，按仓库更新时间和公开提交事件自动整理近期工作。</p>
+        <p>页面会读取 GitHub 公开数据，按仓库更新时间和公开提交事件自动整理近期工作，并在打开期间每 10 分钟自动刷新。</p>
       </div>
       <div class="activity-status reveal" id="github-status">正在读取 GitHub 公开动态</div>
       <div class="activity-grid" id="activity-grid">
@@ -1092,6 +1092,10 @@
     const activityGrid = document.querySelector("#activity-grid");
     const commitChart = document.querySelector("#commit-chart");
     const commitSummary = document.querySelector("#commit-summary");
+    const githubRefreshMs = 10 * 60 * 1000;
+    const githubStaleMs = 2 * 60 * 1000;
+    let githubLastSync = 0;
+    let githubLoading = false;
 
     function observeNewReveals(scope) {
       scope.querySelectorAll(".reveal").forEach((item) => {
@@ -1236,7 +1240,14 @@
       ));
     }
 
-    async function loadGithubActivity() {
+    async function loadGithubActivity(reason = "auto") {
+      if (githubLoading) return;
+      githubLoading = true;
+      const previousStatus = githubStatus.textContent;
+      githubStatus.textContent = reason === "initial"
+        ? "正在读取 GitHub 公开动态"
+        : "正在自动同步 GitHub 公开动态";
+
       try {
         const reposResponse = await fetch(`https://api.github.com/users/${githubUser}/repos?sort=updated&per_page=12`, {
           headers: { Accept: "application/vnd.github+json" }
@@ -1250,19 +1261,33 @@
         const commits = await loadRecentCommits(repos);
         const days = commitsByDay(commits);
         const totalCommits = days.reduce((sum, day) => sum + day.count, 0);
+        const syncedAt = new Intl.DateTimeFormat("zh-CN", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit"
+        }).format(new Date());
 
         renderRepos(repos);
         renderCommitChart(days);
-        githubStatus.textContent = `已同步 GitHub 公开数据：${repos.length} 个仓库，最近 14 天 ${totalCommits} 次公开提交`;
+        githubLastSync = Date.now();
+        githubStatus.textContent = `已自动同步 GitHub 公开数据：${repos.length} 个仓库，最近 14 天 ${totalCommits} 次公开提交 · ${syncedAt} · 每 10 分钟刷新`;
         commitSummary.textContent = `根据最近活跃仓库的 commits API 统计最近 14 天提交数量，共 ${totalCommits} 次公开提交。`;
       } catch (error) {
         renderCommitChart(lastNDays(14));
-        githubStatus.textContent = "GitHub API 暂时不可用，正在显示上次整理的静态内容";
+        githubStatus.textContent = previousStatus || "GitHub API 暂时不可用，正在显示上次整理的静态内容";
         commitSummary.textContent = "当前显示空曲线；GitHub API 可用时会自动刷新最近 14 天公开提交趋势。";
+      } finally {
+        githubLoading = false;
       }
     }
 
-    loadGithubActivity();
+    loadGithubActivity("initial");
+    window.setInterval(() => loadGithubActivity("interval"), githubRefreshMs);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible" && Date.now() - githubLastSync > githubStaleMs) {
+        loadGithubActivity("visible");
+      }
+    });
 
     const canvas = document.querySelector(".ambient");
     const ctx = canvas.getContext("2d");
