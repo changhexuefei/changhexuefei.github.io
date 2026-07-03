@@ -467,6 +467,24 @@
       margin-bottom: 18px;
     }
 
+    .activity-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .activity-status::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      content: "";
+    }
+
     .activity-card {
       display: flex;
       flex-direction: column;
@@ -519,6 +537,82 @@
       display: inline-flex;
       margin-top: 12px;
       color: var(--accent-strong);
+      font-weight: 900;
+    }
+
+    .chart-card {
+      margin: 18px 0 72px;
+      padding: 24px;
+      border: 1px solid rgba(24, 32, 38, .1);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .7);
+      box-shadow: 0 14px 44px rgba(24, 32, 38, .08);
+    }
+
+    .chart-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .chart-head h3 {
+      margin-bottom: 0;
+      font-size: 26px;
+    }
+
+    .chart-head p {
+      max-width: 520px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .commit-chart {
+      display: block;
+      width: 100%;
+      min-height: 260px;
+      overflow: visible;
+    }
+
+    .chart-axis {
+      stroke: rgba(24, 32, 38, .16);
+      stroke-width: 1;
+    }
+
+    .chart-grid-line {
+      stroke: rgba(24, 32, 38, .08);
+      stroke-width: 1;
+    }
+
+    .chart-line {
+      fill: none;
+      stroke: var(--accent);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4;
+    }
+
+    .chart-area {
+      fill: rgba(47, 125, 123, .12);
+    }
+
+    .chart-dot {
+      fill: #fffdfa;
+      stroke: var(--accent);
+      stroke-width: 3;
+    }
+
+    .chart-label {
+      fill: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .chart-value {
+      fill: var(--ink);
+      font-size: 12px;
       font-weight: 900;
     }
 
@@ -876,9 +970,10 @@
     <section id="repos" class="shell">
       <div class="section-head reveal">
         <h2>最近在做</h2>
-        <p>根据 GitHub 公开仓库的最近更新时间整理：当前重心在个人主页、Kotlin 多平台/绘图库，以及仪器控制相关技术栈。</p>
+        <p>页面会读取 GitHub 公开数据，按仓库更新时间和公开提交事件自动整理近期工作。</p>
       </div>
-      <div class="activity-grid">
+      <div class="activity-status reveal" id="github-status">正在读取 GitHub 公开动态</div>
+      <div class="activity-grid" id="activity-grid">
         <article class="activity-card reveal">
           <h3>个人主页重建</h3>
           <p>持续优化 `changhexuefei.github.io`，把旧博客入口整理成更稳定、更美观的 GitHub Pages 门面。</p>
@@ -903,6 +998,13 @@
           <div class="activity-meta"><span>Python</span><span>Java</span></div>
           <a class="activity-link" href="https://github.com/changhexuefei/pyvisa" target="_blank" rel="noopener">查看仓库</a>
         </article>
+      </div>
+      <div class="chart-card reveal" aria-label="提交变化曲线">
+        <div class="chart-head">
+          <h3>提交变化曲线</h3>
+          <p id="commit-summary">根据 GitHub 公开 PushEvent 统计最近 14 天提交数量；如果没有公开事件，会显示空曲线。</p>
+        </div>
+        <svg class="commit-chart" id="commit-chart" viewBox="0 0 920 300" role="img" aria-label="最近 14 天公开提交变化曲线"></svg>
       </div>
       <div class="section-head reveal">
         <h2>仓库风格</h2>
@@ -984,6 +1086,183 @@
       });
     }, { threshold: 0.16 });
     reveals.forEach((item) => revealObserver.observe(item));
+
+    const githubUser = "changhexuefei";
+    const githubStatus = document.querySelector("#github-status");
+    const activityGrid = document.querySelector("#activity-grid");
+    const commitChart = document.querySelector("#commit-chart");
+    const commitSummary = document.querySelector("#commit-summary");
+
+    function observeNewReveals(scope) {
+      scope.querySelectorAll(".reveal").forEach((item) => {
+        item.classList.add("visible");
+      });
+    }
+
+    function formatDate(value) {
+      return new Intl.DateTimeFormat("zh-CN", {
+        month: "2-digit",
+        day: "2-digit"
+      }).format(new Date(value));
+    }
+
+    function repoDescription(repo) {
+      if (repo.description) return repo.description;
+      const fallback = {
+        SiPhStudio: "近期更新的自有 Kotlin 仓库，适合作为后续项目展示和工程记录的重点入口。",
+        "changhexuefei.github.io": "个人主页与 GitHub Pages 门面，承载近期工作、项目方向和可视化动态。"
+      };
+      return fallback[repo.name] || "公开仓库动态，来自 GitHub 最近更新时间。";
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function renderRepos(repos) {
+      const visibleRepos = repos
+        .filter((repo) => !repo.archived)
+        .slice(0, 4);
+
+      if (!visibleRepos.length) return;
+
+      activityGrid.innerHTML = visibleRepos.map((repo) => `
+        <article class="activity-card reveal visible">
+          <h3>${escapeHtml(repo.name)}</h3>
+          <p>${escapeHtml(repoDescription(repo))}</p>
+          <div class="activity-meta">
+            <span>${escapeHtml(repo.language || "Mixed")}</span>
+            <span>${formatDate(repo.updated_at)}</span>
+            ${repo.fork ? "<span>Fork</span>" : "<span>Original</span>"}
+          </div>
+          <a class="activity-link" href="${escapeHtml(repo.html_url)}" target="_blank" rel="noopener">查看仓库</a>
+        </article>
+      `).join("");
+      observeNewReveals(activityGrid);
+    }
+
+    function lastNDays(days) {
+      const result = [];
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      for (let index = days - 1; index >= 0; index -= 1) {
+        const date = new Date(today);
+        date.setDate(today.getDate() - index);
+        result.push({
+          key: date.toISOString().slice(0, 10),
+          label: `${date.getMonth() + 1}/${date.getDate()}`,
+          count: 0
+        });
+      }
+      return result;
+    }
+
+    function renderCommitChart(days) {
+      const width = 920;
+      const height = 300;
+      const pad = { top: 28, right: 28, bottom: 42, left: 44 };
+      const innerWidth = width - pad.left - pad.right;
+      const innerHeight = height - pad.top - pad.bottom;
+      const max = Math.max(1, ...days.map((day) => day.count));
+      const points = days.map((day, index) => {
+        const x = pad.left + (innerWidth * index) / Math.max(1, days.length - 1);
+        const y = pad.top + innerHeight - (day.count / max) * innerHeight;
+        return { ...day, x, y };
+      });
+      const line = points.map((point, index) => `${index === 0 ? "M" : "L"}${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+      const area = `${line} L${points[points.length - 1].x.toFixed(1)},${(pad.top + innerHeight).toFixed(1)} L${points[0].x.toFixed(1)},${(pad.top + innerHeight).toFixed(1)} Z`;
+      const grid = [0, .25, .5, .75, 1].map((ratio) => {
+        const y = pad.top + innerHeight * ratio;
+        return `<line class="chart-grid-line" x1="${pad.left}" y1="${y}" x2="${width - pad.right}" y2="${y}"></line>`;
+      }).join("");
+      const dots = points.map((point) => `
+        <circle class="chart-dot" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="5"></circle>
+        ${point.count ? `<text class="chart-value" x="${point.x.toFixed(1)}" y="${(point.y - 12).toFixed(1)}" text-anchor="middle">${point.count}</text>` : ""}
+      `).join("");
+      const labels = points
+        .filter((_, index) => index === 0 || index === points.length - 1 || index % 3 === 0)
+        .map((point) => `<text class="chart-label" x="${point.x.toFixed(1)}" y="${height - 12}" text-anchor="middle">${point.label}</text>`)
+        .join("");
+
+      commitChart.innerHTML = `
+        ${grid}
+        <line class="chart-axis" x1="${pad.left}" y1="${pad.top + innerHeight}" x2="${width - pad.right}" y2="${pad.top + innerHeight}"></line>
+        <path class="chart-area" d="${area}"></path>
+        <path class="chart-line" d="${line}"></path>
+        ${dots}
+        ${labels}
+      `;
+    }
+
+    function commitsByDay(commits) {
+      const days = lastNDays(14);
+      const counts = new Map(days.map((day) => [day.key, day]));
+      commits
+        .forEach((commit) => {
+          const date = commit.commit?.author?.date || commit.commit?.committer?.date;
+          if (!date) return;
+          const key = new Date(date).toISOString().slice(0, 10);
+          if (!counts.has(key)) return;
+          counts.get(key).count += 1;
+        });
+      return days;
+    }
+
+    async function loadRecentCommits(repos) {
+      const since = new Date();
+      since.setDate(since.getDate() - 13);
+      since.setHours(0, 0, 0, 0);
+
+      const targets = repos
+        .filter((repo) => !repo.archived)
+        .slice(0, 6);
+
+      const results = await Promise.allSettled(targets.map((repo) => (
+        fetch(`https://api.github.com/repos/${githubUser}/${repo.name}/commits?since=${since.toISOString()}&per_page=100`, {
+          headers: { Accept: "application/vnd.github+json" }
+        }).then((response) => {
+          if (!response.ok) return [];
+          return response.json();
+        })
+      )));
+
+      return results.flatMap((result) => (
+        result.status === "fulfilled" && Array.isArray(result.value) ? result.value : []
+      ));
+    }
+
+    async function loadGithubActivity() {
+      try {
+        const reposResponse = await fetch(`https://api.github.com/users/${githubUser}/repos?sort=updated&per_page=12`, {
+          headers: { Accept: "application/vnd.github+json" }
+        });
+
+        if (!reposResponse.ok) {
+          throw new Error("GitHub API unavailable");
+        }
+
+        const repos = await reposResponse.json();
+        const commits = await loadRecentCommits(repos);
+        const days = commitsByDay(commits);
+        const totalCommits = days.reduce((sum, day) => sum + day.count, 0);
+
+        renderRepos(repos);
+        renderCommitChart(days);
+        githubStatus.textContent = `已同步 GitHub 公开数据：${repos.length} 个仓库，最近 14 天 ${totalCommits} 次公开提交`;
+        commitSummary.textContent = `根据最近活跃仓库的 commits API 统计最近 14 天提交数量，共 ${totalCommits} 次公开提交。`;
+      } catch (error) {
+        renderCommitChart(lastNDays(14));
+        githubStatus.textContent = "GitHub API 暂时不可用，正在显示上次整理的静态内容";
+        commitSummary.textContent = "当前显示空曲线；GitHub API 可用时会自动刷新最近 14 天公开提交趋势。";
+      }
+    }
+
+    loadGithubActivity();
 
     const canvas = document.querySelector(".ambient");
     const ctx = canvas.getContext("2d");
