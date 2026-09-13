@@ -1,5 +1,13 @@
 document.querySelector("#year").textContent = new Date().getFullYear();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const kotlinSection = document.createElement("section"); kotlinSection.id = "kotlin-news"; kotlinSection.className = "shell section kotlin-section";
+kotlinSection.innerHTML = '<div class="kotlin-heading"><div><p class="eyebrow">KOTLIN ECOSYSTEM</p><h2>Kotlin 的最新动态。</h2><p>来自 Kotlin 官方网站与 JetBrains Kotlin Blog 的更新。</p></div><a class="kotlin-brand" href="https://kotlinlang.org/" target="_blank" rel="noopener" aria-label="访问 Kotlin 官网"><span class="kotlin-logo"><i></i><b></b></span><span>Kotlin</span><small>官方</small></a></div><div class="kotlin-news-list" id="kotlin-news-list"><article class="kotlin-news-item"><span class="news-date">LATEST</span><h3>正在读取 Kotlin 最新动态</h3><p>正在连接 Kotlin 官方信息源。</p></article></div>';
+document.querySelector("#repos")?.before(kotlinSection);
+const kotlinFallback = [{title:"Kotlin 2.4.20 Released",date:"September 7, 2026",url:"https://kotlinlang.org/",summary:"Kotlin 2.4.20 发布，带来编译器、标准库与多平台开发更新。"},{title:"Kotlin Toolchain 0.12: Multiplatform Library Publishing, Wasm Apps, and More",date:"September 3, 2026",url:"https://kotlinlang.org/",summary:"Kotlin Toolchain 0.12.0 发布，聚焦多平台库发布与 Wasm 应用。"}];
+const kotlinEscape=(value)=>String(value??"").replace(/[&<>\"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'\"':"&quot;", "'":"&#39;"}[char]));
+function renderKotlinNews(items){const list=document.querySelector("#kotlin-news-list");if(!list)return;list.innerHTML=items.slice(0,3).map(item=>`<article class="kotlin-news-item"><span class="news-date">${kotlinEscape(item.date||"KOTLIN")}</span><h3>${kotlinEscape(item.title)}</h3><p>${kotlinEscape(item.summary||"来自 Kotlin 官方更新。")}</p><a href="${kotlinEscape(item.url)}" target="_blank" rel="noopener">阅读原文 ↗</a></article>`).join("");}
+renderKotlinNews(kotlinFallback);
+fetch("https://blog.jetbrains.com/kotlin/feed/",{headers:{Accept:"application/rss+xml, application/xml, text/xml"}}).then(r=>r.ok?r.text():Promise.reject()).then(xml=>{const doc=new DOMParser().parseFromString(xml,"text/xml");const items=[...doc.querySelectorAll("item")].map(item=>({title:item.querySelector("title")?.textContent,date:item.querySelector("pubDate")?.textContent,url:item.querySelector("link")?.textContent,summary:item.querySelector("description")?.textContent?.replace(/<[^>]+>/g,"").slice(0,130)}));if(items.length)renderKotlinNews(items)}).catch(()=>{});
 const orbitArt = document.querySelector(".orbit-art");
 if (orbitArt) {
   orbitArt.querySelectorAll(".orbit-label").forEach((label) => label.remove());
