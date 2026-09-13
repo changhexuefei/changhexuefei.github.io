@@ -1,10 +1,11 @@
 import datetime as dt, json, os, pathlib, urllib.request
+from zoneinfo import ZoneInfo
 
 USER = "changhexuefei"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "articles"
 OUT.mkdir(exist_ok=True)
-today = dt.date.today()
+today = dt.datetime.now(dt.timezone.utc).astimezone(ZoneInfo("Asia/Shanghai")).date()
 end = today - dt.timedelta(days=today.weekday())
 start = end - dt.timedelta(days=7)
 date = end - dt.timedelta(days=1)
