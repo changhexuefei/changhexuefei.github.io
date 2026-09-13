@@ -1,5 +1,11 @@
 document.querySelector("#year").textContent = new Date().getFullYear();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const orbitArt = document.querySelector(".orbit-art");
+if (orbitArt) {
+  orbitArt.insertAdjacentHTML("beforeend", '<div class="orbit-stat stat-cold"><span>COLD START</span><strong>~0.2<small>s</small></strong><i></i></div><div class="orbit-stat stat-ram"><span>RAM</span><strong>35<small> MB</small></strong><i></i></div><div class="orbit-stat stat-modules"><span>MODULES</span><strong>40<small>+</small></strong><i></i></div><div class="orbit-stat stat-formats"><span>FORMATS</span><strong>18</strong><i></i></div>');
+  const svg = orbitArt.querySelector("svg");
+  svg?.insertAdjacentHTML("beforeend", '<g class="orbit-movers"><circle r="9" fill="#6f9fff"><animateMotion dur="12s" repeatCount="indefinite" path="M 60,260 a 220,78 0 1 0 440,0 a 220,78 0 1 0 -440,0"/></circle><circle r="10" fill="#ff8c57"><animateMotion dur="16s" repeatCount="indefinite" path="M 60,260 a 220,78 0 1 0 440,0 a 220,78 0 1 0 -440,0" begin="-5s"/></circle><circle r="11" fill="#c18aff"><animateMotion dur="20s" repeatCount="indefinite" path="M 60,260 a 218,78 0 1 0 436,0 a 218,78 0 1 0 -436,0" begin="-9s"/></circle><circle r="10" fill="#ff6f9c"><animateMotion dur="14s" repeatCount="indefinite" path="M 60,260 a 218,78 0 1 0 436,0 a 218,78 0 1 0 -436,0" begin="-3s"/></circle></g>');
+}
 const canvas = document.createElement("canvas"); canvas.className = "ambient-particles"; canvas.setAttribute("aria-hidden", "true"); document.body.prepend(canvas);
 const ctx = canvas.getContext("2d"); let particles = [], frame = 0;
 function resizeParticles(){const d=Math.min(devicePixelRatio||1,2);canvas.width=innerWidth*d;canvas.height=innerHeight*d;ctx.setTransform(d,0,0,d,0,0);const n=Math.min(110,Math.max(38,Math.floor(innerWidth/13)));particles=Array.from({length:n},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.6+.4,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,a:Math.random()*.5+.15}));}
