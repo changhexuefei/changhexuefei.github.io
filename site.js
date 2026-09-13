@@ -2,7 +2,6 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const orbitArt = document.querySelector(".orbit-art");
 if (orbitArt) {
-  orbitArt.insertAdjacentHTML("beforeend", '<div class="orbit-stat stat-cold"><span>COLD START</span><strong>~0.2<small>s</small></strong><i></i></div><div class="orbit-stat stat-ram"><span>RAM</span><strong>35<small> MB</small></strong><i></i></div><div class="orbit-stat stat-modules"><span>MODULES</span><strong>40<small>+</small></strong><i></i></div><div class="orbit-stat stat-formats"><span>FORMATS</span><strong>18</strong><i></i></div>');
   const svg = orbitArt.querySelector("svg");
   svg?.insertAdjacentHTML("beforeend", '<g class="orbit-movers"><circle r="9" fill="#6f9fff"><animateMotion dur="12s" repeatCount="indefinite" path="M 60,260 a 220,78 0 1 0 440,0 a 220,78 0 1 0 -440,0"/></circle><circle r="10" fill="#ff8c57"><animateMotion dur="16s" repeatCount="indefinite" path="M 60,260 a 220,78 0 1 0 440,0 a 220,78 0 1 0 -440,0" begin="-5s"/></circle><circle r="11" fill="#c18aff"><animateMotion dur="20s" repeatCount="indefinite" path="M 60,260 a 218,78 0 1 0 436,0 a 218,78 0 1 0 -436,0" begin="-9s"/></circle><circle r="10" fill="#ff6f9c"><animateMotion dur="14s" repeatCount="indefinite" path="M 60,260 a 218,78 0 1 0 436,0 a 218,78 0 1 0 -436,0" begin="-3s"/></circle></g>');
 }
