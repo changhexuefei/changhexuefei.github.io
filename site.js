@@ -1,4 +1,10 @@
 document.querySelector("#year").textContent = new Date().getFullYear();
+const navLinks = document.querySelector(".nav-links");
+if (navLinks && !navLinks.querySelector('[href="#articles"]')) navLinks.insertAdjacentHTML("beforeend", '<a href="#articles">每周文章</a>');
+const articleSection = document.createElement("section");
+articleSection.id = "articles"; articleSection.className = "shell section articles-section";
+articleSection.innerHTML = '<div class="section-heading row"><div><p class="eyebrow">WEEKLY ARTICLES</p><h2>把动态写成，<span>值得阅读的文章。</span></h2><p>每周根据 GitHub 公开活动自动整理，记录真实改动与技术思路。</p></div><span class="tag live-tag"><i></i>自动更新</span></div><div id="article-list" class="article-list"><article class="article-card"><span class="article-kicker">LATEST</span><h3>正在加载每周文章</h3><p>文章会在 GitHub Actions 生成后自动出现在这里。</p></article></div>';
+document.querySelector("#about")?.before(articleSection);
     const githubUser = "changhexuefei";
     const githubStatus = document.querySelector("#github-status");
     const activityGrid = document.querySelector("#activity-grid");
@@ -205,4 +211,3 @@ document.querySelector("#year").textContent = new Date().getFullYear();
         loadGithubActivity("visible");
       }
     });
-
