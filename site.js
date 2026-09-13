@@ -170,7 +170,6 @@ document.querySelector("#about")?.before(articleSection);
 
       const results = await Promise.allSettled(targets.map((repo) => (
         fetch(`https://api.github.com/repos/${githubUser}/${repo.name}/commits?since=${since.toISOString()}&per_page=100`, {
-          signal: AbortSignal.timeout(12000),
           headers: { Accept: "application/vnd.github+json" }
         }).then((response) => {
           if (!response.ok) throw new Error("Commits unavailable");
@@ -178,7 +177,6 @@ document.querySelector("#about")?.before(articleSection);
         })
       )));
 
-      if (results.some(result => result.status === "rejected")) throw new Error("Incomplete commit data");
       return results.flatMap((result) => (
         result.status === "fulfilled" && Array.isArray(result.value) ? result.value : []
       ));
@@ -194,7 +192,6 @@ document.querySelector("#about")?.before(articleSection);
 
       try {
         const reposResponse = await fetch(`https://api.github.com/users/${githubUser}/repos?sort=updated&per_page=12`, {
-          signal: AbortSignal.timeout(12000),
           headers: { Accept: "application/vnd.github+json" }
         });
 
@@ -219,7 +216,7 @@ document.querySelector("#about")?.before(articleSection);
         githubStatus.textContent = `已同步公开仓库 · ${syncedAt} 更新 · 每 10 分钟刷新`;
         commitSummary.textContent = `最近活跃的 6 个公开仓库，近 14 天读取到 ${totalCommits} 条提交记录（每库最多 100 条，包含 Fork 历史）。`;
       } catch (error) {
-        commitChart.innerHTML = "";
+        renderCommitChart(lastNDays(14));
         githubStatus.textContent = "GitHub 暂时无法连接，项目列表保留当前内容。";
         commitSummary.textContent = "暂时无法读取提交数据，恢复连接后将自动更新。";
       } finally {
