@@ -36,6 +36,24 @@ const articleSection = document.createElement("section");
 articleSection.id = "articles"; articleSection.className = "shell section articles-section";
 articleSection.innerHTML = '<div class="section-heading row"><div><p class="eyebrow">WEEKLY ARTICLES</p><h2>把动态写成，<span>值得阅读的文章。</span></h2><p>每周根据 GitHub 公开活动自动整理，记录真实改动与技术思路。</p></div><span class="tag live-tag"><i></i>自动更新</span></div><div id="article-list" class="article-list"><article class="article-card"><span class="article-kicker">LATEST</span><h3>正在加载每周文章</h3><p>文章会在 GitHub Actions 生成后自动出现在这里。</p></article></div>';
 document.querySelector("#about")?.before(articleSection);
+const articleList = document.querySelector("#article-list");
+function renderArticles(items) {
+  if (!articleList || !Array.isArray(items) || !items.length) return;
+  articleList.innerHTML = items.slice(0, 6).map((item) => `
+    <article class="article-card scroll-reveal is-visible">
+      <span class="article-kicker">${escapeHtml(item.period || "WEEKLY")}</span>
+      <h3>${escapeHtml(item.title || item.date || "GitHub 周报")}</h3>
+      <p>${escapeHtml(item.summary || "根据 GitHub 公开动态整理的每周文章。")}</p>
+      <div class="article-meta"><span>${escapeHtml(item.date || "")}</span><a href="articles/${encodeURIComponent(item.url || "")}" target="_blank" rel="noopener">阅读文章 ↗</a></div>
+    </article>
+  `).join("");
+}
+fetch("articles/index.json", { cache: "no-store" })
+  .then((response) => response.ok ? response.json() : Promise.reject(new Error("Article index unavailable")))
+  .then(renderArticles)
+  .catch(() => {
+    if (articleList) articleList.innerHTML = '<article class="article-card"><span class="article-kicker">WEEKLY</span><h3>文章正在生成</h3><p>GitHub Actions 完成首次运行后，文章会自动显示在这里。</p></article>';
+  });
     const githubUser = "changhexuefei";
     const githubStatus = document.querySelector("#github-status");
     const activityGrid = document.querySelector("#activity-grid");
