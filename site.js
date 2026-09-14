@@ -44,7 +44,7 @@ function renderArticles(items) {
       <span class="article-kicker">${escapeHtml(item.period || "WEEKLY")}</span>
       <h3>${escapeHtml(item.title || item.date || "GitHub 周报")}</h3>
       <p>${escapeHtml(item.summary || "根据 GitHub 公开动态整理的每周文章。")}</p>
-      <div class="article-meta"><span>${escapeHtml(item.date || "")}</span><a href="articles/${encodeURIComponent(item.url || "")}" target="_blank" rel="noopener">阅读文章 ↗</a></div>
+      <div class="article-meta"><span>${escapeHtml(item.date || "")}</span><a href="articles/${encodeURIComponent(item.url || "")}?v=${encodeURIComponent(item.date || "")}" target="_blank" rel="noopener">阅读文章 ↗</a></div>
     </article>
   `).join("");
 }
