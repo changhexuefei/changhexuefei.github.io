@@ -20,24 +20,26 @@ def get(url):
     with urllib.request.urlopen(req, timeout=20) as response:
         return json.load(response)
 
-events = []
-try:
-    for page in range(1, 4):
-        batch = get(f"https://api.github.com/users/{USER}/events/public?per_page=100&page={page}")
-        events += [event for event in batch if start.isoformat() <= event.get("created_at", "")[:10] < end.isoformat()]
-        if len(batch) < 100:
-            break
-except Exception as exc:
-    print(f"GitHub API unavailable: {exc}")
+window_start = dt.datetime.combine(start, dt.time.min, tzinfo=ZoneInfo("Asia/Shanghai")).astimezone(dt.timezone.utc).isoformat()
+window_end = dt.datetime.combine(end, dt.time.min, tzinfo=ZoneInfo("Asia/Shanghai")).astimezone(dt.timezone.utc).isoformat()
 
+# The public events feed is incomplete and can omit older PushEvents. Read each
+# owned repository's commit endpoint instead, matching the same source as the site chart.
 pushes = []
-for event in events:
-    if event.get("type") != "PushEvent" or event.get("actor", {}).get("login", "").lower() != USER.lower():
-        continue
-    repo = event.get("repo", {}).get("name", "")
-    commits = event.get("payload", {}).get("commits", [])
-    if repo and commits:
-        pushes.append((repo, commits))
+try:
+    repositories = get(f"https://api.github.com/users/{USER}/repos?per_page=100&sort=pushed")
+    for repository in repositories:
+        repo = repository.get("full_name", "")
+        if not repo or repository.get("fork"):
+            continue
+        commits = get(
+            f"https://api.github.com/repos/{repo}/commits"
+            f"?author={USER}&since={window_start}&until={window_end}&per_page=100"
+        )
+        if commits:
+            pushes.append((repo, commits))
+except Exception as exc:
+    print(f"GitHub repository commits unavailable: {exc}")
 
 grouped = {}
 for repo, commits in pushes:
