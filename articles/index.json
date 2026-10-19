@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-18",
+    "period": "TECH REFLECTION",
+    "title": "这一周的技术感想：把 SiPhStudio 做得更可靠",
+    "summary": "提交只是线索，真正值得留下的是做决定时的理由。",
+    "tags": [
+      "技术感想",
+      "GitHub"
+    ],
+    "url": "2026-10-18.html"
+  },
+  {
     "date": "2026-10-11",
     "period": "TECH REFLECTION",
     "title": "这一周的技术感想：把 SiPhStudio 做得更可靠",
