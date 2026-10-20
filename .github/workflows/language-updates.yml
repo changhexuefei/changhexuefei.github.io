@@ -1,0 +1,25 @@
+name: Refresh language ecosystem updates
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch official language versions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update_language_updates.py
+      - name: Publish language update data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/language-updates.json
+          git diff --cached --quiet || (git commit -m "chore: refresh language ecosystem updates" && git push)
