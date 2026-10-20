@@ -83,8 +83,8 @@ aiSection.innerHTML = `
   <div class="section-heading row">
     <div>
       <p class="eyebrow">AI FRONTIER</p>
-      <h2>全球 AI 的最新进展。</h2>
-      <p>追踪公开论文与主流 AI 工具链的更新，帮助你看到技术从研究走向应用的路径。</p>
+      <h2>硅谷与全球 AI 的最新成果。</h2>
+      <p>优先追踪 OpenAI、Google DeepMind、Meta AI、NVIDIA 等官方动态，聚焦世界模型、物理 AI、Agent 和基础模型。</p>
     </div>
     <span class="tag live-tag"><i></i><span id="ai-news-status">正在同步</span></span>
   </div>
@@ -100,19 +100,39 @@ document.querySelector("#language-news")?.after(aiSection);
 const aiEscape=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 const aiDate=(value)=>value?new Intl.DateTimeFormat("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(value)):"最近同步";
 function aiText(value,fallback){const text=String(value||"").replace(/<[^>]+>/g,"").replace(/\\s+/g," ").trim();return text?text.slice(0,190)+(text.length>190?"…":""):fallback;}
+const aiOfficialFeeds=[
+ {name:"Google DeepMind",url:"https://deepmind.google/blog/rss.xml",home:"https://deepmind.google/blog/"},
+ {name:"NVIDIA AI",url:"https://developer.nvidia.com/blog/feed/",home:"https://developer.nvidia.com/blog/"},
+ {name:"OpenAI",url:"https://openai.com/news/rss.xml",home:"https://openai.com/news/"}
+];
+const aiWorldModelKeywords=/world model|world models|physical ai|robotics|agent|foundation model|multimodal|reasoning|generative/i;
+const aiChinaKeywords=/\\b(qwen|deepseek|kimi|doubao|zhipu|moonshot|baidu|alibaba)\\b/i;
+function aiFeedItems(xml,source){
+  const doc=new DOMParser().parseFromString(xml,"text/xml");
+  return [...doc.querySelectorAll("item,entry")].map((node)=>{
+    const title=node.querySelector("title")?.textContent?.trim()||"";
+    const linkNode=node.querySelector('link[rel="alternate"],link');
+    const link=linkNode?.getAttribute("href")||linkNode?.textContent?.trim()||source.home;
+    const date=node.querySelector("pubDate,published,updated")?.textContent?.trim()||"";
+    const summary=node.querySelector("description,summary,content")?.textContent?.trim()||"";
+    return {title,url:link,date,summary,source:source.name,home:source.home};
+  }).filter((item)=>item.title&&aiWorldModelKeywords.test(item.title+" "+item.summary)&&!aiChinaKeywords.test(item.title+" "+item.summary));
+}
 async function loadAiFrontier(){
   const status=document.querySelector("#ai-news-status");
-  try{
-    const response=await fetch("https://huggingface.co/api/daily_papers?limit=6",{cache:"no-store",headers:{Accept:"application/json"}});
+  const results=await Promise.allSettled(aiOfficialFeeds.map(async(source)=>{
+    const response=await fetch(source.url,{cache:"no-store",headers:{Accept:"application/rss+xml, application/atom+xml, application/xml, text/xml"}});
     if(!response.ok)throw new Error("AI feed unavailable");
-    const payload=await response.json();
-    const papers=(Array.isArray(payload)?payload:[]).slice(0,3).map((entry)=>{const paper=entry.paper||entry;return{title:paper.title||entry.title||"未命名研究",summary:aiText(paper.summary||paper.abstract||entry.summary,"查看论文摘要与项目链接。"),date:paper.publishedAt||paper.published_at||entry.publishedAt||entry.published_at,url:paper.url||entry.url||(paper.id?"https://huggingface.co/papers/"+paper.id:"https://huggingface.co/papers")};});
-    if(!papers.length)throw new Error("No papers");
-    document.querySelector("#ai-results-grid").innerHTML=papers.map((paper)=>`<article class="ai-result-card"><span class="ai-source">HUGGING FACE DAILY PAPERS · ${aiEscape(aiDate(paper.date))}</span><h3>${aiEscape(paper.title)}</h3><p>${aiEscape(paper.summary)}</p><a href="${aiEscape(paper.url)}" target="_blank" rel="noopener">阅读研究 ↗</a></article>`).join("");
-    if(status)status.textContent="已同步 · 每 30 分钟刷新";
-  }catch(error){
+    return aiFeedItems(await response.text(),source);
+  }));
+  const items=results.filter((result)=>result.status==="fulfilled").flatMap((result)=>result.value).sort((a,b)=>new Date(b.date)-new Date(a.date));
+  const unique=[...new Map(items.map((item)=>[item.title,item])).values()].slice(0,3);
+  if(unique.length){
+    document.querySelector("#ai-results-grid").innerHTML=unique.map((item)=>`<article class="ai-result-card"><span class="ai-source">${aiEscape(item.source.toUpperCase())} · ${aiEscape(aiDate(item.date))}</span><h3>${aiEscape(item.title)}</h3><p>${aiEscape(aiText(item.summary,"查看官方成果说明与技术细节。"))}</p><a href="${aiEscape(item.url)}" target="_blank" rel="noopener">阅读官方成果 ↗</a></article>`).join("");
+    if(status)status.textContent="已同步官方动态 · 每 30 分钟刷新";
+  }else{
     if(status)status.textContent="官方源暂时不可用";
-    document.querySelector("#ai-results-grid").innerHTML='<article class="ai-result-card is-unavailable"><span class="ai-source">AI FRONTIER</span><h3>暂时无法读取最新研究</h3><p>恢复连接后会自动重试，也可以直接访问 Hugging Face Daily Papers。</p><a href="https://huggingface.co/papers" target="_blank" rel="noopener">打开论文主页 ↗</a></article>';
+    document.querySelector("#ai-results-grid").innerHTML='<article class="ai-result-card is-unavailable"><span class="ai-source">SILICON VALLEY AI FRONTIER</span><h3>暂时无法读取官方动态</h3><p>恢复连接后会自动重试。当前可直接访问 Google DeepMind、NVIDIA AI 和 OpenAI 官方新闻。</p><div class="ai-feed-links"><a href="https://deepmind.google/blog/" target="_blank" rel="noopener">DeepMind ↗</a><a href="https://developer.nvidia.com/blog/" target="_blank" rel="noopener">NVIDIA ↗</a><a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI ↗</a></div></article>';
   }
 }
 const aiStackSources=[
