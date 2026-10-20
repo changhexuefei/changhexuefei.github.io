@@ -1,0 +1,23 @@
+name: Refresh AI frontier updates
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch official AI updates
+        run: python scripts/update_ai_frontier.py
+      - name: Publish AI update data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ai-frontier.json
+          git diff --cached --quiet || (git commit -m "chore: refresh AI frontier updates" && git push)
