@@ -1,13 +1,80 @@
 document.querySelector("#year").textContent = new Date().getFullYear();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const kotlinSection = document.createElement("section"); kotlinSection.id = "kotlin-news"; kotlinSection.className = "shell section kotlin-section";
-kotlinSection.innerHTML = '<div class="kotlin-heading"><div><p class="eyebrow">KOTLIN ECOSYSTEM</p><h2>Kotlin 的最新动态。</h2><p>来自 Kotlin 官方网站与 JetBrains Kotlin Blog 的更新。</p></div><a class="kotlin-brand" href="https://kotlinlang.org/" target="_blank" rel="noopener" aria-label="访问 Kotlin 官网"><span>Kotlin</span><small>官方 ↗</small></a></div><div class="kotlin-news-list" id="kotlin-news-list"><article class="kotlin-news-item"><span class="news-date">LATEST</span><h3>正在读取 Kotlin 最新动态</h3><p>正在连接 Kotlin 官方信息源。</p></article></div>';
-document.querySelector("#repos")?.before(kotlinSection);
-const kotlinFallback = [{title:"Kotlin 2.4.20 Released",date:"September 7, 2026",url:"https://kotlinlang.org/",summary:"Kotlin 2.4.20 发布，带来编译器、标准库与多平台开发更新。"},{title:"Kotlin Toolchain 0.12: Multiplatform Library Publishing, Wasm Apps, and More",date:"September 3, 2026",url:"https://kotlinlang.org/",summary:"Kotlin Toolchain 0.12.0 发布，聚焦多平台库发布与 Wasm 应用。"}];
-const kotlinEscape=(value)=>String(value??"").replace(/[&<>\"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'\"':"&quot;", "'":"&#39;"}[char]));
-function renderKotlinNews(items){const list=document.querySelector("#kotlin-news-list");if(!list)return;list.innerHTML=items.slice(0,3).map(item=>`<article class="kotlin-news-item"><span class="news-date">${kotlinEscape(item.date||"KOTLIN")}</span><h3>${kotlinEscape(item.title)}</h3><p>${kotlinEscape(item.summary||"来自 Kotlin 官方更新。")}</p><a href="${kotlinEscape(item.url)}" target="_blank" rel="noopener">阅读原文 ↗</a></article>`).join("");}
-renderKotlinNews(kotlinFallback);
-fetch("https://blog.jetbrains.com/kotlin/feed/",{headers:{Accept:"application/rss+xml, application/xml, text/xml"}}).then(r=>r.ok?r.text():Promise.reject()).then(xml=>{const doc=new DOMParser().parseFromString(xml,"text/xml");const items=[...doc.querySelectorAll("item")].map(item=>({title:item.querySelector("title")?.textContent,date:item.querySelector("pubDate")?.textContent,url:item.querySelector("link")?.textContent,summary:item.querySelector("description")?.textContent?.replace(/<[^>]+>/g,"").slice(0,130)}));if(items.length)renderKotlinNews(items)}).catch(()=>{});
+const languageSection = document.createElement("section");
+languageSection.id = "language-news";
+languageSection.className = "shell section language-section";
+languageSection.innerHTML = `
+  <div class="section-heading row">
+    <div>
+      <p class="eyebrow">LANGUAGE ECOSYSTEMS</p>
+      <h2>Kotlin、Java、Python 的最新动态。</h2>
+      <p>直接读取官方仓库的发布与版本信息，持续追踪语言生态的变化。</p>
+    </div>
+    <span class="tag live-tag"><i></i><span id="language-news-status">正在同步</span></span>
+  </div>
+  <div class="language-news-grid" id="language-news-grid">
+    <article class="language-news-card"><span class="language-name">KOTLIN</span><h3>正在读取官方动态</h3><p>正在连接 Kotlin 官方发布信息。</p></article>
+    <article class="language-news-card"><span class="language-name">JAVA</span><h3>正在读取官方动态</h3><p>正在连接 OpenJDK 官方版本信息。</p></article>
+    <article class="language-news-card"><span class="language-name">PYTHON</span><h3>正在读取官方动态</h3><p>正在连接 CPython 官方发布信息。</p></article>
+  </div>`;
+document.querySelector("#repos")?.before(languageSection);
+
+const languageNewsConfig = [
+  {key:"kotlin",name:"Kotlin",repo:"JetBrains/kotlin",home:"https://kotlinlang.org/",releases:"https://api.github.com/repos/JetBrains/kotlin/releases?per_page=8",fallback:"Kotlin 官方发布"},
+  {key:"java",name:"Java",repo:"openjdk/jdk",home:"https://openjdk.org/",tags:"https://api.github.com/repos/openjdk/jdk/tags?per_page=8",fallback:"OpenJDK 官方版本"},
+  {key:"python",name:"Python",repo:"python/cpython",home:"https://www.python.org/",releases:"https://api.github.com/repos/python/cpython/releases?per_page=8",fallback:"CPython 官方发布"}
+];
+const languageEscape = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+const languageDate = (value) => value ? new Intl.DateTimeFormat("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(value)) : "最近同步";
+const languageSummary = (body, fallback) => {
+  const clean = String(body || "").replace(/<[^>]+>/g,"").replace(/[#>*`]/g,"").replace(/\\s+/g," ").trim();
+  return clean ? clean.slice(0,180) + (clean.length > 180 ? "…" : "") : fallback;
+};
+async function languageFetch(url) {
+  const response = await fetch(url,{cache:"no-store",headers:{Accept:"application/vnd.github+json"}});
+  if (!response.ok) throw new Error("官方源暂时不可用");
+  return response.json();
+}
+async function readRelease(source) {
+  const releases = await languageFetch(source.releases);
+  const item = (Array.isArray(releases) ? releases : []).find((entry) => !entry.draft) || releases?.[0];
+  if (!item) throw new Error("没有可用发布");
+  return {name:source.name,version:item.tag_name || item.name || "最新发布",title:item.name || item.tag_name || source.fallback,date:item.published_at || item.created_at,url:item.html_url || source.home,summary:languageSummary(item.body,source.fallback + "已更新。"),home:source.home};
+}
+async function readOpenJdk(source) {
+  const tags = await languageFetch(source.tags);
+  const tag = Array.isArray(tags) ? tags[0] : null;
+  if (!tag) throw new Error("没有可用版本");
+  return {name:source.name,version:tag.name,title:"OpenJDK " + tag.name,date:null,url:"https://github.com/openjdk/jdk/releases",summary:"OpenJDK 官方仓库已更新版本标签，点击查看最新 JDK 代码与发布信息。",home:source.home};
+}
+function renderLanguageNews(items) {
+  const grid = document.querySelector("#language-news-grid");
+  if (!grid) return;
+  const byKey = new Map(items.map((item) => [item.key,item]));
+  grid.innerHTML = languageNewsConfig.map((source) => {
+    const item = byKey.get(source.key);
+    if (!item) return `<article class="language-news-card is-unavailable"><span class="language-name">${languageEscape(source.name.toUpperCase())}</span><h3>暂时无法读取</h3><p>官方源恢复后会自动重试。</p><a href="${languageEscape(source.home)}" target="_blank" rel="noopener">访问官网 ↗</a></article>`;
+    return `<article class="language-news-card language-${languageEscape(source.key)}"><div class="language-card-top"><span class="language-name">${languageEscape(item.name.toUpperCase())}</span><span class="language-version">${languageEscape(item.version)}</span></div><h3>${languageEscape(item.title)}</h3><p>${languageEscape(item.summary)}</p><div class="language-card-meta"><span>${languageEscape(languageDate(item.date))}</span><a href="${languageEscape(item.url)}" target="_blank" rel="noopener">查看官方动态 ↗</a></div></article>`;
+  }).join("");
+}
+let languageLoading = false;
+async function loadLanguageNews() {
+  if (languageLoading) return;
+  languageLoading = true;
+  const status = document.querySelector("#language-news-status");
+  if (status) status.textContent = "正在同步";
+  const results = await Promise.allSettled(languageNewsConfig.map(async (source) => {
+    const item = source.key === "java" ? await readOpenJdk(source) : await readRelease(source);
+    return {...item,key:source.key};
+  }));
+  renderLanguageNews(results.filter((result) => result.status === "fulfilled").map((result) => result.value));
+  const syncedAt = new Intl.DateTimeFormat("zh-CN",{hour:"2-digit",minute:"2-digit"}).format(new Date());
+  if (status) status.textContent = `已同步 · ${syncedAt} · 每 30 分钟刷新`;
+  languageLoading = false;
+}
+loadLanguageNews();
+window.setInterval(loadLanguageNews, 30 * 60 * 1000);
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") loadLanguageNews(); });
 const orbitArt = document.querySelector(".orbit-art");
 if (orbitArt) {
   orbitArt.querySelectorAll(".orbit-label").forEach((label) => label.remove());
