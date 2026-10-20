@@ -64,14 +64,20 @@ async function loadLanguageNews() {
   languageLoading = true;
   const status = document.querySelector("#language-news-status");
   if (status) status.textContent = "正在同步";
-  const results = await Promise.allSettled(languageNewsConfig.map(async (source) => {
-    const item = source.tags ? await readTag(source) : await readRelease(source);
-    return {...item,key:source.key};
-  }));
-  renderLanguageNews(results.filter((result) => result.status === "fulfilled").map((result) => result.value));
-  const syncedAt = new Intl.DateTimeFormat("zh-CN",{hour:"2-digit",minute:"2-digit"}).format(new Date());
-  if (status) status.textContent = `已同步 · ${syncedAt} · 每 30 分钟刷新`;
-  languageLoading = false;
+  try {
+    const response = await fetch("data/language-updates.json?ts="+Date.now(), {cache:"no-store"});
+    if (!response.ok) throw new Error("language data unavailable");
+    const payload = await response.json();
+    const items = Array.isArray(payload.items) ? payload.items.map((item) => ({...item, key:item.key})) : [];
+    renderLanguageNews(items);
+    const syncedAt = new Intl.DateTimeFormat("zh-CN",{hour:"2-digit",minute:"2-digit"}).format(new Date());
+    if (status) status.textContent = `已同步 · ${syncedAt} · 每 30 分钟刷新`;
+  } catch (error) {
+    renderLanguageNews([]);
+    if (status) status.textContent = "服务器正在更新";
+  } finally {
+    languageLoading = false;
+  }
 }
 loadLanguageNews();
 window.setInterval(loadLanguageNews, 30 * 60 * 1000);
