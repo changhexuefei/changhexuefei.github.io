@@ -352,46 +352,29 @@ fetch("articles/index.json", { cache: "no-store" })
     async function loadGithubActivity(reason = "auto") {
       if (githubLoading) return;
       githubLoading = true;
-      
-      githubStatus.textContent = reason === "initial"
-        ? "正在读取 GitHub 公开动态"
-        : "正在自动同步 GitHub 公开动态";
-
+      githubStatus.textContent = reason === "initial" ? "正在读取 GitHub 公开动态" : "正在自动同步 GitHub 公开动态";
       try {
-        const reposResponse = await fetch(`https://api.github.com/users/${githubUser}/repos?sort=updated&per_page=12`, {
-          headers: { Accept: "application/vnd.github+json" }
-        });
-
-        if (!reposResponse.ok) {
-          throw new Error("GitHub API unavailable");
-        }
-
-        const repos = await reposResponse.json();
+        const response = await fetch("data/recent-activity.json?ts="+Date.now(), {cache:"no-store"});
+        if (!response.ok) throw new Error("activity data unavailable");
+        const payload = await response.json();
+        const repos = Array.isArray(payload.repos) ? payload.repos : [];
+        const commits = Array.isArray(payload.commits) ? payload.commits : [];
         renderRepos(repos);
-        const commits = await loadRecentCommits(repos);
         const days = commitsByDay(commits);
         const totalCommits = days.reduce((sum, day) => sum + day.count, 0);
-        const syncedAt = new Intl.DateTimeFormat("zh-CN", {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit"
-        }).format(new Date());
-
-        renderRepos(repos);
         renderCommitChart(days);
         githubLastSync = Date.now();
-        githubStatus.textContent = `已同步公开仓库 · ${syncedAt} 更新 · 每 10 分钟刷新`;
-        commitSummary.textContent = `最近活跃的 6 个公开仓库，近 14 天读取到 ${totalCommits} 条提交记录（每库最多 100 条，包含 Fork 历史）。`;
+        const syncedAt = new Intl.DateTimeFormat("zh-CN",{hour:"2-digit",minute:"2-digit",second:"2-digit"}).format(new Date());
+        githubStatus.textContent = `已同步公开仓库 · ${syncedAt} 更新 · 每 30 分钟刷新`;
+        commitSummary.textContent = `最近活跃的 ${repos.length} 个公开仓库，近 14 天读取到 ${totalCommits} 条本人提交记录。`;
       } catch (error) {
-        renderCommitChart(lastNDays(14));
-        githubStatus.textContent = "GitHub 暂时无法连接，项目列表保留当前内容。";
-        commitSummary.textContent = "暂时无法读取提交数据，恢复连接后将自动更新。";
+        githubStatus.textContent = "服务器正在更新 GitHub 动态";
+        commitSummary.textContent = "提交统计正在同步，恢复后会自动更新。";
       } finally {
         githubLoading = false;
       }
     }
-
-    loadGithubActivity("initial");
+loadGithubActivity("initial");
     window.setInterval(() => loadGithubActivity("interval"), githubRefreshMs);
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible" && Date.now() - githubLastSync > githubStaleMs) {
