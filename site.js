@@ -106,7 +106,7 @@ const aiOfficialFeeds=[
  {name:"OpenAI",url:"https://openai.com/news/rss.xml",home:"https://openai.com/news/"}
 ];
 const aiWorldModelKeywords=/world model|world models|physical ai|robotics|agent|foundation model|multimodal|reasoning|generative/i;
-const aiChinaKeywords=/\\b(qwen|deepseek|kimi|doubao|zhipu|moonshot|baidu|alibaba)\\b/i;
+const aiChinaKeywords=/\b(qwen|deepseek|kimi|doubao|zhipu|moonshot|baidu|alibaba)\b/i;
 function aiFeedItems(xml,source){
   const doc=new DOMParser().parseFromString(xml,"text/xml");
   return [...doc.querySelectorAll("item,entry")].map((node)=>{
