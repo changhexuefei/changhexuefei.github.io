@@ -22,7 +22,7 @@ document.querySelector("#repos")?.before(languageSection);
 const languageNewsConfig = [
   {key:"kotlin",name:"Kotlin",repo:"JetBrains/kotlin",home:"https://kotlinlang.org/",releases:"https://api.github.com/repos/JetBrains/kotlin/releases?per_page=8",fallback:"Kotlin 官方发布"},
   {key:"java",name:"Java",repo:"openjdk/jdk",home:"https://openjdk.org/",tags:"https://api.github.com/repos/openjdk/jdk/tags?per_page=8",fallback:"OpenJDK 官方版本"},
-  {key:"python",name:"Python",repo:"python/cpython",home:"https://www.python.org/",releases:"https://api.github.com/repos/python/cpython/releases?per_page=8",fallback:"CPython 官方发布"}
+  {key:"python",name:"Python",repo:"python/cpython",home:"https://www.python.org/",tags:"https://api.github.com/repos/python/cpython/tags?per_page=8",fallback:"CPython 官方发布"}
 ];
 const languageEscape = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 const languageDate = (value) => value ? new Intl.DateTimeFormat("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(value)) : "最近同步";
@@ -41,11 +41,12 @@ async function readRelease(source) {
   if (!item) throw new Error("没有可用发布");
   return {name:source.name,version:item.tag_name || item.name || "最新发布",title:item.name || item.tag_name || source.fallback,date:item.published_at || item.created_at,url:item.html_url || source.home,summary:languageSummary(item.body,source.fallback + "已更新。"),home:source.home};
 }
-async function readOpenJdk(source) {
+async function readTag(source) {
   const tags = await languageFetch(source.tags);
   const tag = Array.isArray(tags) ? tags[0] : null;
   if (!tag) throw new Error("没有可用版本");
-  return {name:source.name,version:tag.name,title:"OpenJDK " + tag.name,date:null,url:"https://github.com/openjdk/jdk/releases",summary:"OpenJDK 官方仓库已更新版本标签，点击查看最新 JDK 代码与发布信息。",home:source.home};
+  const isJava = source.key === "java";
+  return {name:source.name,version:tag.name,title:(isJava ? "OpenJDK " : "CPython ") + tag.name,date:null,url:(isJava ? "https://github.com/openjdk/jdk/tags" : "https://github.com/python/cpython/tags"),summary:(isJava ? "OpenJDK 官方仓库已更新版本标签，点击查看最新 JDK 代码与发布信息。" : "CPython 官方仓库已更新版本标签，点击查看最新 Python 代码与发布信息。"),home:source.home};
 }
 function renderLanguageNews(items) {
   const grid = document.querySelector("#language-news-grid");
@@ -64,7 +65,7 @@ async function loadLanguageNews() {
   const status = document.querySelector("#language-news-status");
   if (status) status.textContent = "正在同步";
   const results = await Promise.allSettled(languageNewsConfig.map(async (source) => {
-    const item = source.key === "java" ? await readOpenJdk(source) : await readRelease(source);
+    const item = source.tags ? await readTag(source) : await readRelease(source);
     return {...item,key:source.key};
   }));
   renderLanguageNews(results.filter((result) => result.status === "fulfilled").map((result) => result.value));
