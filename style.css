@@ -40,3 +40,4 @@
 .ai-version-badge{display:inline-flex;align-self:flex-start;margin-top:12px;padding:4px 8px;border:1px solid #33425e;border-radius:999px;color:#9fb4d5;font:10px Consolas,monospace}
 .ai-result-card.is-unavailable{opacity:.75}
 @media(max-width:760px){.ai-results-grid,.ai-app-grid{grid-template-columns:1fr}.ai-result-card,.ai-app-card{min-height:210px}}
+.ai-feed-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:auto;padding-top:20px}.ai-feed-links a{margin:0!important;padding:0!important}
