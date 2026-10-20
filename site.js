@@ -122,8 +122,8 @@ const aiStackSources=[
 ];
 async function loadAiStackVersions(){
   const results=await Promise.allSettled(aiStackSources.map(async(source)=>{const releases=await languageFetch("https://api.github.com/repos/"+source.repo+"/releases?per_page=5");const item=(Array.isArray(releases)?releases:[]).find((entry)=>!entry.draft)||releases?.[0];return{...source,version:item?.tag_name||"持续更新",date:item?.published_at||item?.created_at};}));
-  results.forEach((result)=>{if(result.status!=="fulfilled")return;const item=result.value;const card=document.querySelector(".ai-app-card .language-name")?.closest(".ai-app-card");});
   const cards=[...document.querySelectorAll(".ai-app-card")];
+  cards.forEach((card)=>card.querySelectorAll(".ai-version-badge").forEach((badge)=>badge.remove()));
   results.forEach((result,index)=>{if(result.status!=="fulfilled"||!cards[index])return;const badge=document.createElement("span");badge.className="ai-version-badge";badge.textContent=result.value.label+" "+result.value.version+" · "+aiDate(result.value.date);cards[index].querySelector("h3")?.after(badge);});
 }
 loadAiFrontier();
