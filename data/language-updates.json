@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-10-20T03:02:29.801588+00:00",
+  "items": [
+    {
+      "key": "kotlin",
+      "name": "Kotlin",
+      "version": "v2.4.21",
+      "title": "Kotlin 2.4.21",
+      "summary": "## Changelog\r \r ### Backend. Wasm\r \r - [`KT-89267`](https://youtrack.jetbrains.com/issue/KT-89267) K/Wasm: calling a (T) -> R lambda with an argument that isn't a T traps instead of throwing ClassCastException\r \r ### JVM",
+      "date": "2026-10-08T09:25:15Z",
+      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.4.21",
+      "home": "https://kotlinlang.org/"
+    },
+    {
+      "key": "java",
+      "name": "Java",
+      "version": "jdk-28+20",
+      "title": "OpenJDK jdk-28+20",
+      "summary": "官方版本标签已更新，点击查看最新代码与版本信息。",
+      "date": null,
+      "url": "https://github.com/openjdk/jdk/tags",
+      "home": "https://openjdk.org/"
+    },
+    {
+      "key": "python",
+      "name": "Python",
+      "version": "v3.16.0a1",
+      "title": "CPython v3.16.0a1",
+      "summary": "官方版本标签已更新，点击查看最新代码与版本信息。",
+      "date": null,
+      "url": "https://github.com/python/cpython/tags",
+      "home": "https://www.python.org/"
+    }
+  ]
+}
