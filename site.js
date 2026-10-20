@@ -84,7 +84,7 @@ aiSection.innerHTML = `
     <div>
       <p class="eyebrow">AI FRONTIER</p>
       <h2>硅谷与全球 AI 的最新成果。</h2>
-      <p>优先追踪 OpenAI、Google DeepMind、Meta AI、NVIDIA 等官方动态，聚焦世界模型、物理 AI、Agent 和基础模型。</p>
+      <p>优先追踪 OpenAI、Google DeepMind、NVIDIA 等官方动态，聚焦世界模型、物理 AI、Agent 和基础模型。</p>
     </div>
     <span class="tag live-tag"><i></i><span id="ai-news-status">正在同步</span></span>
   </div>
