@@ -76,6 +76,59 @@ async function loadLanguageNews() {
 loadLanguageNews();
 window.setInterval(loadLanguageNews, 30 * 60 * 1000);
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") loadLanguageNews(); });
+const aiSection = document.createElement("section");
+aiSection.id = "ai-news";
+aiSection.className = "shell section ai-section";
+aiSection.innerHTML = `
+  <div class="section-heading row">
+    <div>
+      <p class="eyebrow">AI FRONTIER</p>
+      <h2>全球 AI 的最新进展。</h2>
+      <p>追踪公开论文与主流 AI 工具链的更新，帮助你看到技术从研究走向应用的路径。</p>
+    </div>
+    <span class="tag live-tag"><i></i><span id="ai-news-status">正在同步</span></span>
+  </div>
+  <div class="ai-results-grid" id="ai-results-grid">
+    <article class="ai-result-card"><span class="ai-source">HUGGING FACE DAILY PAPERS</span><h3>正在读取最新研究</h3><p>正在连接公开论文动态。</p></article>
+  </div>
+  <div class="ai-app-grid" id="ai-app-grid">
+    <article class="ai-app-card"><span class="language-name">KOTLIN</span><h3>AI Agent 与多平台应用</h3><p>用 Koog 组织 Agent、工具调用和模型连接，把 AI 能力放进桌面与跨平台产品。</p><a href="https://github.com/JetBrains/koog" target="_blank" rel="noopener">查看 Koog ↗</a></article>
+    <article class="ai-app-card"><span class="language-name">JAVA</span><h3>企业服务与可观测 AI</h3><p>用 Spring AI 连接模型、向量库和 MCP，把检索、结构化输出与安全治理接入已有后端。</p><a href="https://github.com/spring-projects/spring-ai" target="_blank" rel="noopener">查看 Spring AI ↗</a></article>
+    <article class="ai-app-card"><span class="language-name">PYTHON</span><h3>训练、推理与多模态实验</h3><p>用 Transformers 和 PyTorch 快速验证模型、数据集与评测，再把成果沉淀为可复现的服务。</p><a href="https://github.com/huggingface/transformers" target="_blank" rel="noopener">查看 Transformers ↗</a></article>
+  </div>`;
+document.querySelector("#language-news")?.after(aiSection);
+const aiEscape=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+const aiDate=(value)=>value?new Intl.DateTimeFormat("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(value)):"最近同步";
+function aiText(value,fallback){const text=String(value||"").replace(/<[^>]+>/g,"").replace(/\\s+/g," ").trim();return text?text.slice(0,190)+(text.length>190?"…":""):fallback;}
+async function loadAiFrontier(){
+  const status=document.querySelector("#ai-news-status");
+  try{
+    const response=await fetch("https://huggingface.co/api/daily_papers?limit=6",{cache:"no-store",headers:{Accept:"application/json"}});
+    if(!response.ok)throw new Error("AI feed unavailable");
+    const payload=await response.json();
+    const papers=(Array.isArray(payload)?payload:[]).slice(0,3).map((entry)=>{const paper=entry.paper||entry;return{title:paper.title||entry.title||"未命名研究",summary:aiText(paper.summary||paper.abstract||entry.summary,"查看论文摘要与项目链接。"),date:paper.publishedAt||paper.published_at||entry.publishedAt||entry.published_at,url:paper.url||entry.url||(paper.id?"https://huggingface.co/papers/"+paper.id:"https://huggingface.co/papers")};});
+    if(!papers.length)throw new Error("No papers");
+    document.querySelector("#ai-results-grid").innerHTML=papers.map((paper)=>`<article class="ai-result-card"><span class="ai-source">HUGGING FACE DAILY PAPERS · ${aiEscape(aiDate(paper.date))}</span><h3>${aiEscape(paper.title)}</h3><p>${aiEscape(paper.summary)}</p><a href="${aiEscape(paper.url)}" target="_blank" rel="noopener">阅读研究 ↗</a></article>`).join("");
+    if(status)status.textContent="已同步 · 每 30 分钟刷新";
+  }catch(error){
+    if(status)status.textContent="官方源暂时不可用";
+    document.querySelector("#ai-results-grid").innerHTML='<article class="ai-result-card is-unavailable"><span class="ai-source">AI FRONTIER</span><h3>暂时无法读取最新研究</h3><p>恢复连接后会自动重试，也可以直接访问 Hugging Face Daily Papers。</p><a href="https://huggingface.co/papers" target="_blank" rel="noopener">打开论文主页 ↗</a></article>';
+  }
+}
+const aiStackSources=[
+ {key:"kotlin",repo:"JetBrains/koog",label:"Koog",url:"https://github.com/JetBrains/koog/releases"},
+ {key:"java",repo:"spring-projects/spring-ai",label:"Spring AI",url:"https://github.com/spring-projects/spring-ai/releases"},
+ {key:"python",repo:"huggingface/transformers",label:"Transformers",url:"https://github.com/huggingface/transformers/releases"}
+];
+async function loadAiStackVersions(){
+  const results=await Promise.allSettled(aiStackSources.map(async(source)=>{const releases=await languageFetch("https://api.github.com/repos/"+source.repo+"/releases?per_page=5");const item=(Array.isArray(releases)?releases:[]).find((entry)=>!entry.draft)||releases?.[0];return{...source,version:item?.tag_name||"持续更新",date:item?.published_at||item?.created_at};}));
+  results.forEach((result)=>{if(result.status!=="fulfilled")return;const item=result.value;const card=document.querySelector(".ai-app-card .language-name")?.closest(".ai-app-card");});
+  const cards=[...document.querySelectorAll(".ai-app-card")];
+  results.forEach((result,index)=>{if(result.status!=="fulfilled"||!cards[index])return;const badge=document.createElement("span");badge.className="ai-version-badge";badge.textContent=result.value.label+" "+result.value.version+" · "+aiDate(result.value.date);cards[index].querySelector("h3")?.after(badge);});
+}
+loadAiFrontier();
+loadAiStackVersions();
+window.setInterval(()=>{loadAiFrontier();loadAiStackVersions();},30*60*1000);
 const orbitArt = document.querySelector(".orbit-art");
 if (orbitArt) {
   orbitArt.querySelectorAll(".orbit-label").forEach((label) => label.remove());
