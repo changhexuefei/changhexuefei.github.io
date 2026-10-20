@@ -84,7 +84,7 @@ aiSection.innerHTML = `
     <div>
       <p class="eyebrow">AI FRONTIER</p>
       <h2>硅谷与全球 AI 的最新成果。</h2>
-      <p>优先追踪 OpenAI、Google DeepMind、NVIDIA 等官方动态，聚焦世界模型、物理 AI、Agent 和基础模型。</p>
+      <p>优先追踪 OpenAI、Google DeepMind、NVIDIA 等官方动态，聚焦世界模型、空间智能、物理 AI、Agent 和基础模型，并追踪李飞飞与 World Labs。</p>
     </div>
     <span class="tag live-tag"><i></i><span id="ai-news-status">正在同步</span></span>
   </div>
@@ -122,7 +122,7 @@ async function loadAiFrontier(){
     const response=await fetch("data/ai-frontier.json?ts="+Date.now(),{cache:"no-store"});
     if(!response.ok)throw new Error("AI data unavailable");
     const payload=await response.json();
-    const ok=renderAiItems(payload.items);
+    const ok=renderAiItems(payload.featured ? [payload.featured,...(payload.items||[])] : payload.items);
     if(status)status.textContent=ok?"已同步官方研究 · 每 30 分钟刷新":"等待下次抓取";
   }catch(error){
     renderAiItems([]);
