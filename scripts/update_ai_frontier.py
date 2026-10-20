@@ -62,6 +62,8 @@ class WorldLabsParser(HTMLParser):
     def handle_endtag(self, tag):
         if tag == "a" and self.href:
             title = clean(" ".join(self.parts))
+            title = re.sub(r"\\s*Read More.*$", "", title, flags=re.I).strip()
+            title = re.sub(r"^(January|February|March|April|May|June|July|August|September|October|November|December) \\d{1,2}, \\d{4}\\s+", "", title)
             body = title
             if title and len(title) > 12 and TOPIC.search(body):
                 url = self.href if self.href.startswith("http") else "https://www.worldlabs.ai" + self.href
