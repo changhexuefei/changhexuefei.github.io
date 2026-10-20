@@ -1,5 +1,13 @@
 {
-  "updated_at": "2026-10-20T02:50:51.213689+00:00",
+  "updated_at": "2026-10-20T02:54:57.366663+00:00",
+  "featured": {
+    "title": "September 28, 2026 Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD Read More →",
+    "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
+    "url": "https://drfeifei.substack.com/worldlabs-joining-amd",
+    "date": "",
+    "source": "World Labs · Fei-Fei Li",
+    "home": "https://www.worldlabs.ai/blog"
+  },
   "items": [
     {
       "title": "How Itaú is building generative AI for its entire customer base",
@@ -48,6 +56,22 @@
       "date": "2026-10-14T16:10:45Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "date": "Wed, 14 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
+    {
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "url": "https://openai.com/index/third-moment-research",
+      "date": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
@@ -65,6 +89,16 @@
       "name": "OpenAI",
       "url": "https://openai.com/news/rss.xml",
       "home": "https://openai.com/news/"
+    },
+    {
+      "name": "Stanford HAI · Fei-Fei Li",
+      "url": "https://hai.stanford.edu/news/rss.xml",
+      "home": "https://hai.stanford.edu/news/"
+    },
+    {
+      "name": "World Labs · Fei-Fei Li",
+      "url": "https://www.worldlabs.ai/blog",
+      "home": "https://www.worldlabs.ai/blog"
     }
   ]
 }
