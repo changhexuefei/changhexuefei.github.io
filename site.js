@@ -89,7 +89,7 @@ aiSection.innerHTML = `
     <span class="tag live-tag"><i></i><span id="ai-news-status">正在同步</span></span>
   </div>
   <div class="ai-results-grid" id="ai-results-grid">
-    <article class="ai-result-card"><span class="ai-source">HUGGING FACE DAILY PAPERS</span><h3>正在读取最新研究</h3><p>正在连接公开论文动态。</p></article>
+    <article class="ai-result-card"><span class="ai-source">OFFICIAL AI FRONTIER</span><h3>正在读取最新研究</h3><p>正在连接官方 AI 研究与成果。</p></article>
   </div>
   <div class="ai-app-grid" id="ai-app-grid">
     <article class="ai-app-card"><span class="language-name">KOTLIN</span><h3>AI Agent 与多平台应用</h3><p>用 Koog 组织 Agent、工具调用和模型连接，把 AI 能力放进桌面与跨平台产品。</p><a href="https://github.com/JetBrains/koog" target="_blank" rel="noopener">查看 Koog ↗</a></article>
@@ -101,38 +101,32 @@ const aiEscape=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp
 const aiDate=(value)=>value?new Intl.DateTimeFormat("zh-CN",{year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(value)):"最近同步";
 function aiText(value,fallback){const text=String(value||"").replace(/<[^>]+>/g,"").replace(/\\s+/g," ").trim();return text?text.slice(0,190)+(text.length>190?"…":""):fallback;}
 const aiOfficialFeeds=[
- {name:"Google DeepMind",url:"https://deepmind.google/blog/rss.xml",home:"https://deepmind.google/blog/"},
- {name:"NVIDIA AI",url:"https://developer.nvidia.com/blog/feed/",home:"https://developer.nvidia.com/blog/"},
- {name:"OpenAI",url:"https://openai.com/news/rss.xml",home:"https://openai.com/news/"}
+ {name:"Google DeepMind",home:"https://deepmind.google/blog/"},
+ {name:"NVIDIA AI",home:"https://developer.nvidia.com/blog/"},
+ {name:"OpenAI",home:"https://openai.com/news/"}
 ];
-const aiWorldModelKeywords=/world model|world models|physical ai|robotics|agent|foundation model|multimodal|reasoning|generative/i;
-const aiChinaKeywords=/\b(qwen|deepseek|kimi|doubao|zhipu|moonshot|baidu|alibaba)\b/i;
-function aiFeedItems(xml,source){
-  const doc=new DOMParser().parseFromString(xml,"text/xml");
-  return [...doc.querySelectorAll("item,entry")].map((node)=>{
-    const title=node.querySelector("title")?.textContent?.trim()||"";
-    const linkNode=node.querySelector('link[rel="alternate"],link');
-    const link=linkNode?.getAttribute("href")||linkNode?.textContent?.trim()||source.home;
-    const date=node.querySelector("pubDate,published,updated")?.textContent?.trim()||"";
-    const summary=node.querySelector("description,summary,content")?.textContent?.trim()||"";
-    return {title,url:link,date,summary,source:source.name,home:source.home};
-  }).filter((item)=>item.title&&aiWorldModelKeywords.test(item.title+" "+item.summary)&&!aiChinaKeywords.test(item.title+" "+item.summary));
+function renderAiItems(items){
+  const grid=document.querySelector("#ai-results-grid");
+  if(!grid)return;
+  const rows=Array.isArray(items)?items.slice(0,3):[];
+  if(rows.length){
+    grid.innerHTML=rows.map((item)=>`<article class="ai-result-card"><span class="ai-source">${aiEscape(item.source||"OFFICIAL AI")} · ${aiEscape(aiDate(item.date))}</span><h3>${aiEscape(item.title||"最新 AI 成果")}</h3><p>${aiEscape(aiText(item.summary,"查看官方成果说明与技术细节。"))}</p><a href="${aiEscape(item.url||item.home||"#")}" target="_blank" rel="noopener">阅读官方成果 ↗</a></article>`).join("");
+    return true;
+  }
+  grid.innerHTML='<article class="ai-result-card is-unavailable"><span class="ai-source">SILICON VALLEY AI FRONTIER</span><h3>正在等待官方研究数据</h3><p>服务器端抓取任务正在更新。页面会自动重试，也可以直接访问官方研究源。</p><div class="ai-feed-links"><a href="https://deepmind.google/blog/" target="_blank" rel="noopener">DeepMind ↗</a><a href="https://developer.nvidia.com/blog/" target="_blank" rel="noopener">NVIDIA ↗</a><a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI ↗</a></div></article>';
+  return false;
 }
 async function loadAiFrontier(){
   const status=document.querySelector("#ai-news-status");
-  const results=await Promise.allSettled(aiOfficialFeeds.map(async(source)=>{
-    const response=await fetch(source.url,{cache:"no-store",headers:{Accept:"application/rss+xml, application/atom+xml, application/xml, text/xml"}});
-    if(!response.ok)throw new Error("AI feed unavailable");
-    return aiFeedItems(await response.text(),source);
-  }));
-  const items=results.filter((result)=>result.status==="fulfilled").flatMap((result)=>result.value).sort((a,b)=>new Date(b.date)-new Date(a.date));
-  const unique=[...new Map(items.map((item)=>[item.title,item])).values()].slice(0,3);
-  if(unique.length){
-    document.querySelector("#ai-results-grid").innerHTML=unique.map((item)=>`<article class="ai-result-card"><span class="ai-source">${aiEscape(item.source.toUpperCase())} · ${aiEscape(aiDate(item.date))}</span><h3>${aiEscape(item.title)}</h3><p>${aiEscape(aiText(item.summary,"查看官方成果说明与技术细节。"))}</p><a href="${aiEscape(item.url)}" target="_blank" rel="noopener">阅读官方成果 ↗</a></article>`).join("");
-    if(status)status.textContent="已同步官方动态 · 每 30 分钟刷新";
-  }else{
-    if(status)status.textContent="官方源暂时不可用";
-    document.querySelector("#ai-results-grid").innerHTML='<article class="ai-result-card is-unavailable"><span class="ai-source">SILICON VALLEY AI FRONTIER</span><h3>暂时无法读取官方动态</h3><p>恢复连接后会自动重试。当前可直接访问 Google DeepMind、NVIDIA AI 和 OpenAI 官方新闻。</p><div class="ai-feed-links"><a href="https://deepmind.google/blog/" target="_blank" rel="noopener">DeepMind ↗</a><a href="https://developer.nvidia.com/blog/" target="_blank" rel="noopener">NVIDIA ↗</a><a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI ↗</a></div></article>';
+  try{
+    const response=await fetch("data/ai-frontier.json?ts="+Date.now(),{cache:"no-store"});
+    if(!response.ok)throw new Error("AI data unavailable");
+    const payload=await response.json();
+    const ok=renderAiItems(payload.items);
+    if(status)status.textContent=ok?"已同步官方研究 · 每 30 分钟刷新":"等待下次抓取";
+  }catch(error){
+    renderAiItems([]);
+    if(status)status.textContent="服务器正在更新";
   }
 }
 const aiStackSources=[
