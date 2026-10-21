@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-21T10:24:09.212809+00:00",
+  "updated_at": "2026-10-21T15:27:09.958835+00:00",
   "items": [
     {
       "key": "kotlin",
       "name": "Kotlin",
-      "version": "v2.4.21",
-      "title": "Kotlin 2.4.21",
-      "summary": "## Changelog\r \r ### Backend. Wasm\r \r - [`KT-89267`](https://youtrack.jetbrains.com/issue/KT-89267) K/Wasm: calling a (T) -> R lambda with an argument that isn't a T traps instead of throwing ClassCastException\r \r ### JVM",
-      "date": "2026-10-08T09:25:15Z",
-      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.4.21",
+      "version": "v2.5.0-Beta2",
+      "title": "Kotlin 2.5.0-Beta2",
+      "summary": "## Changelog\r \r ### Analysis API\r \r - [`KT-60484`](https://youtrack.jetbrains.com/issue/KT-60484) Analysis API: add support for KtType pointers similar to KtSymbolPointer\r - [`KT-67786`](https://youtrack.jetbrains.com/is",
+      "date": "2026-10-21T10:43:18Z",
+      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.5.0-Beta2",
       "home": "https://kotlinlang.org/"
     },
     {
