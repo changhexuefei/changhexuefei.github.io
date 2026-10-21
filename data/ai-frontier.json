@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T05:09:13.296133+00:00",
+  "updated_at": "2026-10-21T10:28:11.102582+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,30 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+      "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
+      "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+      "date": "2026-10-21T09:52:16Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
+      "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex...",
+      "url": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
+      "date": "2026-10-21T09:50:14Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
+      "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams...",
+      "url": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
+      "date": "2026-10-21T09:38:49Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
     {
       "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
       "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
@@ -48,30 +72,6 @@
       "date": "2026-10-15T18:01:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
-      "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
-      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
-      "date": "2026-10-15T18:00:01Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Optimizing Agent Reliability and Tool Calling Efficiency for Chip Design Using NVIDIA NeMo Gym",
-      "summary": "AI agents offer remarkable productivity gains in complex chip design workflows, but their tendency to generate plausible yet incorrect artifacts makes...",
-      "url": "https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym/",
-      "date": "2026-10-14T16:10:45Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "date": "Wed, 14 Oct 2026 12:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
