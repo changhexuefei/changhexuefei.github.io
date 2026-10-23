@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T10:24:20.519767+00:00",
+  "updated_at": "2026-10-23T15:22:29.919597+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+      "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions...",
+      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "date": "2026-10-23T14:58:32Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
     {
       "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
       "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
@@ -64,14 +72,6 @@
       "date": "Fri, 16 Oct 2026 19:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-      "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As...",
-      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "date": "2026-10-16T17:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
     }
   ],
   "sources": [
