@@ -1,6 +1,116 @@
 {
-  "updated_at": "2026-10-24T21:30:07.527859+00:00",
+  "updated_at": "2026-10-24T23:40:13.511368+00:00",
   "repos": [
+    {
+      "id": 113524788,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTM1MjQ3ODg=",
+      "name": "changhexuefei.github.io",
+      "full_name": "changhexuefei/changhexuefei.github.io",
+      "private": false,
+      "owner": {
+        "login": "changhexuefei",
+        "id": 19502034,
+        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/changhexuefei",
+        "html_url": "https://github.com/changhexuefei",
+        "followers_url": "https://api.github.com/users/changhexuefei/followers",
+        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
+        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
+        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
+        "repos_url": "https://api.github.com/users/changhexuefei/repos",
+        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io",
+      "description": "长河雪飞的个人网站",
+      "fork": false,
+      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io",
+      "forks_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/forks",
+      "keys_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/teams",
+      "hooks_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/hooks",
+      "issue_events_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/events",
+      "assignees_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/tags",
+      "blobs_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/languages",
+      "stargazers_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/stargazers",
+      "contributors_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/contributors",
+      "subscribers_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/subscribers",
+      "subscription_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/subscription",
+      "commits_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/merges",
+      "archive_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/downloads",
+      "issues_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/labels{/name}",
+      "releases_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/deployments",
+      "created_at": "2017-12-08T03:05:21Z",
+      "updated_at": "2026-10-24T22:41:35Z",
+      "pushed_at": "2026-10-24T22:41:32Z",
+      "git_url": "git://github.com/changhexuefei/changhexuefei.github.io.git",
+      "ssh_url": "git@github.com:changhexuefei/changhexuefei.github.io.git",
+      "clone_url": "https://github.com/changhexuefei/changhexuefei.github.io.git",
+      "svn_url": "https://github.com/changhexuefei/changhexuefei.github.io",
+      "homepage": "https://changhexuefei.github.io/",
+      "size": 727,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "master",
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      }
+    },
     {
       "id": 1287307543,
       "node_id": "R_kgDOTLrBFw",
@@ -76,7 +186,7 @@
       "clone_url": "https://github.com/changhexuefei/changhexuefei.git",
       "svn_url": "https://github.com/changhexuefei/changhexuefei",
       "homepage": null,
-      "size": 254,
+      "size": 255,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Python",
@@ -103,116 +213,6 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "permissions": {
-        "admin": false,
-        "maintain": false,
-        "push": false,
-        "triage": false,
-        "pull": false
-      }
-    },
-    {
-      "id": 113524788,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTM1MjQ3ODg=",
-      "name": "changhexuefei.github.io",
-      "full_name": "changhexuefei/changhexuefei.github.io",
-      "private": false,
-      "owner": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io",
-      "description": "长河雪飞的个人网站",
-      "fork": false,
-      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io",
-      "forks_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/forks",
-      "keys_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/keys{/key_id}",
-      "collaborators_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/collaborators{/collaborator}",
-      "teams_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/teams",
-      "hooks_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/hooks",
-      "issue_events_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/issues/events{/number}",
-      "events_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/events",
-      "assignees_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/assignees{/user}",
-      "branches_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/branches{/branch}",
-      "tags_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/tags",
-      "blobs_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/blobs{/sha}",
-      "git_tags_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/tags{/sha}",
-      "git_refs_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/refs{/sha}",
-      "trees_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees{/sha}",
-      "statuses_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/statuses/{sha}",
-      "languages_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/languages",
-      "stargazers_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/stargazers",
-      "contributors_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/contributors",
-      "subscribers_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/subscribers",
-      "subscription_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/subscription",
-      "commits_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits{/sha}",
-      "git_commits_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits{/sha}",
-      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/comments{/number}",
-      "issue_comment_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/issues/comments{/number}",
-      "contents_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/contents/{+path}",
-      "compare_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/compare/{base}...{head}",
-      "merges_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/merges",
-      "archive_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/{archive_format}{/ref}",
-      "downloads_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/downloads",
-      "issues_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/issues{/number}",
-      "pulls_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/pulls{/number}",
-      "milestones_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/milestones{/number}",
-      "notifications_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/notifications{?since,all,participating}",
-      "labels_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/labels{/name}",
-      "releases_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/releases{/id}",
-      "deployments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/deployments",
-      "created_at": "2017-12-08T03:05:21Z",
-      "updated_at": "2026-10-24T20:27:52Z",
-      "pushed_at": "2026-10-24T20:27:49Z",
-      "git_url": "git://github.com/changhexuefei/changhexuefei.github.io.git",
-      "ssh_url": "git@github.com:changhexuefei/changhexuefei.github.io.git",
-      "clone_url": "https://github.com/changhexuefei/changhexuefei.github.io.git",
-      "svn_url": "https://github.com/changhexuefei/changhexuefei.github.io",
-      "homepage": "https://changhexuefei.github.io/",
-      "size": 629,
-      "stargazers_count": 0,
-      "watchers_count": 0,
-      "language": "JavaScript",
-      "has_issues": true,
-      "has_projects": true,
-      "has_downloads": false,
-      "has_wiki": true,
-      "has_pages": true,
-      "has_discussions": false,
-      "forks_count": 0,
-      "mirror_url": null,
-      "archived": false,
-      "disabled": false,
-      "open_issues_count": 0,
-      "license": null,
-      "allow_forking": true,
-      "is_template": false,
-      "web_commit_signoff_required": false,
-      "has_pull_requests": true,
-      "pull_request_creation_policy": "all",
-      "topics": [],
-      "visibility": "public",
-      "forks": 0,
-      "open_issues": 0,
-      "watchers": 0,
-      "default_branch": "master",
       "permissions": {
         "admin": false,
         "maintain": false,
@@ -9370,826 +9370,6 @@
           "sha": "d026e9779cb519383870a99b42270f43bcb86ed7",
           "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/d026e9779cb519383870a99b42270f43bcb86ed7",
           "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/d026e9779cb519383870a99b42270f43bcb86ed7"
-        }
-      ]
-    },
-    {
-      "sha": "d026e9779cb519383870a99b42270f43bcb86ed7",
-      "node_id": "C_kwDOSu6iTdoAKGQwMjZlOTc3OWNiNTE5MzgzODcwYTk5YjQyMjcwZjQzYmNiODZlZDc",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:39:15Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:39:15Z"
-        },
-        "message": "test(sim): verify virtual PI GCS launcher process over TCP end to end (#68)\n\n* test(sim): expose production runtime classpath for forked launcher smoke test\n\n* test(sim): smoke real virtual GCS launcher process with two TCP clients and shutdown",
-        "tree": {
-          "sha": "c0d1765d3d45e8077529bc457bb3007c63403c41",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/c0d1765d3d45e8077529bc457bb3007c63403c41"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/d026e9779cb519383870a99b42270f43bcb86ed7",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysyjCRC1aQ7uu5UhlAAAW1gQAJShakk4z8xJhmMVSl4T/Nt3\nhnZAvutuATRm4M+hWsV/72/t4hKb2zxbUUnSDZyaSJb7b3Z9LraoOuo34BmvzArh\nvBEwQPcKjcg782dttc97H0wAtte79dgDnEuJLbf5JgWM0DJVVl5qGKfr6hfBFYg4\n/zkTeYfAZOnlTe9FshDTFY5b6VicibMT3W9AavdXu7IDG2OR6GnvCnlQ7nvnIWtR\nPf54KTJVYITRPsT9k69cpqulKadUi45DsFfocsF+LgmpK54ZxcE0gwnG1D641kHe\nycGBrR4hModla3T/p0E1bJqRV9Jy0+2SjuOHp7tYKN+JX1jZG9IcAEShFDyvicA1\nMqL0+uJgM3bpJMOa2oARhvcM77e0jSYLY8fHdIBNTHZklPguoxrbgwQIikMc+kdt\nDJ82gtwG+CieCFACeeNxN6V6EZBtpHL2nMRkj9SomhGsz+sG3nk83nUHnn3WZXFf\n/X5X/65suh92gQv3VOt4yoJDcD6Pynjv/0JQcUKMtlb2dVdkSqDhqb/fG80VVDn0\nAePEdHc2XeG5g71LfgZMLm+77PXJKCMuri/Y9ddabznxK0gAoO9yB534ap+gANHr\nAW+pG5695m5TM2WnRaeDdVj0BE3Bne8vFoeGrd8lI9pgawPQ7D7SvcMvs4kMErCa\n51c/zTJTReVcRm1GtOc1\n=mWUc\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree c0d1765d3d45e8077529bc457bb3007c63403c41\nparent 15bb93cfdab66e627d05f71e6cae209f7ec1bdca\nauthor jason <changhexuefei2011@163.com> 1791675555 +0800\ncommitter GitHub <noreply@github.com> 1791675555 +0800\n\ntest(sim): verify virtual PI GCS launcher process over TCP end to end (#68)\n\n* test(sim): expose production runtime classpath for forked launcher smoke test\n\n* test(sim): smoke real virtual GCS launcher process with two TCP clients and shutdown",
-          "verified_at": "2026-10-10T23:39:16Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/d026e9779cb519383870a99b42270f43bcb86ed7",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/d026e9779cb519383870a99b42270f43bcb86ed7",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/d026e9779cb519383870a99b42270f43bcb86ed7/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "15bb93cfdab66e627d05f71e6cae209f7ec1bdca",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/15bb93cfdab66e627d05f71e6cae209f7ec1bdca",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/15bb93cfdab66e627d05f71e6cae209f7ec1bdca"
-        }
-      ]
-    },
-    {
-      "sha": "15bb93cfdab66e627d05f71e6cae209f7ec1bdca",
-      "node_id": "C_kwDOSu6iTdoAKDE1YmI5M2NmZGFiNjZlNjI3ZDA1ZjcxZTZjYWUyMDlmN2VjMWJkY2E",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:36:11Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:36:11Z"
-        },
-        "message": "feat(sim): add standalone localhost virtual PI GCS launcher (#67)\n\n* feat(sim): add explicit loopback virtual GCS console launcher\n\n* build(sim): register JVM virtual PI GCS launcher task\n\n* docs(sim): document localhost virtual GCS launcher and Desktop read-only workflow",
-        "tree": {
-          "sha": "39c2b02bb1cd0e236d8beb4988f2cbfe56ff597e",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/39c2b02bb1cd0e236d8beb4988f2cbfe56ff597e"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/15bb93cfdab66e627d05f71e6cae209f7ec1bdca",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysvrCRC1aQ7uu5UhlAAA0l0QAI+sT7XfLmnzFKW1RJa5CE6W\ntGjX/0uhGuQN57F7fibvJk28pBx3HrvcfUimNN5B5F2ZomYtXGYYxEuHVusUmbAF\nSxH5WdossvBO6J1IoK6W9jJq2FDVsgA7KquVrU4QkP16oVuH9+py6VkuyYYEgbRn\nAlPnN9tz5gmwFn7WIoUgU3/FkZL6F6dSlUkF63kA+NvJaP5gKRPc69cc/zJYM9F5\nGTcl5xjx9NoFQBLXHWTNxPG0/GUUdvma+5vfA576ksPgNf1Z+EEJGQZkVdCkRO3u\nNxyC0XYJo5uH8JdUvyNWRmnZJK2gDEHy7RIscQY2/u69B/zFQZvao2LmAtOEiDs7\nPf5scfWdIXHF7fYBh6yVBx1j1LsFGGRCcMNPuutWEgMtFEFNclZWuj5Q+da2qvCv\n3pmRwxa4uowT9Fc3Hd0HNJNIr3UTB6oi7eCr3wbKHZaRANFksgxWCAOn+9meRbBq\nqfSRQkoqyuck7JgE8MuSj0dbdGT/er6OjRcuXOA5L5zxKOm/LFJRaWprgTxXOadA\n3ohLUKcEbJVjcZUxCCoWn9M5zy4FXVsG54iAsAD1bye2dk5zomLqOyfaFfMsDQjB\nq+z1y8oteb4jehHfQ2LXPlfUN2RRJRUw4zdKuP3xLg0oxRvcHGqVWJTBfPoGtdGH\ngJFeGAjzpJyGI50QZxzl\n=H8Xb\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 39c2b02bb1cd0e236d8beb4988f2cbfe56ff597e\nparent b2f9c679fd935b6c8638dd65b1ed490ca9447b98\nauthor jason <changhexuefei2011@163.com> 1791675371 +0800\ncommitter GitHub <noreply@github.com> 1791675371 +0800\n\nfeat(sim): add standalone localhost virtual PI GCS launcher (#67)\n\n* feat(sim): add explicit loopback virtual GCS console launcher\n\n* build(sim): register JVM virtual PI GCS launcher task\n\n* docs(sim): document localhost virtual GCS launcher and Desktop read-only workflow",
-          "verified_at": "2026-10-10T23:36:12Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/15bb93cfdab66e627d05f71e6cae209f7ec1bdca",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/15bb93cfdab66e627d05f71e6cae209f7ec1bdca",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/15bb93cfdab66e627d05f71e6cae209f7ec1bdca/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "b2f9c679fd935b6c8638dd65b1ed490ca9447b98",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/b2f9c679fd935b6c8638dd65b1ed490ca9447b98",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/b2f9c679fd935b6c8638dd65b1ed490ca9447b98"
-        }
-      ]
-    },
-    {
-      "sha": "b2f9c679fd935b6c8638dd65b1ed490ca9447b98",
-      "node_id": "C_kwDOSu6iTdoAKGIyZjljNjc5ZmQ5MzViNmM4NjM4ZGQ2NWIxZWQ0OTBjYTk0NDdiOTg",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:32:47Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:32:47Z"
-        },
-        "message": "feat(sim): add loopback-only read-only virtual PI GCS TCP server (#66)\n\n* feat(sim): add loopback-only read-only virtual PI GCS TCP peer\n\n* test(sim): verify virtual GCS TCP identity, units and motion-command rejection",
-        "tree": {
-          "sha": "f198565a69c092020eae0015eac71ecf99b0a5fd",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/f198565a69c092020eae0015eac71ecf99b0a5fd"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/b2f9c679fd935b6c8638dd65b1ed490ca9447b98",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqyssfCRC1aQ7uu5UhlAAAW58QAAfGjGfRUR+F7B80PONbouQz\nbhXxzcS9xIrTvtfeAN+dCcyYz795RP5UXkW8BAsn4K0VgeyIE3dNy8JwM2y/iAKs\naS0Xh+8+mMRdxT+xOYzl7XpNVc2rO4641HMTiCCFGbF0mBBhnmKr2nmJOP67m0Ay\nWZbK/xhOjp4bKcEi3YAA6JXdkeguosbL7MJbCSBnhXOT9p/4Vgm6MMYi1PjaypCA\nsjIG7ScOduwsTNbA8MeVkBPBQeFo8x+B7AJGUXIbr4Y2rTHM/1/yyKxL/xhyI/O3\ngC9TkmNy/NncNknwJehkWo+H3GuZzCkQvpIsWTwrmmNyvLsiXz0IpMryn9Q/KC0G\nE8+MJpgZZAT4Gs3V3XIJImzzZkTEOtaj23ObuYs7P3O7Sj7aCbNKY0oSWkBH3X1g\nZZ1delx0hmLV6TcRYIRGWSYPuYwknBU4onEftm8K/f6ICHMW1SaXE3Lxkg4KNs5h\nrPYaGmKOaj4TqF//i2cNxq9nr4dSb9xO+d6O/qF/x7Zi9Y/WPBN3JN0YTkcQYRwI\nji2AQ13jolt2d+fHW7Cx7U6tABNE9ZRDgDdSJXZ7ythP0m9xAS6KYQNtuRBJxoIj\nwHPdqRPF+/ogVlq4KLnH/jAtSZY8PTFy7mOSrEe+JAgUYXRnZu6PDabbriq2s8c8\n4QGfbNRK3ACKArcTsGt9\n=aASb\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree f198565a69c092020eae0015eac71ecf99b0a5fd\nparent f68267d772dfa8e169fa07dc925a9b2c00aab48b\nauthor jason <changhexuefei2011@163.com> 1791675167 +0800\ncommitter GitHub <noreply@github.com> 1791675167 +0800\n\nfeat(sim): add loopback-only read-only virtual PI GCS TCP server (#66)\n\n* feat(sim): add loopback-only read-only virtual PI GCS TCP peer\n\n* test(sim): verify virtual GCS TCP identity, units and motion-command rejection",
-          "verified_at": "2026-10-10T23:32:48Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/b2f9c679fd935b6c8638dd65b1ed490ca9447b98",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/b2f9c679fd935b6c8638dd65b1ed490ca9447b98",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/b2f9c679fd935b6c8638dd65b1ed490ca9447b98/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "f68267d772dfa8e169fa07dc925a9b2c00aab48b",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/f68267d772dfa8e169fa07dc925a9b2c00aab48b",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/f68267d772dfa8e169fa07dc925a9b2c00aab48b"
-        }
-      ]
-    },
-    {
-      "sha": "f68267d772dfa8e169fa07dc925a9b2c00aab48b",
-      "node_id": "C_kwDOSu6iTdoAKGY2ODI2N2Q3NzJkZmE4ZTE2OWZhMDdkYzkyNWE5YjJjMDBhYWI0OGI",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:29:29Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:29:29Z"
-        },
-        "message": "feat(sim): deterministic virtual PI hexapod motion and safety state (#65)\n\n* feat(sim): add deterministic offline PI six-axis motion and safety-state model\n\n* test(sim): verify six-axis progression, limits, stop latch and synthetic faults",
-        "tree": {
-          "sha": "1b0561634f6999329442f62f2c6b28b36d212c31",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/1b0561634f6999329442f62f2c6b28b36d212c31"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/f68267d772dfa8e169fa07dc925a9b2c00aab48b",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqyspZCRC1aQ7uu5UhlAAAKYMQABZuajYIssZCD/zGvQp+1J7y\nR0YlFVBvR0yTgV20dsHDdRBdTiQ4+3rgfJ/ExHw6iL9HE9NJh4z8csO/I8Rb9ve2\nQKblanoql28VvyR8L8LP0u5XHk10idF4oYkfXuEKyXdgNMvkLX8qVn69DNN1A4Q5\nMPuXiRy0ATyXylMSa/MAUCGPy0dERqK0+5CFtBvtk6HHdxvAUpvVdC9Qwpl0wJTT\nQw+Hw/yMEIYr3p79vOH3TwZP77Qn7tsC6ADKP8yXcnrZYMAm2OyP2hIAdsDoP4/b\nXnNqvidhALibPjAAL4YeZCIzrMyJMroziXworc6ZCOIvXNnnpttwr1XtPDhb4Dcw\n66n1KrHUKuIHYRsVP28l+I9UIgZenxrlrggZlf8Ts8CaBGH8OmcXgUjsLXWkTxXO\n4yXFe4xA/Y4eAa/9RXRSZ1IiUCx4rX4tCv9xzjqI9KVQyem31WpqXVp2n3lKsY9x\n1E+2KWFIHpvpeBE/x6Nhb5LflFiycmHMVgnhxGlNR+xqsB/4Hsq9RSmPz6e+q8XE\na2BV5Xc8HanpkF403i3bQosXXgRFZH6eCjGF73MquZxUEaV+AkhbErb8LhhoD+61\noQvereOwYYa514FVGgH07MOzHI6fok5yVMlCRr0VCFFHVgxg7SGIlqqc6RtVDt9V\nu4Oexf4CbDUx4l+tihy8\n=AIK0\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 1b0561634f6999329442f62f2c6b28b36d212c31\nparent 0707cf12fce3c6cad0f19ff8badf82dc14920449\nauthor jason <changhexuefei2011@163.com> 1791674969 +0800\ncommitter GitHub <noreply@github.com> 1791674969 +0800\n\nfeat(sim): deterministic virtual PI hexapod motion and safety state (#65)\n\n* feat(sim): add deterministic offline PI six-axis motion and safety-state model\n\n* test(sim): verify six-axis progression, limits, stop latch and synthetic faults",
-          "verified_at": "2026-10-10T23:29:30Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/f68267d772dfa8e169fa07dc925a9b2c00aab48b",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/f68267d772dfa8e169fa07dc925a9b2c00aab48b",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/f68267d772dfa8e169fa07dc925a9b2c00aab48b/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "0707cf12fce3c6cad0f19ff8badf82dc14920449",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/0707cf12fce3c6cad0f19ff8badf82dc14920449",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/0707cf12fce3c6cad0f19ff8badf82dc14920449"
-        }
-      ]
-    },
-    {
-      "sha": "0707cf12fce3c6cad0f19ff8badf82dc14920449",
-      "node_id": "C_kwDOSu6iTdoAKDA3MDdjZjEyZmNlM2M2Y2FkMGYxOWZmOGJhZGY4MmRjMTQ5MjA0NDk",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:24:18Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:24:18Z"
-        },
-        "message": "test(pi): verify cancellation releases real GCS TCP sockets (#64)\n\n* test(pi): verify cancellation releases real TCP socket before reconnect\n\n* fix(test): avoid blocking runBlocking dispatcher while awaiting TCP request",
-        "tree": {
-          "sha": "07316c595526062a0814b457906779257ea9ce91",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/07316c595526062a0814b457906779257ea9ce91"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/0707cf12fce3c6cad0f19ff8badf82dc14920449",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqyskiCRC1aQ7uu5UhlAAAowgQAIEjm7tXolhvVPl8jmYgE8Tu\nNOTx5J5AfHR74iDA/bdb2wORgKdAUhiIBe2envNemGm/eP7a6b2BJAaL/8AHkKoL\nSHj+2/g3TrtCI32ZEzv1NfGcvI/38KrBqnsBc2QKmbh2A4TmLz0N6JDbMhIFMHYR\nbpVkywbUgqS3kTI8fz0faVS8Ud54T1LB73AggQfRgDXc0d1bSaORaUXkhlDreGp8\n/rFI8SDKWGwGU2cgZJYwm2eDyOP00QlAV28derUHG7BOQ/c3UMImBpAl6xo0MRJx\n/fbVJsBP1fKICLdn/9Rksj/kUYq6ppDrJGsV8ds2qkolOkqk5v5liLSpFIkA2pL5\nXDOIbQfNsoc/rhqJ/X9o1d/wGLTLjatZJ+0P1sFxBgheP17ihdt1L+7Iry3y/LZw\nha5bJ5S0uBoNkdH80wkpwisN+Hl2FHkQlzvunA3YfWEYnYBtZ6eneaHG/vLbIW2+\nN1iIqJ13VVxPrMVQWNpN8i2MBa5Ui8VeHDfQ0aO4schYJlZGc5EJDmeRrRiwfzeM\nVKq6LjV3vql7H1t+bP/JER5Vr0N3gWQre88GG5V0y9TpaBJGrRs3rvc+NL/UrhMN\nfp/ZT41TV2aiRT9eZMz2GOaFZxolNAFlijMAWazo0UfPzsmBs41tnHFkRe5oC1fZ\nPDQVkH8KXnTl3OMa2vC3\n=abfd\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 07316c595526062a0814b457906779257ea9ce91\nparent ba29fb34692d8f65a3ac69011bfb3088ed470676\nauthor jason <changhexuefei2011@163.com> 1791674658 +0800\ncommitter GitHub <noreply@github.com> 1791674658 +0800\n\ntest(pi): verify cancellation releases real GCS TCP sockets (#64)\n\n* test(pi): verify cancellation releases real TCP socket before reconnect\n\n* fix(test): avoid blocking runBlocking dispatcher while awaiting TCP request",
-          "verified_at": "2026-10-10T23:24:18Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/0707cf12fce3c6cad0f19ff8badf82dc14920449",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/0707cf12fce3c6cad0f19ff8badf82dc14920449",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/0707cf12fce3c6cad0f19ff8badf82dc14920449/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "ba29fb34692d8f65a3ac69011bfb3088ed470676",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/ba29fb34692d8f65a3ac69011bfb3088ed470676",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/ba29fb34692d8f65a3ac69011bfb3088ed470676"
-        }
-      ]
-    },
-    {
-      "sha": "ba29fb34692d8f65a3ac69011bfb3088ed470676",
-      "node_id": "C_kwDOSu6iTdoAKGJhMjlmYjM0NjkyZDhmNjVhM2FjNjkwMTFiZmIzMDg4ZWQ0NzA2NzY",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:19:15Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:19:15Z"
-        },
-        "message": "test(pi): require cancelled GCS query to retire pending-response session (#63)",
-        "tree": {
-          "sha": "2a0562056d69498b9b06c3b1132f34472f618d06",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/2a0562056d69498b9b06c3b1132f34472f618d06"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/ba29fb34692d8f65a3ac69011bfb3088ed470676",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysf0CRC1aQ7uu5UhlAAA9LMQACL1cHQ4pGlM0TYBXP0GyjsW\niX3QYulzdoxuYew5k40fV6Nhh6Nnn3+xZmVW7LCE7ViPwqtGiq/cJertz1hn0bg3\nKEDdn7h44u8/rrVPf2N9t1BFSQE86X4SzjxeH0oqozxq7/pCQsia0WJ4jSsyyRPo\n0W999ganLFgvlwYMTQ7Oq8kjyGB94WSpGjymvmKbft9Vg8ijK3VgngRjw1A3LmAL\nnr4sBZwx3WZvGaV+qZlec90PfhpIw9IS6/jELspYH7xp8OOXPp0Vdb5nAhHLNMRy\nT9SBgDnwJB77RSIRsB/5rawXdA7tL2qxjCLBvljIx12Wyd4mXCedTWGEW8qK7A3v\nDnIIX+SO+ZHMgOa0SrtZmVS1cGo8BpkzDohr6n6LxnnomucX1w1P9wIufF4sFhjg\nWS5JRu420KtuCtjUrUFKjgoY6yOi/4HuqsVEdktumF8h3fucRK5Lyh5d5e9c+YQy\nPQFHQ7zGva1mQFPMY/YziZll1MRoTvxKhb0/kt790AoQSy+owtYTdl81EICfrIJR\nXhg1BBwT1bsvdUR/RHLIuk0AhAGlksGCmlpZuSHmPHDpucT316uH/O69aZDclMbB\nNj0KSywtIPW3XQv82qBkyc9qEEa2WYxomyeU2lb74XahhNumlAiXDEQTv96fPS8q\nsb3LX8dg6dZFb97bdKqy\n=qzNP\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 2a0562056d69498b9b06c3b1132f34472f618d06\nparent 1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f\nauthor jason <changhexuefei2011@163.com> 1791674355 +0800\ncommitter GitHub <noreply@github.com> 1791674355 +0800\n\ntest(pi): require cancelled GCS query to retire pending-response session (#63)",
-          "verified_at": "2026-10-10T23:19:16Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/ba29fb34692d8f65a3ac69011bfb3088ed470676",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/ba29fb34692d8f65a3ac69011bfb3088ed470676",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/ba29fb34692d8f65a3ac69011bfb3088ed470676/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f"
-        }
-      ]
-    },
-    {
-      "sha": "1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f",
-      "node_id": "C_kwDOSu6iTdoAKDFkYmQ3OWVkYzZhM2QwM2JlOTcwZTExZDdkYzhiZDE1OTVmOTBhMWY",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:16:38Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:16:38Z"
-        },
-        "message": "test(pi): cover TCP IDN timeout, fresh reconnect and truncated six-axis replies (#61)",
-        "tree": {
-          "sha": "5ef455d714bc430833bab9f04b5c9f80395bf0de",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/5ef455d714bc430833bab9f04b5c9f80395bf0de"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysdWCRC1aQ7uu5UhlAAAbIsQAEQALznjjE+JcDgbE6cm361l\nNHdLQFZHYUwNkc+ptv2Ns5kzOUJVS/oqwh30X8uUrydb3S7nMGcjYMo3nw/YjTnk\nPrhdg2P76vmHnonH+wzi558cYuJe00x2LJMxotVtcDNsA+xRAm/GhjkmTyQmOeSu\nab/FAKTnBAFlKnMAcrP7RxkAXGjg3kFDnxmawHFc3wVxpf/sygn/NmbppvJovKDc\nUtpwJjFZ44rrFlU489XaAG17LrFYczkeTF0OF/YluHrr28Eic30ZpoEjoRnbZYpO\ny1jXrGUUulkQJEMpfYzZdfnweUgRpTmp1Wm+4jVj7ss0BujkNKnotAWBVQpDctKM\nYBr/vjCrPokpfoi7s7TbfevGrIhwi8AfDD7EWSGvfuy0HHNqvdQiTREEjev707L3\n2A2t2L91m0CcT4f1WnPmTtIr/4vHQD6LDSOiB3qEmAC0m38fiwO0lkzHuO40fMfq\neIaIzPWdr1NEI2IzNcrZSARy+0x/mmb7SsH0jJYLBHQ/hxdHNShnQwhN9hf49VNA\nZw1MvC85nMEhtAYAFovCBdwt8rnhVJ58mK/7WIqzNOs0Iov+xi/IxNpaQCaIkjy2\nxbvN9dlCAv011gpRKjPYATc/iTvjFtLu9Q3a1JzlA0Bk7Ro+sy0e+NeP67/9ohjR\nvhFbulEZEppNhBsK7YAA\n=SkQ0\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 5ef455d714bc430833bab9f04b5c9f80395bf0de\nparent b74a164cc5f5e5d4e05a0ee798be100b66254782\nauthor jason <changhexuefei2011@163.com> 1791674198 +0800\ncommitter GitHub <noreply@github.com> 1791674198 +0800\n\ntest(pi): cover TCP IDN timeout, fresh reconnect and truncated six-axis replies (#61)",
-          "verified_at": "2026-10-10T23:16:39Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/1dbd79edc6a3d03be970e11d7dc8bd1595f90a1f/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "b74a164cc5f5e5d4e05a0ee798be100b66254782",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/b74a164cc5f5e5d4e05a0ee798be100b66254782",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/b74a164cc5f5e5d4e05a0ee798be100b66254782"
-        }
-      ]
-    },
-    {
-      "sha": "b74a164cc5f5e5d4e05a0ee798be100b66254782",
-      "node_id": "C_kwDOSu6iTdoAKGI3NGExNjRjYzVmNWU1ZDRlMDVhMGVlNzk4YmUxMDBiNjYyNTQ3ODI",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:12:33Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:12:33Z"
-        },
-        "message": "test(pi): exercise read-only GCS identity and six-axis framing over localhost TCP (#60)",
-        "tree": {
-          "sha": "eb3171b05cc429a64770aafca78c48adcf15d358",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/eb3171b05cc429a64770aafca78c48adcf15d358"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/b74a164cc5f5e5d4e05a0ee798be100b66254782",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysZhCRC1aQ7uu5UhlAAANhQQAJPN8kv5n/5uXI+z47D6Af5D\noAinOTFmo43zAsgol6Ow1AUfP/FAf0UsH3vFTLyp70hQ0NJc4SRPoDlXqZisn+HH\ns3ail7cs+k8k3yHdm5rZtmrm4/HjkcRJcc/9AMF4n3Gr94MJuzUzI113Ci1eiyxb\nQgq+5SQEryYbQDCRqxACIQ/Ur6jZkJ4xP+z9aJ32Y8n6/l7XH0Ch1ZhybAcdT8IK\nM2L8NYtZXMKWDIJKPdKz5smdn2UigetzpwQ3MSjuW6/h4jyEE9VNM0MoopF4XukA\nIVolTYO+nliy89LUFdGMdp/LJJIiWEdxjmPsWpTk9SFqZv9Xw5nJLtxBDJ6hsORU\n9pTaFnAIkbpwm6O7VIpNrw/4KcEMoKa7tVnKynLYP2T6cR2bBEqgoDPw6934b77P\nLmw/DJ6ddQMi8IjChzL+ob0QCGBLOaSuwr1E1vjtZ/FK8EcPpyOSwO7ZlJNN61/Z\nUG90RAfOWEw7ndGGuh31pn8lK1BhLJhqjxkHN/SEvZ2nQI5f7AID698V1NOkDawW\n11CVJXAkvfbcG8AgJS7Zel5+g1kewsCZBXHt908zibRbR3h/RjNCygCyPVzycQSw\nLju759q0AG6w6AlvUbiehtmllgT/OXUXBXr6pdRNWIDTdLM2RQA/Vn0ruKqF0+iz\nF/+fBHjGrvYNNpbbJhX/\n=MKHb\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree eb3171b05cc429a64770aafca78c48adcf15d358\nparent e8a2a46db470bb76a82b93e746ca72306c492351\nauthor jason <changhexuefei2011@163.com> 1791673953 +0800\ncommitter GitHub <noreply@github.com> 1791673953 +0800\n\ntest(pi): exercise read-only GCS identity and six-axis framing over localhost TCP (#60)",
-          "verified_at": "2026-10-10T23:12:34Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/b74a164cc5f5e5d4e05a0ee798be100b66254782",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/b74a164cc5f5e5d4e05a0ee798be100b66254782",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/b74a164cc5f5e5d4e05a0ee798be100b66254782/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "e8a2a46db470bb76a82b93e746ca72306c492351",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/e8a2a46db470bb76a82b93e746ca72306c492351",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/e8a2a46db470bb76a82b93e746ca72306c492351"
-        }
-      ]
-    },
-    {
-      "sha": "e8a2a46db470bb76a82b93e746ca72306c492351",
-      "node_id": "C_kwDOSu6iTdoAKGU4YTJhNDZkYjQ3MGJiNzZhODJiOTNlNzQ2Y2E3MjMwNmM0OTIzNTE",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:08:49Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:08:49Z"
-        },
-        "message": "docs(pi): prepare official PI emulator compatibility validation (#59)\n\n* docs(pi): prepare official emulator TCP compatibility acceptance matrix\n\n* docs: link PI official emulator compatibility instructions from README",
-        "tree": {
-          "sha": "936ddaf1d53c6305f119accf09f1b06efe344343",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/936ddaf1d53c6305f119accf09f1b06efe344343"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/e8a2a46db470bb76a82b93e746ca72306c492351",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysWBCRC1aQ7uu5UhlAAA5d0QAE5gf/nb1KxEjzfisEwN3Wcs\nX+Xfttf5HhwMDUPMfUaHxWRQFtj9Kk2jUwt9qyKiF5UrsUJM+rN80A78B8cWB3CR\nxjdtwSM0kP7FoEHPnT/V/HxxtVJTOTTCbzxr/mbg+6TgJ4lCUyOjOqC3UshWwpw1\nUY0HWru89dm1ljiwa60dLzRu3J7TuKJoNbTbhqxSHVepHo91hI3wPLv5ihBCRrC1\nyKMaluyvqVPb0xv0bdHTFpF4LIsTd/soAyNI2i9Jl1RtRgp64gm/SnfYENFOYVFj\nF3pUg8oEgS1pSprYAy2QlGWLYqoP0AqeP0fFMGGEdCBGG0uEyoo5nZ62d3xk6Jkj\nUc7Suhui+Hydwc1gB9n7FuCa2G1f7Z7GNsEENFdckho7MUkfY+LigV6CnKwmOoF3\norhtpGUvTI0ZT1bDZD/nny3FMJFMlEHf9DXlk3tHiFGqxIOdHeQHviKU/XafYxDF\n5sp13ZjDp0yF37SdTK8MW26ZK3D43vWG4A8DmBsB8+9cO+W6cXjxIU6dMsY0/oJS\n7O99iUZ6Kme9oSKvhCDfM+QZB953a6JSlByDBXJR18Y8A3jHzrPy9JKZHnE1H7c0\n214i0VvmLqhR29Bc5MpVwVsI3CdYbwC0998hLXtqh8/aH/HdheRrGUff80EXdEBm\nNSFyu8Hth7YrNsnQxxk5\n=8Bj0\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 936ddaf1d53c6305f119accf09f1b06efe344343\nparent 9957283c162c4e16c61e112c40fd905313ea680d\nauthor jason <changhexuefei2011@163.com> 1791673729 +0800\ncommitter GitHub <noreply@github.com> 1791673729 +0800\n\ndocs(pi): prepare official PI emulator compatibility validation (#59)\n\n* docs(pi): prepare official emulator TCP compatibility acceptance matrix\n\n* docs: link PI official emulator compatibility instructions from README",
-          "verified_at": "2026-10-10T23:08:49Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/e8a2a46db470bb76a82b93e746ca72306c492351",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/e8a2a46db470bb76a82b93e746ca72306c492351",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/e8a2a46db470bb76a82b93e746ca72306c492351/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "9957283c162c4e16c61e112c40fd905313ea680d",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/9957283c162c4e16c61e112c40fd905313ea680d",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/9957283c162c4e16c61e112c40fd905313ea680d"
-        }
-      ]
-    },
-    {
-      "sha": "9957283c162c4e16c61e112c40fd905313ea680d",
-      "node_id": "C_kwDOSu6iTdoAKDk5NTcyODNjMTYyYzRlMTZjNjFlMTEyYzQwZmQ5MDUzMTNlYTY4MGQ",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-10T23:05:24Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-10T23:05:24Z"
-        },
-        "message": "docs(pi): add physical read-only hardware acceptance checklist (#58)\n\n* docs(pi): add controlled physical read-only hardware acceptance matrix\n\n* docs: link physical controller acceptance checklist from README",
-        "tree": {
-          "sha": "1401a2afe2348ad819dd017ea08519fb03a61efb",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/1401a2afe2348ad819dd017ea08519fb03a61efb"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/9957283c162c4e16c61e112c40fd905313ea680d",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqysS0CRC1aQ7uu5UhlAAAvcIQAG2YPxsiFnXZyXnHj8Ip5rq8\nz1GjEu6SeCFPRqwk/YpU/8BqjsMVj2jzXfU3YIPg677O9D1C70fKOHLMhs/8KuLV\nmf151vIT1FRLqCriP/aTuiRIBno2151HJOuJB8axf8D7o8SJ+aN8xMA/EeOfwaEb\nylV4GeiJrVg34wsKleyv1izw1gGNi63eT1LQ/Dm5wpyPGmqV6utXUFNCHmexjU3M\nTZHY6S0ZybKMN8oofwVVTDZEPRXz3W4QKsmj47LCQ2KoXXfBtUzk/xY/3lGt7dL3\nSBL2/2WC0PmVomm49JVTfiaEG9DZKO+zZCEiNkfNAgZ09V6gapVk9Lv028ysBJFj\n+HUOyccL3xjDMPIX7N8fypGvJRayYg9CyV6EA3rlW0YhETPCchrXnoSZ9PiwfDO/\ncn08VPLoPLK/vhHeVE1oOHJFKrU5sIDJiFLWUs4RN2wzSYolueu9KG2lcEYU/WRp\nO3W9/DZ96Nrh41vSfg2wch/6msSzJqVqla6LW0qhSyW+zVs1D1xiIsWllO5BZiqI\nf+YOmeZroai70VS2h1aEiXJefskTc/p0Fzdzxv6+n3EXE8TymRlYIhZTAd3Zsnfn\nr4w+OKAwVNqjzNeRlhlL1K+I7B/Om+89xDP3YOp8jlQ98q7/3S1luLNGrWvBClj9\nFIxnvUJE1kY2amDw+9Kc\n=kF/z\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 1401a2afe2348ad819dd017ea08519fb03a61efb\nparent 147b87e1672371517cdd416e5830ed2e7cc70d5b\nauthor jason <changhexuefei2011@163.com> 1791673524 +0800\ncommitter GitHub <noreply@github.com> 1791673524 +0800\n\ndocs(pi): add physical read-only hardware acceptance checklist (#58)\n\n* docs(pi): add controlled physical read-only hardware acceptance matrix\n\n* docs: link physical controller acceptance checklist from README",
-          "verified_at": "2026-10-10T23:05:25Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/9957283c162c4e16c61e112c40fd905313ea680d",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/9957283c162c4e16c61e112c40fd905313ea680d",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/9957283c162c4e16c61e112c40fd905313ea680d/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "147b87e1672371517cdd416e5830ed2e7cc70d5b",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/147b87e1672371517cdd416e5830ed2e7cc70d5b",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/147b87e1672371517cdd416e5830ed2e7cc70d5b"
         }
       ]
     }
