@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T13:52:41.988429+00:00",
+  "updated_at": "2026-10-25T17:33:53.081384+00:00",
   "repos": [
     {
       "id": 113524788,
@@ -69,14 +69,14 @@
       "releases_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/deployments",
       "created_at": "2017-12-08T03:05:21Z",
-      "updated_at": "2026-10-25T12:57:27Z",
-      "pushed_at": "2026-10-25T12:57:24Z",
+      "updated_at": "2026-10-25T16:57:36Z",
+      "pushed_at": "2026-10-25T16:57:32Z",
       "git_url": "git://github.com/changhexuefei/changhexuefei.github.io.git",
       "ssh_url": "git@github.com:changhexuefei/changhexuefei.github.io.git",
       "clone_url": "https://github.com/changhexuefei/changhexuefei.github.io.git",
       "svn_url": "https://github.com/changhexuefei/changhexuefei.github.io",
       "homepage": "https://changhexuefei.github.io/",
-      "size": 802,
+      "size": 888,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -179,14 +179,14 @@
       "releases_url": "https://api.github.com/repos/changhexuefei/changhexuefei/releases{/id}",
       "deployments_url": "https://api.github.com/repos/changhexuefei/changhexuefei/deployments",
       "created_at": "2026-07-02T15:07:32Z",
-      "updated_at": "2026-10-25T11:20:42Z",
-      "pushed_at": "2026-10-25T11:20:39Z",
+      "updated_at": "2026-10-25T16:12:10Z",
+      "pushed_at": "2026-10-25T16:12:06Z",
       "git_url": "git://github.com/changhexuefei/changhexuefei.git",
       "ssh_url": "git@github.com:changhexuefei/changhexuefei.git",
       "clone_url": "https://github.com/changhexuefei/changhexuefei.git",
       "svn_url": "https://github.com/changhexuefei/changhexuefei",
       "homepage": null,
-      "size": 256,
+      "size": 257,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Python",
@@ -7648,88 +7648,6 @@
           "sha": "89b7fbe55ea0aab8055583902877016026ab4e9e",
           "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/89b7fbe55ea0aab8055583902877016026ab4e9e",
           "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/89b7fbe55ea0aab8055583902877016026ab4e9e"
-        }
-      ]
-    },
-    {
-      "sha": "89b7fbe55ea0aab8055583902877016026ab4e9e",
-      "node_id": "C_kwDOSu6iTdoAKDg5YjdmYmU1NWVhMGFhYjgwNTU1ODM5MDI4NzcwMTYwMjZhYjRlOWU",
-      "commit": {
-        "author": {
-          "name": "jason",
-          "email": "changhexuefei2011@163.com",
-          "date": "2026-10-11T14:35:43Z"
-        },
-        "committer": {
-          "name": "GitHub",
-          "email": "noreply@github.com",
-          "date": "2026-10-11T14:35:43Z"
-        },
-        "message": "test(pi): fail-closed offline physical read-only preflight approval gate (#89)\n\n* feat(pi): add offline fail-closed read-only preflight approval record gate\n\n* test(pi): enforce offline approval and exact read-only GCS query allowlist\n\n* docs(pi): clarify offline preflight gate is only a review readiness check",
-        "tree": {
-          "sha": "6e77f4bb45b50bfca4e821a7aa342b150f92d35c",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/trees/6e77f4bb45b50bfca4e821a7aa342b150f92d35c"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/git/commits/89b7fbe55ea0aab8055583902877016026ab4e9e",
-        "comment_count": 0,
-        "verification": {
-          "verified": true,
-          "reason": "valid",
-          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqy56/CRC1aQ7uu5UhlAAAzCoQAFMGtqMRK9ZVtJtCPFV6sK6p\nLbatuuicnhkZKN+TG/Dd3v/ZIlNb9EjuUZNg54A5lbiiLD5F/H2MEn0xl6API0bQ\nXabgQLc3r75QZat3qsFxmFIyIoIxm9cnO/RuifDZCz7Spm8Y+yg7XmKL+v2Dwfqv\ngtgXO1iME6Vlqs/pHdMj2R8FMviiuhrFXwzvzs2Gzz6XxdHgc/MrA1EKBqItok+g\nAWr6rkB+GVKdkGdZ/8n8Pc7+TEe6aHf3LIKYUM0jTuClofcmOZn9UwNQ55nmwuD5\nnewcGBdEi4YZ5DJRmXYAeDV9hDwN7ARoxKUPNrMMMELezfme3lPWYpeSFaP1oAJQ\ncGftB3l5ccknba+He0KCvyYXJGvhZjHqy46ngLi9o4qAMG1QeMtJVj6jtHuc25Eg\nT62HMjPgRlkDaaQWysop+i1uC1e6efAGPvpZ2Xy6f6ohUNZD2vs934gxRVaM6eVs\n233RxjLvptOATeVoqT+JLqn+fkMjKYOnVfiWR/NepD8Nmi536DBdZo6Q7Lu5IzF+\nGtX5zXPb+hajmx6rVf2oagFRDlQkCbblnz63V19tGpVxqhnAlOL8oGndoQsp6QqI\nAKaG7TVOyxd3LUp+4k1nDLJXPAvOxNDxwhKqAjuFVoNYpxxKtr1t9HF+G+CWDcau\nOwMJ4CJUIUATyKHxhBwH\n=jW5S\n-----END PGP SIGNATURE-----\n",
-          "payload": "tree 6e77f4bb45b50bfca4e821a7aa342b150f92d35c\nparent 11a58ac60a9868e3cc235dd110a3638c7ad4b104\nauthor jason <changhexuefei2011@163.com> 1791729343 +0800\ncommitter GitHub <noreply@github.com> 1791729343 +0800\n\ntest(pi): fail-closed offline physical read-only preflight approval gate (#89)\n\n* feat(pi): add offline fail-closed read-only preflight approval record gate\n\n* test(pi): enforce offline approval and exact read-only GCS query allowlist\n\n* docs(pi): clarify offline preflight gate is only a review readiness check",
-          "verified_at": "2026-10-11T14:35:44Z"
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/89b7fbe55ea0aab8055583902877016026ab4e9e",
-      "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/89b7fbe55ea0aab8055583902877016026ab4e9e",
-      "comments_url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/89b7fbe55ea0aab8055583902877016026ab4e9e/comments",
-      "author": {
-        "login": "changhexuefei",
-        "id": 19502034,
-        "node_id": "MDQ6VXNlcjE5NTAyMDM0",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19502034?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/changhexuefei",
-        "html_url": "https://github.com/changhexuefei",
-        "followers_url": "https://api.github.com/users/changhexuefei/followers",
-        "following_url": "https://api.github.com/users/changhexuefei/following{/other_user}",
-        "gists_url": "https://api.github.com/users/changhexuefei/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/changhexuefei/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/changhexuefei/subscriptions",
-        "organizations_url": "https://api.github.com/users/changhexuefei/orgs",
-        "repos_url": "https://api.github.com/users/changhexuefei/repos",
-        "events_url": "https://api.github.com/users/changhexuefei/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/changhexuefei/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "web-flow",
-        "id": 19864447,
-        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/web-flow",
-        "html_url": "https://github.com/web-flow",
-        "followers_url": "https://api.github.com/users/web-flow/followers",
-        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-        "organizations_url": "https://api.github.com/users/web-flow/orgs",
-        "repos_url": "https://api.github.com/users/web-flow/repos",
-        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/web-flow/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "11a58ac60a9868e3cc235dd110a3638c7ad4b104",
-          "url": "https://api.github.com/repos/changhexuefei/SiPhStudio/commits/11a58ac60a9868e3cc235dd110a3638c7ad4b104",
-          "html_url": "https://github.com/changhexuefei/SiPhStudio/commit/11a58ac60a9868e3cc235dd110a3638c7ad4b104"
         }
       ]
     }
