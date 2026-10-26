@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T20:20:43.617199+00:00",
+  "updated_at": "2026-10-26T23:59:47.048507+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "date": "Mon, 26 Oct 2026 13:45:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
     {
       "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
       "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions...",
@@ -62,14 +70,6 @@
       "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
       "url": "https://openai.com/index/terminal-x",
       "date": "Tue, 20 Oct 2026 07:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
-    },
-    {
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
-      "url": "https://openai.com/index/itau-generative-ai",
-      "date": "Fri, 16 Oct 2026 19:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
     }
