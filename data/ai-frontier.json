@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T15:58:15.327064+00:00",
+  "updated_at": "2026-10-27T20:35:11.824729+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,22 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Genie 4: A new generation of world simulation",
+      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "date": "Tue, 27 Oct 2026 16:01:38 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
+    {
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "date": "Tue, 27 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
     {
       "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
       "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
@@ -54,22 +70,6 @@
       "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
       "date": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Using thousands of AI agents to uncover new leads in biological data",
-      "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
-      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "date": "Wed, 21 Oct 2026 04:50:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-      "url": "https://openai.com/index/terminal-x",
-      "date": "Tue, 20 Oct 2026 07:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
     }
