@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T00:16:55.460008+00:00",
+  "updated_at": "2026-10-28T06:03:44.249000+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Genie 4: A new generation of world simulation",
+      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "date": "Tue, 27 Oct 2026 16:01:38 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
     {
       "title": "Retell uses OpenAI models to help power 100M monthly calls",
       "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
@@ -64,14 +72,6 @@
       "date": "2026-10-21T09:38:49Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-      "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
-      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "date": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
