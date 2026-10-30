@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:59:39.312588+00:00",
+  "updated_at": "2026-10-30T23:37:47.898928+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+      "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,...",
+      "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "date": "2026-10-30T20:33:18Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
     {
       "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
       "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces...",
@@ -40,14 +48,6 @@
       "date": "Wed, 28 Oct 2026 09:30:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Genie 4: A new generation of world simulation",
-      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "date": "Tue, 27 Oct 2026 16:01:38 +0000",
-      "source": "Google DeepMind",
-      "home": "https://deepmind.google/blog/"
     },
     {
       "title": "Retell uses OpenAI models to help power 100M monthly calls",
