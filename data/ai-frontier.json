@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:11:42.517114+00:00",
+  "updated_at": "2026-10-30T19:59:39.312588+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+      "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces...",
+      "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+      "date": "2026-10-30T16:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
     {
       "title": "How we detect frontier model misalignment",
       "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
@@ -64,14 +72,6 @@
       "date": "Mon, 26 Oct 2026 13:45:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
-      "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions...",
-      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
-      "date": "2026-10-23T14:58:32Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
     }
   ],
   "sources": [
