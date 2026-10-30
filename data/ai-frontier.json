@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T08:13:04.239716+00:00",
+  "updated_at": "2026-10-30T15:11:42.517114+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -34,6 +34,14 @@
       "home": "https://openai.com/news/"
     },
     {
+      "title": "Genie 4: A new generation of world simulation",
+      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "date": "Tue, 27 Oct 2026 16:01:38 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
+    {
       "title": "Retell uses OpenAI models to help power 100M monthly calls",
       "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
       "url": "https://openai.com/index/retell-ai",
@@ -62,14 +70,6 @@
       "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions...",
       "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
       "date": "2026-10-23T14:58:32Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-      "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
-      "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-      "date": "2026-10-21T09:52:16Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
     }
