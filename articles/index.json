@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-01",
+    "period": "TECH REFLECTION",
+    "title": "这一周的技术感想：2026-10-26 — 2026-11-01",
+    "summary": "没有新的公开提交，也可以记录一次停下来观察项目的时间。",
+    "tags": [
+      "技术感想",
+      "GitHub"
+    ],
+    "url": "2026-11-01.html"
+  },
+  {
     "date": "2026-10-25",
     "period": "TECH REFLECTION",
     "title": "这一周的技术感想：把 changhexuefei.github.io 做得更可靠",
