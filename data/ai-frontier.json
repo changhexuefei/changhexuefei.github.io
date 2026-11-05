@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T21:48:44.884999+00:00",
+  "updated_at": "2026-11-05T02:01:41.738087+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+      "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...",
+      "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "date": "2026-11-04T22:00:17Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
     {
       "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
       "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed...",
@@ -24,6 +32,14 @@
       "date": "2026-11-04T16:00:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "url": "https://openai.com/index/devrev-enterprise-self-service",
+      "date": "Wed, 04 Nov 2026 00:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
     },
     {
       "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
@@ -54,22 +70,6 @@
       "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
       "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
       "date": "Thu, 29 Oct 2026 09:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
-    },
-    {
-      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "date": "Wed, 28 Oct 2026 13:15:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Legora is building the agentic operating system for legal work",
-      "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-      "url": "https://openai.com/index/legora",
-      "date": "Wed, 28 Oct 2026 09:30:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
     }
