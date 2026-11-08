@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T07:46:31.424532+00:00",
+  "updated_at": "2026-11-08T14:50:09.774675+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -58,18 +58,18 @@
       "home": "https://openai.com/news/"
     },
     {
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "date": "Tue, 03 Nov 2026 17:01:49 +0000",
-      "source": "Google DeepMind",
-      "home": "https://deepmind.google/blog/"
-    },
-    {
       "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
       "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into...",
       "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
       "date": "2026-11-02T17:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+      "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,...",
+      "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "date": "2026-10-30T20:33:18Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
     }
