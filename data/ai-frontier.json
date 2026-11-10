@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T03:58:59.857878+00:00",
+  "updated_at": "2026-11-10T12:28:34.508073+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "date": "Tue, 10 Nov 2026 12:02:28 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
     {
       "title": "CodeRabbit scales agentic software development and ships 20x more",
       "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
@@ -64,14 +72,6 @@
       "date": "Wed, 04 Nov 2026 00:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "date": "Tue, 03 Nov 2026 17:01:49 +0000",
-      "source": "Google DeepMind",
-      "home": "https://deepmind.google/blog/"
     }
   ],
   "sources": [
