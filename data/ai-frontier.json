@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T12:28:34.508073+00:00",
+  "updated_at": "2026-11-10T19:57:47.418885+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -10,10 +10,34 @@
   },
   "items": [
     {
+      "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+      "summary": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide...",
+      "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+      "date": "2026-11-10T16:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
+      "summary": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per...",
+      "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/",
+      "date": "2026-11-10T15:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
       "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
       "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
       "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
       "date": "Tue, 10 Nov 2026 12:02:28 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
+    {
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "date": "Mon, 09 Nov 2026 19:51:47 +0000",
       "source": "Google DeepMind",
       "home": "https://deepmind.google/blog/"
     },
@@ -48,30 +72,6 @@
       "date": "2026-11-04T22:00:17Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
-      "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed...",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
-      "date": "2026-11-04T17:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
-      "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you...",
-      "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
-      "date": "2026-11-04T16:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-      "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
-      "url": "https://openai.com/index/devrev-enterprise-self-service",
-      "date": "Wed, 04 Nov 2026 00:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
