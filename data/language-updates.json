@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:07:33.548027+00:00",
+  "updated_at": "2026-11-11T00:44:38.784871+00:00",
   "items": [
     {
       "key": "kotlin",
@@ -24,8 +24,8 @@
     {
       "key": "python",
       "name": "Python",
-      "version": "v3.16.0a1",
-      "title": "CPython v3.16.0a1",
+      "version": "v3.16.0a2",
+      "title": "CPython v3.16.0a2",
       "summary": "官方版本标签已更新，点击查看最新代码与版本信息。",
       "date": null,
       "url": "https://github.com/python/cpython/tags",
