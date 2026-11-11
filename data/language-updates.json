@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-11T07:23:48.148338+00:00",
+  "updated_at": "2026-11-11T15:29:14.801854+00:00",
   "items": [
     {
       "key": "kotlin",
       "name": "Kotlin",
-      "version": "v2.5.0-Beta2",
-      "title": "Kotlin 2.5.0-Beta2",
-      "summary": "## Changelog\r \r ### Analysis API\r \r - [`KT-60484`](https://youtrack.jetbrains.com/issue/KT-60484) Analysis API: add support for KtType pointers similar to KtSymbolPointer\r - [`KT-67786`](https://youtrack.jetbrains.com/is",
-      "date": "2026-10-21T10:43:18Z",
-      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.5.0-Beta2",
+      "version": "v2.5.0-RC",
+      "title": "Kotlin 2.5.0-RC",
+      "summary": "## Changelog\r \r ### Analysis API. Standalone\r \r - [`KT-89902`](https://youtrack.jetbrains.com/issue/KT-89902) Analysis API Standalone: JavaPsiFacade doesn't find Kotlin classes from binary libraries\r \r ### Backend. Wasm\r",
+      "date": "2026-11-11T10:19:34Z",
+      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.5.0-RC",
       "home": "https://kotlinlang.org/"
     },
     {
