@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T11:35:55.401416+00:00",
+  "updated_at": "2026-11-12T19:22:21.260088+00:00",
   "items": [
     {
       "key": "kotlin",
@@ -14,8 +14,8 @@
     {
       "key": "java",
       "name": "Java",
-      "version": "jdk-28+23",
-      "title": "OpenJDK jdk-28+23",
+      "version": "jdk-28+24",
+      "title": "OpenJDK jdk-28+24",
       "summary": "官方版本标签已更新，点击查看最新代码与版本信息。",
       "date": null,
       "url": "https://github.com/openjdk/jdk/tags",
