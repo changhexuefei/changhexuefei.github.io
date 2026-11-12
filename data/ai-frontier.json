@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T03:39:32.813425+00:00",
+  "updated_at": "2026-11-12T12:17:53.293905+00:00",
   "featured": {
     "title": "Dr. Fei-Fei Li To Seek a Newer World Our journey from World Labs to AMD",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -26,28 +26,12 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
-      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-      "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "date": "Tue, 10 Nov 2026 12:02:28 +0000",
-      "source": "Google DeepMind",
-      "home": "https://deepmind.google/blog/"
-    },
-    {
       "title": "Cogent and OpenAI build cyber defense factories for enterprises",
       "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
       "url": "https://openai.com/index/cogent-security",
       "date": "Tue, 10 Nov 2026 00:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-      "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
-      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-      "date": "Mon, 09 Nov 2026 19:51:47 +0000",
-      "source": "Google DeepMind",
-      "home": "https://deepmind.google/blog/"
     },
     {
       "title": "CodeRabbit scales agentic software development and ships 20x more",
@@ -72,6 +56,22 @@
       "date": "Thu, 05 Nov 2026 09:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
+    },
+    {
+      "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+      "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...",
+      "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "date": "2026-11-04T22:00:17Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+      "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed...",
+      "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
+      "date": "2026-11-04T17:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
     }
   ],
   "sources": [
