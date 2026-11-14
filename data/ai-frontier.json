@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:29:42.603496+00:00",
+  "updated_at": "2026-11-14T02:39:15.449802+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -14,6 +14,14 @@
       "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
       "url": "https://openai.com/index/introducing-chatgpt-wallet",
       "date": "Fri, 13 Nov 2026 15:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
+    {
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "date": "Fri, 13 Nov 2026 08:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
     },
@@ -64,14 +72,6 @@
       "date": "Mon, 09 Nov 2026 19:51:47 +0000",
       "source": "Google DeepMind",
       "home": "https://deepmind.google/blog/"
-    },
-    {
-      "title": "CodeRabbit scales agentic software development and ships 20x more",
-      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
-      "url": "https://openai.com/index/coderabbit-codex-daybreak",
-      "date": "Mon, 09 Nov 2026 08:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
