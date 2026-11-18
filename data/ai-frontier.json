@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T19:18:54.610933+00:00",
+  "updated_at": "2026-11-18T01:47:48.091368+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -42,17 +42,17 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
-      "title": "Advancing computer-use agents for healthcare teams",
-      "summary": "",
-      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
       "date": "Mon, 16 Nov 2026 06:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
     },
     {
-      "title": "More ways to move care forward with ChatGPT for Healthcare",
-      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "summary": "",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
       "date": "Mon, 16 Nov 2026 06:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
