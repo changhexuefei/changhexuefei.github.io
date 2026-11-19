@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T18:42:23.249064+00:00",
+  "updated_at": "2026-11-19T00:59:14.142484+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -18,18 +18,18 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
+      "title": "Research acceleration: The jagged frontier",
+      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "date": "Wed, 18 Nov 2026 08:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
+    {
       "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
       "summary": "Agentic workloads, long documents, and large codebases are pushing context lengths from tens of thousands of tokens to hundreds of thousands. At those lengths,...",
       "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
       "date": "2026-11-17T17:30:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
-      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
-      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
-      "date": "2026-11-16T16:00:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
     },
@@ -50,12 +50,12 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
-      "title": "Advancing computer-use agents for healthcare teams",
-      "summary": "",
-      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-      "date": "Mon, 16 Nov 2026 06:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
+      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
+      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
+      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
+      "date": "2026-11-16T16:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
     },
     {
       "title": "More ways to move care forward with ChatGPT for Healthcare",
@@ -66,10 +66,10 @@
       "home": "https://openai.com/news/"
     },
     {
-      "title": "Introducing ChatGPT Wallet",
-      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-      "url": "https://openai.com/index/introducing-chatgpt-wallet",
-      "date": "Fri, 13 Nov 2026 15:00:00 GMT",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "summary": "",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "date": "Mon, 16 Nov 2026 06:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
     }
