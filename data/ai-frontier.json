@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T08:39:06.889404+00:00",
+  "updated_at": "2026-11-19T18:00:29.186085+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Build Tool-Calling Parsers in Rust with AI Agents",
+      "summary": "A tool call can arrive in pieces, an argument can be cut short, or model-specific markup can leak into the answer. A frontend parser turns that output, received...",
+      "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/",
+      "date": "2026-11-19T16:30:46Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
     {
       "title": "Build Training-Ready Physical AI Datasets with Two Prompts in NVIDIA Cosmos",
       "summary": "World model accuracy starts with high-quality, diverse training datasets. Yet capturing rare defects, nighttime incidents, and other challenging scenarios is...",
@@ -34,6 +42,14 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
+      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
+      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
+      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
+      "date": "2026-11-16T16:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
       "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
       "summary": "Agentic workloads are demanding more from inference systems. AI agents carry growing conversation histories across turns and generate a mix of reasoning, tool...",
       "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/",
@@ -50,25 +66,9 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
-      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
-      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
-      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
-      "date": "2026-11-16T16:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
       "title": "More ways to move care forward with ChatGPT for Healthcare",
       "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
       "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-      "date": "Mon, 16 Nov 2026 06:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Advancing computer-use agents for healthcare teams",
-      "summary": "",
-      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
       "date": "Mon, 16 Nov 2026 06:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
