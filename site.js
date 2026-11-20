@@ -308,6 +308,7 @@ fetch("articles/index.json", { cache: "no-store" })
         <path class="chart-line" d="${line}"></path>
         ${dots}
         ${labels}
+        ${days.every((day) => day.count === 0) ? `<text class="chart-empty" x="${width / 2}" y="${pad.top + innerHeight / 2}" text-anchor="middle">近 14 天暂无公开提交</text>` : ""}
       `;
     }
 
@@ -366,7 +367,9 @@ fetch("articles/index.json", { cache: "no-store" })
         githubLastSync = Date.now();
         const syncedAt = new Intl.DateTimeFormat("zh-CN",{hour:"2-digit",minute:"2-digit",second:"2-digit"}).format(new Date());
         githubStatus.textContent = `已同步公开仓库 · ${syncedAt} 更新 · 每 30 分钟刷新`;
-        commitSummary.textContent = `最近活跃的 ${repos.length} 个公开仓库，近 14 天读取到 ${totalCommits} 条本人提交记录。`;
+        commitSummary.textContent = totalCommits
+          ? `最近活跃的 ${repos.length} 个公开仓库，近 14 天读取到 ${totalCommits} 条公开提交记录。`
+          : `最近活跃的 ${repos.length} 个公开仓库，近 14 天暂无公开提交；仓库动态仍会继续同步。`;
       } catch (error) {
         githubStatus.textContent = "服务器正在更新 GitHub 动态";
         commitSummary.textContent = "提交统计正在同步，恢复后会自动更新。";

@@ -41,3 +41,4 @@
 .ai-result-card.is-unavailable{opacity:.75}
 @media(max-width:760px){.ai-results-grid,.ai-app-grid{grid-template-columns:1fr}.ai-result-card,.ai-app-card{min-height:210px}}
 .ai-feed-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:auto;padding-top:20px}.ai-feed-links a{margin:0!important;padding:0!important}
+ .chart-empty{fill:#7183a3;font:13px system-ui}

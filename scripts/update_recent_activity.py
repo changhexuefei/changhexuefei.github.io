@@ -23,7 +23,10 @@ def main():
     commits = []
     for repo in repos[:8]:
         try:
-            query = urlencode({"author": USER, "since": since, "per_page": 100})
+            # Keep this feed aligned with the public activity view: include all
+            # commits in the user's public repositories, including automation
+            # commits, instead of filtering by the commit author's account.
+            query = urlencode({"since": since, "per_page": 100})
             commits.extend(fetch(f"https://api.github.com/repos/{USER}/{repo['name']}/commits?{query}"))
         except Exception as error:
             print(f"skip {repo.get('name')}: {error}")
