@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T18:00:29.186085+00:00",
+  "updated_at": "2026-11-20T00:48:04.065440+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -42,14 +42,6 @@
       "home": "https://developer.nvidia.com/blog/"
     },
     {
-      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
-      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
-      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
-      "date": "2026-11-16T16:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
       "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
       "summary": "Agentic workloads are demanding more from inference systems. AI agents carry growing conversation histories across turns and generate a mix of reasoning, tool...",
       "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/",
@@ -61,6 +53,14 @@
       "title": "NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1",
       "summary": "As AI agents tackle increasingly complex workflows, reducing time-to-train is critical for rapidly iterating on both models and the agents they power. MLPerf...",
       "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/",
+      "date": "2026-11-16T16:00:00Z",
+      "source": "NVIDIA AI",
+      "home": "https://developer.nvidia.com/blog/"
+    },
+    {
+      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
+      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
+      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
       "date": "2026-11-16T16:00:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
