@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T23:30:23.857067+00:00",
+  "updated_at": "2026-11-23T07:17:35.928801+00:00",
   "repos": [
     {
       "id": 1287307543,
@@ -180,13 +180,13 @@
       "deployments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/deployments",
       "created_at": "2017-12-08T03:05:21Z",
       "updated_at": "2026-11-12T12:36:01Z",
-      "pushed_at": "2026-11-22T21:36:05Z",
+      "pushed_at": "2026-11-23T02:20:53Z",
       "git_url": "git://github.com/changhexuefei/changhexuefei.github.io.git",
       "ssh_url": "git@github.com:changhexuefei/changhexuefei.github.io.git",
       "clone_url": "https://github.com/changhexuefei/changhexuefei.github.io.git",
       "svn_url": "https://github.com/changhexuefei/changhexuefei.github.io",
       "homepage": "https://changhexuefei.github.io/",
-      "size": 639,
+      "size": 669,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",
@@ -3060,25 +3060,25 @@
       ]
     },
     {
-      "sha": "f71754f14bcd87cf548b963f3b16316fd4a1fd2f",
-      "node_id": "C_kwDOTLrBF9oAKGY3MTc1NGYxNGJjZDg3Y2Y1NDhiOTYzZjNiMTYzMTZmZDRhMWZkMmY",
+      "sha": "51b985fe68bf9ac70dde9d8fce2d176fe7a4cba3",
+      "node_id": "C_kwDOBsRANNoAKDUxYjk4NWZlNjhiZjlhYzcwZGRlOWQ4ZmNlMmQxNzZmZTdhNGNiYTM",
       "commit": {
         "author": {
           "name": "github-actions[bot]",
           "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-09T06:18:27Z"
+          "date": "2026-11-23T02:20:52Z"
         },
         "committer": {
           "name": "github-actions[bot]",
           "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-09T06:18:27Z"
+          "date": "2026-11-23T02:20:52Z"
         },
-        "message": "Update dynamic profile content",
+        "message": "chore: refresh AI frontier updates",
         "tree": {
-          "sha": "3793cb141721aa2e60613dc8987816de3bda4aa9",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei/git/trees/3793cb141721aa2e60613dc8987816de3bda4aa9"
+          "sha": "0fc32102febcbe9929f679d1ae40b7275326c6fe",
+          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees/0fc32102febcbe9929f679d1ae40b7275326c6fe"
         },
-        "url": "https://api.github.com/repos/changhexuefei/changhexuefei/git/commits/f71754f14bcd87cf548b963f3b16316fd4a1fd2f",
+        "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits/51b985fe68bf9ac70dde9d8fce2d176fe7a4cba3",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -3088,9 +3088,9 @@
           "verified_at": null
         }
       },
-      "url": "https://api.github.com/repos/changhexuefei/changhexuefei/commits/f71754f14bcd87cf548b963f3b16316fd4a1fd2f",
-      "html_url": "https://github.com/changhexuefei/changhexuefei/commit/f71754f14bcd87cf548b963f3b16316fd4a1fd2f",
-      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei/commits/f71754f14bcd87cf548b963f3b16316fd4a1fd2f/comments",
+      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/51b985fe68bf9ac70dde9d8fce2d176fe7a4cba3",
+      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/51b985fe68bf9ac70dde9d8fce2d176fe7a4cba3",
+      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/51b985fe68bf9ac70dde9d8fce2d176fe7a4cba3/comments",
       "author": {
         "login": "github-actions[bot]",
         "id": 41898282,
@@ -3135,9 +3135,173 @@
       },
       "parents": [
         {
-          "sha": "50d9114b0ca9c11e5094447d0ffe194d717cd186",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei/commits/50d9114b0ca9c11e5094447d0ffe194d717cd186",
-          "html_url": "https://github.com/changhexuefei/changhexuefei/commit/50d9114b0ca9c11e5094447d0ffe194d717cd186"
+          "sha": "1ff943a875f470410ba07411a83b20e37053a860",
+          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/1ff943a875f470410ba07411a83b20e37053a860",
+          "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/1ff943a875f470410ba07411a83b20e37053a860"
+        }
+      ]
+    },
+    {
+      "sha": "1ff943a875f470410ba07411a83b20e37053a860",
+      "node_id": "C_kwDOBsRANNoAKDFmZjk0M2E4NzVmNDcwNDEwYmEwNzQxMWE4M2IyMGUzNzA1M2E4NjA",
+      "commit": {
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "41898282+github-actions[bot]@users.noreply.github.com",
+          "date": "2026-11-23T00:59:23Z"
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "41898282+github-actions[bot]@users.noreply.github.com",
+          "date": "2026-11-23T00:59:23Z"
+        },
+        "message": "chore: refresh language ecosystem updates",
+        "tree": {
+          "sha": "137b9d98573dd616ba371a9f0414420aaa970120",
+          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees/137b9d98573dd616ba371a9f0414420aaa970120"
+        },
+        "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits/1ff943a875f470410ba07411a83b20e37053a860",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/1ff943a875f470410ba07411a83b20e37053a860",
+      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/1ff943a875f470410ba07411a83b20e37053a860",
+      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/1ff943a875f470410ba07411a83b20e37053a860/comments",
+      "author": {
+        "login": "github-actions[bot]",
+        "id": 41898282,
+        "node_id": "MDM6Qm90NDE4OTgyODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+        "html_url": "https://github.com/apps/github-actions",
+        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "github-actions[bot]",
+        "id": 41898282,
+        "node_id": "MDM6Qm90NDE4OTgyODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+        "html_url": "https://github.com/apps/github-actions",
+        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "d8ab67c0b940225b24a925b6725bdf487474e26f",
+          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/d8ab67c0b940225b24a925b6725bdf487474e26f",
+          "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/d8ab67c0b940225b24a925b6725bdf487474e26f"
+        }
+      ]
+    },
+    {
+      "sha": "d8ab67c0b940225b24a925b6725bdf487474e26f",
+      "node_id": "C_kwDOBsRANNoAKGQ4YWI2N2MwYjk0MDIyNWIyNGE5MjViNjcyNWJkZjQ4NzQ3NGUyNmY",
+      "commit": {
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "41898282+github-actions[bot]@users.noreply.github.com",
+          "date": "2026-11-22T23:30:23Z"
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "41898282+github-actions[bot]@users.noreply.github.com",
+          "date": "2026-11-22T23:30:23Z"
+        },
+        "message": "chore: refresh GitHub activity data",
+        "tree": {
+          "sha": "9666dd4c5b8112c6f26e09b99b0919e9d3990028",
+          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees/9666dd4c5b8112c6f26e09b99b0919e9d3990028"
+        },
+        "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits/d8ab67c0b940225b24a925b6725bdf487474e26f",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/d8ab67c0b940225b24a925b6725bdf487474e26f",
+      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/d8ab67c0b940225b24a925b6725bdf487474e26f",
+      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/d8ab67c0b940225b24a925b6725bdf487474e26f/comments",
+      "author": {
+        "login": "github-actions[bot]",
+        "id": 41898282,
+        "node_id": "MDM6Qm90NDE4OTgyODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+        "html_url": "https://github.com/apps/github-actions",
+        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "github-actions[bot]",
+        "id": 41898282,
+        "node_id": "MDM6Qm90NDE4OTgyODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+        "html_url": "https://github.com/apps/github-actions",
+        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "9c2fc34808d22ee0b5cba59986d46fc02d3d6037",
+          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/9c2fc34808d22ee0b5cba59986d46fc02d3d6037",
+          "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/9c2fc34808d22ee0b5cba59986d46fc02d3d6037"
         }
       ]
     },
@@ -11092,252 +11256,6 @@
           "sha": "8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8",
           "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8",
           "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8"
-        }
-      ]
-    },
-    {
-      "sha": "8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8",
-      "node_id": "C_kwDOBsRANNoAKDgyMzRlOGI3ZWViOGUyNmYyNzJjN2JjZTZlNzBkMWNmNWQxZjU0Yjg",
-      "commit": {
-        "author": {
-          "name": "github-actions[bot]",
-          "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-13T22:29:42Z"
-        },
-        "committer": {
-          "name": "github-actions[bot]",
-          "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-13T22:29:42Z"
-        },
-        "message": "chore: refresh AI frontier updates",
-        "tree": {
-          "sha": "4be1bbe4e1ec20788e04cc51a2f7f3438399861a",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees/4be1bbe4e1ec20788e04cc51a2f7f3438399861a"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits/8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8",
-        "comment_count": 0,
-        "verification": {
-          "verified": false,
-          "reason": "unsigned",
-          "signature": null,
-          "payload": null,
-          "verified_at": null
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8",
-      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8",
-      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/8234e8b7eeb8e26f272c7bce6e70d1cf5d1f54b8/comments",
-      "author": {
-        "login": "github-actions[bot]",
-        "id": 41898282,
-        "node_id": "MDM6Qm90NDE4OTgyODI=",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-        "html_url": "https://github.com/apps/github-actions",
-        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-        "type": "Bot",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "github-actions[bot]",
-        "id": 41898282,
-        "node_id": "MDM6Qm90NDE4OTgyODI=",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-        "html_url": "https://github.com/apps/github-actions",
-        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-        "type": "Bot",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "805009e10b0a3296b31eef20bbb682df02f80118",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/805009e10b0a3296b31eef20bbb682df02f80118",
-          "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/805009e10b0a3296b31eef20bbb682df02f80118"
-        }
-      ]
-    },
-    {
-      "sha": "805009e10b0a3296b31eef20bbb682df02f80118",
-      "node_id": "C_kwDOBsRANNoAKDgwNTAwOWUxMGIwYTMyOTZiMzFlZWYyMGJiYjY4MmRmMDJmODAxMTg",
-      "commit": {
-        "author": {
-          "name": "github-actions[bot]",
-          "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-13T21:44:27Z"
-        },
-        "committer": {
-          "name": "github-actions[bot]",
-          "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-13T21:44:27Z"
-        },
-        "message": "chore: refresh language ecosystem updates",
-        "tree": {
-          "sha": "b0f67d47078ee4f221021b075c72423163a58e7a",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees/b0f67d47078ee4f221021b075c72423163a58e7a"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits/805009e10b0a3296b31eef20bbb682df02f80118",
-        "comment_count": 0,
-        "verification": {
-          "verified": false,
-          "reason": "unsigned",
-          "signature": null,
-          "payload": null,
-          "verified_at": null
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/805009e10b0a3296b31eef20bbb682df02f80118",
-      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/805009e10b0a3296b31eef20bbb682df02f80118",
-      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/805009e10b0a3296b31eef20bbb682df02f80118/comments",
-      "author": {
-        "login": "github-actions[bot]",
-        "id": 41898282,
-        "node_id": "MDM6Qm90NDE4OTgyODI=",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-        "html_url": "https://github.com/apps/github-actions",
-        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-        "type": "Bot",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "github-actions[bot]",
-        "id": 41898282,
-        "node_id": "MDM6Qm90NDE4OTgyODI=",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-        "html_url": "https://github.com/apps/github-actions",
-        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-        "type": "Bot",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "108b0c94b81741f95f271107944819d05e68aace",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/108b0c94b81741f95f271107944819d05e68aace",
-          "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/108b0c94b81741f95f271107944819d05e68aace"
-        }
-      ]
-    },
-    {
-      "sha": "108b0c94b81741f95f271107944819d05e68aace",
-      "node_id": "C_kwDOBsRANNoAKDEwOGIwYzk0YjgxNzQxZjk1ZjI3MTEwNzk0NDgxOWQwNWU2OGFhY2U",
-      "commit": {
-        "author": {
-          "name": "github-actions[bot]",
-          "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-13T17:20:31Z"
-        },
-        "committer": {
-          "name": "github-actions[bot]",
-          "email": "41898282+github-actions[bot]@users.noreply.github.com",
-          "date": "2026-11-13T17:20:31Z"
-        },
-        "message": "chore: refresh GitHub activity data",
-        "tree": {
-          "sha": "d579f7a8552c2ca18fdf61302a946f731c7c01ea",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/trees/d579f7a8552c2ca18fdf61302a946f731c7c01ea"
-        },
-        "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/git/commits/108b0c94b81741f95f271107944819d05e68aace",
-        "comment_count": 0,
-        "verification": {
-          "verified": false,
-          "reason": "unsigned",
-          "signature": null,
-          "payload": null,
-          "verified_at": null
-        }
-      },
-      "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/108b0c94b81741f95f271107944819d05e68aace",
-      "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/108b0c94b81741f95f271107944819d05e68aace",
-      "comments_url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/108b0c94b81741f95f271107944819d05e68aace/comments",
-      "author": {
-        "login": "github-actions[bot]",
-        "id": 41898282,
-        "node_id": "MDM6Qm90NDE4OTgyODI=",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-        "html_url": "https://github.com/apps/github-actions",
-        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-        "type": "Bot",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "committer": {
-        "login": "github-actions[bot]",
-        "id": 41898282,
-        "node_id": "MDM6Qm90NDE4OTgyODI=",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-        "html_url": "https://github.com/apps/github-actions",
-        "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-        "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-        "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-        "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-        "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-        "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-        "type": "Bot",
-        "user_view_type": "public",
-        "site_admin": false
-      },
-      "parents": [
-        {
-          "sha": "12090c1912999047dff3d56a8a76ae4c58dd06c4",
-          "url": "https://api.github.com/repos/changhexuefei/changhexuefei.github.io/commits/12090c1912999047dff3d56a8a76ae4c58dd06c4",
-          "html_url": "https://github.com/changhexuefei/changhexuefei.github.io/commit/12090c1912999047dff3d56a8a76ae4c58dd06c4"
         }
       ]
     }
