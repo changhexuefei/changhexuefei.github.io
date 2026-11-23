@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T11:03:25.495661+00:00",
+  "updated_at": "2026-11-23T22:50:43.943750+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "date": "Mon, 23 Nov 2026 08:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
     {
       "title": "Build Tool-Calling Parsers in Rust with AI Agents",
       "summary": "A tool call can arrive in pieces, an argument can be cut short, or model-specific markup can leak into the answer. A frontend parser turns that output, received...",
@@ -53,14 +61,6 @@
       "title": "NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1",
       "summary": "As AI agents tackle increasingly complex workflows, reducing time-to-train is critical for rapidly iterating on both models and the agents they power. MLPerf...",
       "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/",
-      "date": "2026-11-16T16:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
-      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
-      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
       "date": "2026-11-16T16:00:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
