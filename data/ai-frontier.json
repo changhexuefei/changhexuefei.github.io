@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T22:50:43.943750+00:00",
+  "updated_at": "2026-11-24T06:48:42.888867+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -9,6 +9,14 @@
     "home": "https://www.worldlabs.ai/blog"
   },
   "items": [
+    {
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "date": "Mon, 23 Nov 2026 16:59:40 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
     {
       "title": "Richpanel helps companies automate 50% of support in 30 days",
       "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
@@ -64,14 +72,6 @@
       "date": "2026-11-16T16:00:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "More ways to move care forward with ChatGPT for Healthcare",
-      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-      "date": "Mon, 16 Nov 2026 06:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
