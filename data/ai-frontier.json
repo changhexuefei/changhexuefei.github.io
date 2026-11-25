@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T18:41:49.339918+00:00",
+  "updated_at": "2026-11-25T02:57:06.890618+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -10,12 +10,36 @@
   },
   "items": [
     {
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "date": "Tue, 24 Nov 2026 13:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
+    {
       "title": "How iFood scales coding agents across 15,000 repositories",
       "summary": "",
-      "url": "https://openai.com/index/ifood",
+      "url": "https://openai.com/business/customer-stories/ifood",
       "date": "Tue, 24 Nov 2026 00:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
+    },
+    {
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "date": "Tue, 24 Nov 2026 00:00:00 GMT",
+      "source": "OpenAI",
+      "home": "https://openai.com/news/"
+    },
+    {
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "date": "Mon, 23 Nov 2026 16:59:40 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
     },
     {
       "title": "Richpanel helps companies automate 50% of support in 30 days",
@@ -48,30 +72,6 @@
       "date": "Wed, 18 Nov 2026 08:00:00 GMT",
       "source": "OpenAI",
       "home": "https://openai.com/news/"
-    },
-    {
-      "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
-      "summary": "Agentic workloads, long documents, and large codebases are pushing context lengths from tens of thousands of tokens to hundreds of thousands. At those lengths,...",
-      "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
-      "date": "2026-11-17T17:30:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
-      "summary": "Agentic workloads are demanding more from inference systems. AI agents carry growing conversation histories across turns and generate a mix of reasoning, tool...",
-      "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/",
-      "date": "2026-11-16T16:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1",
-      "summary": "As AI agents tackle increasingly complex workflows, reducing time-to-train is critical for rapidly iterating on both models and the agents they power. MLPerf...",
-      "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/",
-      "date": "2026-11-16T16:00:00Z",
-      "source": "NVIDIA AI",
-      "home": "https://developer.nvidia.com/blog/"
     }
   ],
   "sources": [
