@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-25T09:32:12.457473+00:00",
+  "updated_at": "2026-11-25T19:40:53.550056+00:00",
   "items": [
     {
       "key": "kotlin",
       "name": "Kotlin",
-      "version": "v2.5.0-RC",
-      "title": "Kotlin 2.5.0-RC",
-      "summary": "## Changelog\r \r ### Analysis API. Standalone\r \r - [`KT-89902`](https://youtrack.jetbrains.com/issue/KT-89902) Analysis API Standalone: JavaPsiFacade doesn't find Kotlin classes from binary libraries\r \r ### Backend. Wasm\r",
-      "date": "2026-11-11T10:19:34Z",
-      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.5.0-RC",
+      "version": "v2.5.0-RC2",
+      "title": "Kotlin 2.5.0-RC2",
+      "summary": "## Changelog\r \r ### Backend. Wasm\r \r - [`KT-91749`](https://youtrack.jetbrains.com/issue/KT-91749) Kotlin/Wasm: cos is ~47% slower in 2.5.0-RC than in 2.4.21\r \r ### Compiler\r \r - [`KT-91549`](https://youtrack.jetbrains.c",
+      "date": "2026-11-25T10:43:53Z",
+      "url": "https://github.com/JetBrains/kotlin/releases/tag/v2.5.0-RC2",
       "home": "https://kotlinlang.org/"
     },
     {
