@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T06:46:51.607176+00:00",
+  "updated_at": "2026-11-28T15:59:26.389284+00:00",
   "featured": {
     "title": "World Labs team Atlas: Releasing our next generation world model Generate and reconstruct worlds and bring creations into your own workflows with our tools and developer APIs.",
     "summary": "World Labs 官方研究与产品动态，聚焦空间智能和可交互世界模型。",
@@ -42,6 +42,14 @@
       "home": "https://openai.com/news/"
     },
     {
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "date": "Mon, 23 Nov 2026 16:59:40 +0000",
+      "source": "Google DeepMind",
+      "home": "https://deepmind.google/blog/"
+    },
+    {
       "title": "Richpanel helps companies automate 50% of support in 30 days",
       "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
       "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
@@ -64,14 +72,6 @@
       "date": "2026-11-18T17:00:00Z",
       "source": "NVIDIA AI",
       "home": "https://developer.nvidia.com/blog/"
-    },
-    {
-      "title": "Research acceleration: The jagged frontier",
-      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "date": "Wed, 18 Nov 2026 08:00:00 GMT",
-      "source": "OpenAI",
-      "home": "https://openai.com/news/"
     }
   ],
   "sources": [
